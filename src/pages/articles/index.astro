@@ -3,108 +3,62 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Navigation from '../../components/Navigation.astro';
 
-// Hae kaikki blogikirjoitukset ja järjestä ne julkaisupäivän mukaan
+// Get all blog posts
 const allPosts = await getCollection('blog');
-const sortedPosts = allPosts.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
-// Jaa kirjoitukset kategorioittain
+// Sort posts by date
+const sortedPosts = allPosts.sort((a: any, b: any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+// Group posts by category
 const postsByCategory = {
-  'destination-guide': sortedPosts.filter(post => post.data.category === 'destination-guide'),
-  'travel-tips': sortedPosts.filter(post => post.data.category === 'travel-tips'),
-  'hotel-review': sortedPosts.filter(post => post.data.category === 'hotel-review'),
-  'hidden-gems': sortedPosts.filter(post => post.data.category === 'hidden-gems')
+  'destination-guide': sortedPosts.filter((post: any) => post.data.category === 'destination-guide'),
+  'hotel-review': sortedPosts.filter((post: any) => post.data.category === 'hotel-review'),
+  'travel-tips': sortedPosts.filter((post: any) => post.data.category === 'travel-tips'),
 };
-
-// Hae featured-kirjoitukset
-const featuredPosts = sortedPosts.filter(post => post.data.featured);
 ---
 
-<Layout 
-  title="Travel Articles - Hidden Europe"
-  description="Discover unique travel stories, destination guides, and hotel reviews from Europe's hidden corners."
+<Layout
+  title="Articles - Hidden Europe"
+  description="Discover unique travel stories, destination guides, and hotel reviews from Hidden Europe."
 >
   <Navigation />
-  
+
   <main>
-    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Travel Stories & Insights</h1>
-        <p>Discover unique perspectives and hidden treasures across Europe</p>
+        <h1>Travel Stories & Guides</h1>
+        <p>Discover unique perspectives on Europe's hidden treasures</p>
       </div>
     </section>
 
-    <!-- Featured Articles -->
-    {featuredPosts.length > 0 && (
-      <section class="featured">
-        <div class="container">
-          <h2>Featured Stories</h2>
-          <div class="featured-grid">
-            {featuredPosts.map(post => (
-              <a href={`/articles/${post.slug}`} class="featured-card">
-                {post.data.heroImage && (
-                  <div class="card-image">
-                    <img src={post.data.heroImage} alt={post.data.title} />
-                  </div>
-                )}
-                <div class="card-content">
-                  <div class="card-category">{post.data.category.replace('-', ' ')}</div>
-                  <h3>{post.data.title}</h3>
-                  <p>{post.data.description}</p>
-                  <div class="card-meta">
-                    <span class="author">{post.data.author}</span>
-                    <span class="date">{new Date(post.data.publishDate).toLocaleDateString('en-GB', {
-                      day: 'numeric',
-                      month: 'long',
-                      year: 'numeric'
-                    })}</span>
-                    {post.data.readingTime && (
-                      <span class="reading-time">{post.data.readingTime} min read</span>
-                    )}
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-    )}
-
-    <!-- Articles by Category -->
     <section class="articles">
       <div class="container">
         {Object.entries(postsByCategory).map(([category, posts]) => (
-          posts.length > 0 && (
-            <div class="category-section">
-              <h2>{category.replace('-', ' ')}</h2>
-              <div class="articles-grid">
-                {posts.map(post => (
-                  <a href={`/articles/${post.slug}`} class="article-card">
+          <div class="category-section">
+            <h2>{category.replace('-', ' ')}</h2>
+            <div class="article-grid">
+              {posts.map((post: any) => (
+                <article class="article-card">
+                  <a href={`/articles/${post.slug}`} class="article-link">
                     {post.data.heroImage && (
-                      <div class="card-image">
-                        <img src={post.data.heroImage} alt={post.data.title} />
-                      </div>
+                      <img src={post.data.heroImage} alt={post.data.title} class="article-image" />
                     )}
-                    <div class="card-content">
+                    <div class="article-content">
+                      <span class="category">{post.data.category.replace('-', ' ')}</span>
                       <h3>{post.data.title}</h3>
                       <p>{post.data.description}</p>
-                      <div class="card-meta">
+                      <div class="article-meta">
                         <span class="author">{post.data.author}</span>
-                        <span class="date">{new Date(post.data.publishDate).toLocaleDateString('en-GB', {
-                          day: 'numeric',
-                          month: 'long',
-                          year: 'numeric'
-                        })}</span>
                         {post.data.readingTime && (
                           <span class="reading-time">{post.data.readingTime} min read</span>
                         )}
                       </div>
                     </div>
                   </a>
-                ))}
-              </div>
+                </article>
+              ))}
             </div>
-          )
+          </div>
         ))}
       </div>
     </section>
@@ -113,23 +67,25 @@ const featuredPosts = sortedPosts.filter(post => post.data.featured);
 
 <style>
   .hero {
-    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    background: linear-gradient(135deg, var(--cal-poly-green) 0%, var(--viridian) 100%);
     color: white;
-    padding: 6rem 2rem 4rem 2rem;
+    padding: 6rem 2rem;
     text-align: center;
   }
 
-  .hero-content h1 {
+  .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 300;
   }
 
-  .hero-content p {
+  .hero p {
     font-size: 1.3rem;
     opacity: 0.9;
-    max-width: 700px;
-    margin: 0 auto;
+  }
+
+  .articles {
+    padding: 4rem 0;
   }
 
   .container {
@@ -138,143 +94,107 @@ const featuredPosts = sortedPosts.filter(post => post.data.featured);
     padding: 0 2rem;
   }
 
-  .featured {
-    padding: 6rem 0;
-    background: var(--bg-primary);
+  .category-section {
+    margin-bottom: 4rem;
   }
 
-  .featured h2,
-  .articles h2 {
-    font-size: 2.5rem;
+  .category-section h2 {
     color: var(--cal-poly-green);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
     font-weight: 300;
-    margin-bottom: 3rem;
   }
 
-  :root.dark .featured h2,
-  :root.dark .articles h2 {
-    color: var(--card-text);
+  :root.dark .category-section h2 {
+    color: var(--card-title);
   }
 
-  .featured-grid {
+  .article-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
   }
 
-  .featured-card,
   .article-card {
     background: var(--bg-primary);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
   }
 
-  :root.dark .featured-card,
   :root.dark .article-card {
-    background: var(--card-bg);
-  }
-
-  .featured-card:hover,
-  .article-card:hover {
-    transform: translateY(-8px);
-  }
-
-  .card-image {
-    aspect-ratio: 16/9;
-    overflow: hidden;
-  }
-
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
-  }
-
-  .featured-card:hover .card-image img,
-  .article-card:hover .card-image img {
-    transform: scale(1.05);
-  }
-
-  .card-content {
-    padding: 2rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-category {
-    text-transform: capitalize;
-    color: var(--bright-blue);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .card-content h3 {
-    font-size: 1.5rem;
-    color: var(--cal-poly-green);
-    margin-bottom: 1rem;
-    line-height: 1.3;
-  }
-
-  :root.dark .card-content h3 {
-    color: var(--card-title);
-  }
-
-  .card-content p {
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    flex-grow: 1;
-  }
-
-  :root.dark .card-content p {
-    color: var(--card-text);
-  }
-
-  .card-meta {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    flex-wrap: wrap;
-  }
-
-  :root.dark .card-meta {
-    color: var(--card-text-secondary);
-  }
-
-  .articles {
-    padding: 6rem 0;
     background: var(--bg-secondary);
   }
 
-  .category-section {
-    margin-bottom: 6rem;
+  .article-card:hover {
+    transform: translateY(-5px);
   }
 
-  .category-section:last-child {
-    margin-bottom: 0;
+  .article-link {
+    text-decoration: none;
+    color: inherit;
   }
 
-  .articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
+  .article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .article-content {
+    padding: 1.5rem;
+  }
+
+  .category {
+    color: var(--cal-poly-green);
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+
+  :root.dark .category {
+    color: var(--bright-blue);
+  }
+
+  .article-content h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  :root.dark .article-content h3 {
+    color: var(--card-title);
+  }
+
+  .article-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  :root.dark .article-content p {
+    color: var(--card-text);
+  }
+
+  .article-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  :root.dark .article-meta {
+    color: var(--card-text-secondary);
   }
 
   @media (max-width: 768px) {
-    .hero-content h1 {
+    .hero h1 {
       font-size: 2.5rem;
     }
 
-    .featured-grid,
-    .articles-grid {
+    .article-grid {
       grid-template-columns: 1fr;
     }
   }
