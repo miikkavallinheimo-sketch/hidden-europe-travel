@@ -3,4 +3,5 @@ User-agent: *
 Allow: /
 
 # Sitemaps
+Sitemap: https://hiddeneurope.travel/sitemap-0.xml
 Sitemap: https://hiddeneurope.travel/sitemap-index.xml
