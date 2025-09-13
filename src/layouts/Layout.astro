@@ -1,6 +1,7 @@
 ---
 // src/layouts/Layout.astro
 import { ChevronUp } from 'lucide-astro';
+import '../styles/global.css';
 export interface Props {
   title: string;
   description: string;
@@ -21,8 +22,7 @@ const { title, description } = Astro.props;
     <!-- Recia Font from Fontshare -->
     <link href="https://api.fontshare.com/v2/css?f[]=recia@400,500,600,700&display=swap" rel="stylesheet">
     
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="/src/styles/global.css">
+    <!-- Global styles are imported via frontmatter -->
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

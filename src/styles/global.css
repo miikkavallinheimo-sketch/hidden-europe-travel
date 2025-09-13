@@ -81,14 +81,14 @@ html, body { margin:0; padding:0; }
 }
 
 /* Typography -------------------------------------------------------------- */
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap;}
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-LightItalic.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap;}
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-RegularItalic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-MediumItalic.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap;}
-@font-face{font-family:'Recia';src:url('/public/fonts/Recia-BoldItalic.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-LightItalic.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-Italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-MediumItalic.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:'Recia';src:url('/Fonts/Recia-BoldItalic.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
 
 body{
   font-family:'Recia', serif;
