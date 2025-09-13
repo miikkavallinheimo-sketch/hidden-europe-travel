@@ -1,17 +1,17 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Navigation from '../../components/Navigation.astro';
 
 export async function getStaticPaths() {
   const blogPosts = await getCollection('blog');
-  return blogPosts.map((post) => ({
+  return blogPosts.map((post: CollectionEntry<'blog'>) => ({
     params: { slug: post.slug },
     props: { post },
   }));
 }
 
-const { post } = Astro.props;
+const { post } = Astro.props as { post: CollectionEntry<'blog'> };
 const { Content } = await post.render();
 
 const formattedDate = post.data.publishDate.toLocaleDateString('en-GB', {
