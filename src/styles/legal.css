@@ -1,0 +1,94 @@
+/* Legal Pages (Privacy Policy & Terms of Service) */
+.legal-content {
+  padding: 6rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-muted);
+}
+
+.legal-content h1 {
+  font-size: 3rem;
+  color: var(--brand-green);
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.legal-content .last-updated {
+  color: var(--muted-2);
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.legal-content h2 {
+  font-size: 1.8rem;
+  color: var(--brand-green-700);
+  margin: 3rem 0 1.5rem;
+  font-weight: 500;
+}
+
+.legal-content h3 {
+  font-size: 1.4rem;
+  color: var(--brand-green);
+  margin: 2rem 0 1rem;
+  font-weight: 500;
+}
+
+.legal-content p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.legal-content ul {
+  margin: 1rem 0 2rem 2rem;
+  line-height: 1.8;
+}
+
+.legal-content li {
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.legal-content a {
+  color: var(--brand-green-700);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legal-content a:hover {
+  color: var(--brand-green);
+  text-decoration: underline;
+}
+
+.legal-content strong {
+  color: var(--brand-green);
+  font-weight: 500;
+}
+
+/* Dark mode */
+:root.dark .legal-content h1,
+:root.dark .legal-content h3,
+:root.dark .legal-content strong {
+  color: var(--brand-green-dark);
+}
+
+:root.dark .legal-content h2 {
+  color: var(--accent-gold);
+}
+
+:root.dark .legal-content p,
+:root.dark .legal-content li {
+  color: var(--text);
+}
+
+:root.dark .legal-content .last-updated {
+  color: var(--muted);
+}
+
+:root.dark .legal-content a {
+  color: var(--accent-gold);
+}
+
+:root.dark .legal-content a:hover {
+  color: var(--brand-green-dark);
+}

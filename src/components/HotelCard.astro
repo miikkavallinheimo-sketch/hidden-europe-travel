@@ -1,0 +1,368 @@
+---
+// src/components/HotelCard.astro
+import { Home, Euro, Waves, Utensils, Clock, Star, MapPin } from 'lucide-astro';
+
+export interface Props {
+  hotel: any;
+}
+
+const { hotel } = Astro.props;
+
+// Price range indicator
+const getPriceLevel = (range: string) => {
+  const count = range.length;
+  return count;
+};
+
+const priceLevel = getPriceLevel(hotel.price_range);
+---
+
+<a href={`/hotels/${hotel.id}`} class="hotel-card" data-category={hotel.categorySlug}>
+  <div class="card-image">
+    <img 
+      src={hotel.images?.hero || '/images/hotel-placeholder.jpg'} 
+      alt={hotel.name} 
+      loading="lazy" 
+    />
+    <div class="card-badge">{hotel.category}</div>
+    <div class="price-badge">
+      {Array.from({ length: 4 }, (_, i) => (
+        <Euro size={12} class={i < priceLevel ? 'active' : 'inactive'} />
+      ))}
+    </div>
+  </div>
+  
+  <div class="card-content">
+    <h3>{hotel.name}</h3>
+    <p class="location">
+      <MapPin size={14} />
+      {hotel.region}, {hotel.country}
+    </p>
+    
+    <p class="description">{hotel.description}</p>
+    
+    <div class="features-row">
+      <span class="feature-item">
+        <Home size={14} />
+        {hotel.room_count} rooms
+      </span>
+      {hotel.spa && (
+        <span class="feature-item spa">
+          <Waves size={14} />
+          Spa
+        </span>
+      )}
+      {hotel.fine_dining && (
+        <span class="feature-item dining">
+          <Utensils size={14} />
+          Fine dining
+        </span>
+      )}
+    </div>
+    
+    <div class="hotel-meta">
+      <span class="meta-item">
+        <Clock size={14} />
+        {hotel.best_time}
+      </span>
+      {hotel.historical_significance && (
+        <span class="meta-item heritage">
+          <Star size={14} />
+          Historic heritage
+        </span>
+      )}
+    </div>
+    
+    {hotel.historical_significance && (
+      <div class="heritage-note">
+        <p>{hotel.historical_significance}</p>
+      </div>
+    )}
+    
+    <span class="read-more">
+      Discover hotel →
+    </span>
+  </div>
+</a>
+
+<style>
+  .hotel-card {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 190, 11, 0.1);
+    text-decoration: none;
+  }
+
+  :root.dark .hotel-card {
+    background: var(--card-bg);
+    border-color: rgba(91, 192, 235, 0.2);
+  }
+
+  .hotel-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 50px rgba(0,0,0,0.12);
+    border-color: rgba(255, 190, 11, 0.2);
+  }
+
+  :root.dark .hotel-card:hover {
+    border-color: rgba(91, 192, 235, 0.4);
+  }
+
+  .card-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .hotel-card:hover .card-image img {
+    transform: scale(1.05);
+  }
+
+  .card-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(48, 27, 86, 0.9);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .price-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+
+  :root.dark .price-badge {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .price-badge .active {
+    color: #FFBE0B;
+  }
+
+  :root.dark .price-badge .active {
+    color: var(--bright-blue);
+  }
+
+  .price-badge .inactive {
+    color: #ddd;
+  }
+
+  :root.dark .price-badge .inactive {
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  .card-content {
+    padding: 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c5530;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  :root.dark .card-content h3 {
+    color: var(--card-title);
+  }
+
+  .location {
+    color: #301B56;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  :root.dark .location {
+    color: var(--card-text);
+  }
+
+  .description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+
+  :root.dark .description {
+    color: var(--card-text);
+  }
+
+  .features-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  :root.dark .features-row {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+  }
+
+  :root.dark .feature-item {
+    color: var(--card-text);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .feature-item.spa {
+    color: #666666;
+    background: rgba(102, 102, 102, 0.1);
+  }
+
+  :root.dark .feature-item.spa {
+    color: var(--card-text);
+    background: var(--bg-primary);
+  }
+
+  .feature-item.dining {
+    color: #FFBE0B;
+    background: rgba(255, 190, 11, 0.1);
+  }
+
+  :root.dark .feature-item.dining {
+    color: var(--bright-blue);
+    background: rgba(91, 192, 235, 0.1);
+  }
+
+  .hotel-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+  }
+
+  :root.dark .meta-item {
+    color: var(--card-text);
+  }
+
+  .meta-item.heritage {
+    color: #FFBE0B;
+  }
+
+  :root.dark .meta-item.heritage {
+    color: var(--bright-blue);
+  }
+
+  .heritage-note {
+    background: rgba(255, 190, 11, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 3px solid #FFBE0B;
+  }
+
+  :root.dark .heritage-note {
+    background: var(--bg-primary);
+    border-left-color: var(--bright-blue);
+  }
+
+  .heritage-note p {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  :root.dark .heritage-note p {
+    color: var(--card-text);
+  }
+
+  .read-more {
+    color: #301B56;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    padding-bottom: 2px;
+    margin-top: auto;
+  }
+
+  :root.dark .read-more {
+    color: var(--card-text);
+  }
+
+  .hotel-card:hover .read-more {
+    border-bottom-color: #301B56;
+    color: #FFBE0B;
+  }
+
+  :root.dark .hotel-card:hover .read-more {
+    border-bottom-color: var(--card-text);
+    color: var(--card-text);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-content {
+      padding: 2rem;
+    }
+    
+    .features-row,
+    .hotel-meta {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .card-content h3 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

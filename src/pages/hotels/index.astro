@@ -1,0 +1,487 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import HotelCard from '../../components/HotelCard.astro';
+import DestinationCard from '../../components/DestinationCard.astro';
+import hotelsData from '../../data/hotels.json';
+import { Castle, Mountain, Building, Church, Snowflake, Palette, Tent, Wine, Building as CityBuilding } from 'lucide-astro';
+
+// Hae kategoria URL:n parametreista
+const category = Astro.url.searchParams.get('category');
+
+// Määritä kategorioiden ja hotellityyppien vastaavuudet
+const categoryMapping = {
+  castle: 'castle_hotels',
+  cave: 'cave_hotels',
+  lighthouse: 'lighthouse_hotels',
+  monastery: 'monastery_hotels',
+  extreme: 'extreme_unique',
+  design: 'design_boutique',
+  alpine: 'alpine_retreats',
+  vineyard: 'vineyard_hotels',
+  city: 'city_boutique'
+};
+
+// Kerää hotellit kategorioittain
+const hotelsByCategory = {};
+Object.entries(categoryMapping).forEach(([key, value]) => {
+  hotelsByCategory[key] = hotelsData.boutique_hotels[value] || [];
+});
+
+// Lisää kategoria jokaiselle hotellille
+Object.entries(categoryMapping).forEach(([key, value]) => {
+  if (hotelsData.boutique_hotels[value]) {
+    hotelsData.boutique_hotels[value].forEach(hotel => {
+      hotel.categorySlug = key;
+    });
+  }
+});
+
+// Hae kaikki hotellit kategorioittain
+const allHotels = Object.values(hotelsData.boutique_hotels).flat();
+
+// Valitse 6 satunnaista featured hotellia
+const featuredHotels = allHotels
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 6);
+
+// Hae featured destinations
+const featuredDestinations = [
+  {
+    id: "monsanto_portugal",
+    name: "Monsanto",
+    country: "Portugal",
+    region: "Castelo Branco",
+    category: "Hidden Villages",
+    description: "Village built among and under giant boulders",
+    best_time: "Spring and autumn",
+    crowd_level: "Low",
+    accessibility: "Moderate"
+  },
+  {
+    id: "giethoorn_netherlands",
+    name: "Giethoorn",
+    country: "Netherlands",
+    region: "Overijssel",
+    category: "Hidden Villages",
+    description: "Car-free village with 180+ wooden bridges",
+    best_time: "May-September",
+    crowd_level: "Moderate",
+    accessibility: "Easy"
+  }
+];
+---
+
+<Layout 
+  title="Boutique Hotels - Hidden Europe"
+  description="Discover Europe's most unique boutique hotels - from castle hotels and cave accommodations to lighthouse stays and monastery retreats."
+>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Europe's Most Unique Boutique Hotels</h1>
+        <p>From medieval castles and cave hotels to lighthouse stays and monastery retreats - extraordinary accommodations await.</p>
+      </div>
+    </section>
+
+    <!-- Categories Preview -->
+    <section class="categories">
+      <div class="container">
+        <h2>Hotel Categories</h2>
+        <div class="categories-grid">
+          <a href="/hotels/category/castle" class="category-card">
+            <div class="category-icon"><Castle size={48} /></div>
+            <h3>Castle Hotels</h3>
+            <p>Sleep like royalty in authentic medieval castles with luxury amenities</p>
+          </a>
+          <a href="/hotels/category/cave" class="category-card">
+            <div class="category-icon"><Mountain size={48} /></div>
+            <h3>Cave Hotels</h3>
+            <p>Unique underground experiences in historic cave accommodations</p>
+          </a>
+          <a href="/hotels/category/lighthouse" class="category-card">
+            <div class="category-icon"><Building size={48} /></div>
+            <h3>Lighthouse Hotels</h3>
+            <p>Romantic coastal stays in converted historic lighthouses</p>
+          </a>
+          <a href="/hotels/category/monastery" class="category-card">
+            <div class="category-icon"><Church size={48} /></div>
+            <h3>Monastery Hotels</h3>
+            <p>Peaceful retreats in transformed monasteries and convents</p>
+          </a>
+          <a href="/hotels/category/extreme" class="category-card">
+            <div class="category-icon"><Snowflake size={48} /></div>
+            <h3>Extreme Unique</h3>
+            <p>Ice hotels, treehouses and other extraordinary accommodations</p>
+          </a>
+          <a href="/hotels/category/design" class="category-card">
+            <div class="category-icon"><Palette size={48} /></div>
+            <h3>Design Boutique</h3>
+            <p>Stylish hotels with cutting-edge design and artistic interiors</p>
+          </a>
+          <a href="/hotels/category/alpine" class="category-card">
+            <div class="category-icon"><Tent size={48} /></div>
+            <h3>Alpine Retreats</h3>
+            <p>Mountain lodges and chalets with stunning alpine views</p>
+          </a>
+          <a href="/hotels/category/vineyard" class="category-card">
+            <div class="category-icon"><Wine size={48} /></div>
+            <h3>Vineyard Hotels</h3>
+            <p>Luxury stays in historic wine estates and châteaux</p>
+          </a>
+          <a href="/hotels/category/city" class="category-card">
+            <div class="category-icon"><CityBuilding size={48} /></div>
+            <h3>City Boutique</h3>
+            <p>Urban retreats in historic buildings and palaces</p>
+          </a>
+        </div>
+        <div class="view-all">
+          <a href="/hotels/all" class="view-all-button">View All Hotels</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Hotels -->
+    <section class="featured" id="featured">
+      <div class="container">
+        <h2>Featured Hotels</h2>
+        <div class="hotels-grid">
+          {featuredHotels.map((hotel) => (
+            <HotelCard hotel={hotel} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured destinations">
+      <div class="container">
+        <h2>Featured Destinations</h2>
+        <div class="destination-grid">
+          {featuredDestinations.map((destination) => (
+            <DestinationCard destination={destination} />
+          ))}
+        </div>
+        <div class="view-all">
+          <a href="/destinations" class="view-all-button">View All Destinations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    padding: 6rem 2rem 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .hotels {
+    padding: 6rem 0;
+    background: var(--bg-secondary);
+  }
+
+  .featured {
+    padding: 6rem 0;
+    background: var(--bg-muted);
+  }
+
+  :root.dark .featured {
+    background: var(--bg-muted);
+  }
+
+  .featured h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--brand-green);
+    font-weight: 300;
+    margin-bottom: 4rem;
+  }
+
+  :root.dark .featured h2 {
+    color: var(--card-title);
+  }
+
+  :root.dark .categories {
+    background: var(--bg-primary);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hotels-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .hotels-header h2 {
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  :root.dark .hotels-header h2,
+  :root.dark .categories h2 {
+    color: var(--card-text);
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  :root.dark .subtitle {
+    color: var(--card-text-secondary);
+  }
+
+  .hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .no-hotels {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  :root.dark .no-hotels {
+    background: var(--card-bg);
+  }
+
+  .no-hotels h3 {
+    color: #2c5530;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  :root.dark .no-hotels h3 {
+    color: var(--card-title);
+  }
+
+  .no-hotels p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  :root.dark .no-hotels p {
+    color: var(--card-text);
+  }
+
+  .back-home {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #2c5530;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .back-home:hover {
+    background: #4a7c59;
+  }
+
+  .categories {
+    padding: 6rem 0;
+  }
+
+  .categories h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 300;
+    margin-bottom: 4rem;
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .category-card {
+    background: var(--bg-primary);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none;
+    display: block;
+  }
+
+  :root.dark .category-card {
+    background: var(--card-bg);
+  }
+
+  :root.dark .category-card h3 {
+    color: var(--card-title);
+  }
+
+  :root.dark .category-card p {
+    color: var(--card-text);
+  }
+
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .category-icon {
+    margin-bottom: 1rem;
+  }
+
+  .categories-grid a:nth-child(1) .category-icon {
+    color: #2C5530; /* Castle Hotels */
+  }
+
+  .categories-grid a:nth-child(2) .category-icon {
+    color: #5BC0EB; /* Cave Hotels */
+  }
+
+  .categories-grid a:nth-child(3) .category-icon {
+    color: #2274A5; /* Lighthouse Hotels */
+  }
+
+  .categories-grid a:nth-child(4) .category-icon {
+    color: #301B56; /* Monastery Hotels */
+  }
+
+  .categories-grid a:nth-child(5) .category-icon {
+    color: #333333; /* Extreme Unique */
+  }
+
+  .categories-grid a:nth-child(6) .category-icon {
+    color: #2C5530; /* Design Boutique */
+  }
+
+  .categories-grid a:nth-child(7) .category-icon {
+    color: #5BC0EB; /* Alpine Retreats */
+  }
+
+  .categories-grid a:nth-child(8) .category-icon {
+    color: #2274A5; /* Vineyard Hotels */
+  }
+
+  .categories-grid a:nth-child(9) .category-icon {
+    color: #301B56; /* City Boutique */
+  }
+
+  :root.dark .categories-grid a:nth-child(1) .category-icon,
+  :root.dark .categories-grid a:nth-child(6) .category-icon {
+    color: var(--card-text);
+  }
+
+  :root.dark .categories-grid a:nth-child(2) .category-icon,
+  :root.dark .categories-grid a:nth-child(7) .category-icon {
+    color: var(--bright-blue);
+  }
+
+  :root.dark .categories-grid a:nth-child(3) .category-icon,
+  :root.dark .categories-grid a:nth-child(8) .category-icon {
+    color: var(--dark-blue);
+  }
+
+  :root.dark .categories-grid a:nth-child(4) .category-icon,
+  :root.dark .categories-grid a:nth-child(9) .category-icon {
+    color: var(--card-title);
+  }
+
+  :root.dark .categories-grid a:nth-child(5) .category-icon {
+    color: var(--card-text);
+  }
+
+  .category-card h3 {
+    color: #2c5530;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .category-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .view-all {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .view-all-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--cal-poly-green);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .view-all-button:hover {
+    background: var(--viridian);
+    transform: translateY(-2px);
+  }
+
+  .featured.destinations {
+    background: var(--bg-primary);
+  }
+
+  :root.dark .featured.destinations {
+    background: var(--bg-primary);
+  }
+
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .hotels-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hotels-grid,
+    .categories-grid,
+    .destination-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

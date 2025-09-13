@@ -1,0 +1,201 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import DestinationCard from '../../components/DestinationCard.astro';
+import destinationsData from '../../data/destinations.json';
+
+// Kerää kaikki kohteet
+const allDestinations = Object.values(destinationsData).flat();
+
+// Kerää uniikit maat
+const countries = [...new Set(allDestinations.map(d => d.country))].sort();
+
+const title = "All Destinations - Hidden Europe";
+const description = "Explore all our extraordinary hidden destinations across Europe. Filter by country to find your next adventure.";
+---
+
+<Layout title={title} description={description}>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>All Hidden Destinations</h1>
+        <p>Discover extraordinary places across Europe</p>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+      <div class="container">
+        <div class="filter-group">
+          <label for="country-filter">Filter by Country</label>
+          <select id="country-filter" class="custom-select">
+            <option value="all">All Countries</option>
+            {countries.map(country => (
+              <option value={country}>{country}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <div class="destinations-grid">
+          {allDestinations.map((destination) => (
+            <div class="destination-wrapper" data-country={destination.country}>
+              <DestinationCard destination={destination} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<script>
+  // Alustus
+  const countryFilter = document.getElementById('country-filter') as HTMLSelectElement;
+  const destinationCards = document.querySelectorAll('.destination-wrapper');
+
+  // Filtteröinti
+  function filterDestinations() {
+    const selectedCountry = countryFilter.value;
+    
+    destinationCards.forEach(card => {
+      if (selectedCountry === 'all' || card.getAttribute('data-country') === selectedCountry) {
+        card.classList.remove('hidden');
+        // Fade in -animaatio
+        requestAnimationFrame(() => {
+          card.classList.add('visible');
+        });
+      } else {
+        card.classList.add('hidden');
+        card.classList.remove('visible');
+      }
+    });
+  }
+
+  // Event listener
+  countryFilter.addEventListener('change', filterDestinations);
+
+  // Alusta kaikki näkyviin
+  destinationCards.forEach(card => {
+    card.classList.add('visible');
+  });
+</script>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    padding: 6rem 2rem 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .filters {
+    padding: 2rem 0;
+    background: var(--bg-secondary);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .filter-group label {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .custom-select {
+    appearance: none;
+    background-color: var(--bg-primary);
+    border: 2px solid var(--cal-poly-green);
+    border-radius: 8px;
+    padding: 0.8rem 2.5rem 0.8rem 1rem;
+    font-size: 1rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232c5530' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+
+  :root.dark .custom-select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  }
+
+  .custom-select:hover {
+    border-color: var(--viridian);
+  }
+
+  .custom-select:focus {
+    outline: none;
+    border-color: var(--viridian);
+    box-shadow: 0 0 0 2px rgba(74, 124, 89, 0.2);
+  }
+
+  .destinations {
+    padding: 4rem 0;
+    background: var(--bg-secondary);
+  }
+
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .destination-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .destination-wrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .destination-wrapper.hidden {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .destinations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

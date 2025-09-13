@@ -1,0 +1,248 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navigation from '../../../components/Navigation.astro';
+import DestinationCard from '../../../components/DestinationCard.astro';
+import HotelCard from '../../../components/HotelCard.astro';
+import destinationsData from '../../../data/destinations.json';
+import hotelsData from '../../../data/hotels.json';
+
+export function getStaticPaths() {
+  return Object.keys(destinationsData).map(category => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params;
+
+// Muunna category_id näyttönimeksi
+const categoryDisplayNames = {
+  hidden_villages: 'Hidden Villages',
+  remote_islands: 'Remote Islands',
+  underground_wonders: 'Underground Wonders',
+  arctic_wonders: 'Arctic Wonders',
+  medieval_towns: 'Medieval Towns',
+  coastal_gems: 'Coastal Gems',
+  underrated_capitals: 'Underrated Capitals',
+  alpine_lakes: 'Alpine Lakes',
+  thermal_spa_destinations: 'Thermal Spa Destinations',
+  wine_regions: 'Wine Regions',
+  mountain_destinations: 'Mountain Destinations',
+  lake_destinations: 'Lake Destinations'
+};
+
+// Hae kategorian kohteet
+const destinations = destinationsData[category] || [];
+
+// Hae satunnaiset featured hotellit
+const allHotels = Object.values(hotelsData.boutique_hotels).flat();
+const featuredHotels = allHotels
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 4);
+
+const title = `${categoryDisplayNames[category]} - Hidden Europe`;
+const description = `Discover extraordinary ${categoryDisplayNames[category].toLowerCase()} across Europe. Explore unique destinations off the beaten path.`;
+---
+
+<Layout title={title} description={description}>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>{categoryDisplayNames[category]}</h1>
+        <p>Discover extraordinary {categoryDisplayNames[category].toLowerCase()} across Europe</p>
+      </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        {destinations && destinations.length > 0 ? (
+          <div class="destinations-grid">
+            {destinations.map((destination) => (
+              <DestinationCard destination={destination} />
+            ))}
+          </div>
+        ) : (
+          <div class="no-destinations">
+            <h3>Destinations coming soon!</h3>
+            <p>We're curating extraordinary {categoryDisplayNames[category].toLowerCase()} across Europe. Check back soon!</p>
+            <a href="/destinations" class="back-home">← Back to all destinations</a>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- Featured Hotels -->
+    <section class="featured hotels">
+      <div class="container">
+        <h2>Featured Hotels</h2>
+        <div class="hotels-grid">
+          {featuredHotels.map((hotel) => (
+            <HotelCard hotel={hotel} />
+          ))}
+        </div>
+        <div class="view-all">
+          <a href="/hotels" class="view-all-button">View All Hotels</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    padding: 6rem 2rem 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .destinations {
+    padding: 6rem 0;
+    background: var(--bg-muted);
+  }
+
+  :root.dark .destinations {
+    background: var(--bg-muted);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .no-destinations {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  :root.dark .no-destinations {
+    background: var(--card-bg);
+  }
+
+  .no-destinations h3 {
+    color: #2c5530;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  :root.dark .no-destinations h3 {
+    color: var(--card-title);
+  }
+
+  .no-destinations p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  :root.dark .no-destinations p {
+    color: var(--card-text);
+  }
+
+  .back-home {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #2c5530;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .back-home:hover {
+    background: #4a7c59;
+  }
+
+  .featured {
+    padding: 6rem 0;
+    background: var(--bg-primary);
+  }
+
+  :root.dark .featured {
+    background: var(--bg-primary);
+  }
+
+  .featured h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--brand-green);
+    font-weight: 300;
+    margin-bottom: 4rem;
+  }
+
+  :root.dark .featured h2 {
+    color: var(--card-title);
+  }
+
+  .hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+  }
+
+  .view-all {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .view-all-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--cal-poly-green);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .view-all-button:hover {
+    background: var(--viridian);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 1024px) {
+    .hotels-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .destinations-grid,
+    .hotels-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

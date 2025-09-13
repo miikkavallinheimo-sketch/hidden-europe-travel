@@ -1,0 +1,1746 @@
+{
+  "boutique_hotels": {
+    "castle_hotels": [
+      {
+        "id": "ashford_castle_ireland",
+        "name": "Ashford Castle",
+        "country": "Ireland",
+        "region": "Mayo-Galway Border",
+        "category": "Luxury Castle",
+        "description": "16th-century medieval castle on shores of Lough Corrib",
+        "unique_features": [
+          "Celebrity guest history",
+          "Falconry experiences",
+          "Lake cruising",
+          "Championship golf course",
+          "Portrait gallery of famous guests"
+        ],
+        "room_count": "83",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "Owned by Guinness family since 1852",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/ireland/ashford-castle-lough-corrib-aerial.jpg"
+        }
+      },
+      {
+        "id": "chateau_bagnols_france",
+        "name": "Château de Bagnols",
+        "country": "France",
+        "region": "Beaujolais",
+        "category": "Wine Castle",
+        "description": "15th-century golden stone fortress among vineyards",
+        "unique_features": [
+          "Luxury spa",
+          "Topiary gardens",
+          "Michelin-starred restaurant 1217",
+          "Individually decorated rooms",
+          "Paul Bocuse nearby"
+        ],
+        "room_count": "21",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "15th-century fortification",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/chateau-bagnols-golden-stone-vineyard.jpg"
+        }
+      },
+      {
+        "id": "schloss_fuschl_austria",
+        "name": "Schloss Fuschl",
+        "country": "Austria",
+        "region": "Salzburg",
+        "category": "Lake Castle",
+        "description": "1450s castle on shores of Lake Fuschl",
+        "unique_features": [
+          "110 rooms and suites",
+          "Lakeside cottages",
+          "Massive spa complex",
+          "Sunbathing platform into lake",
+          "Sound of Music location"
+        ],
+        "room_count": "110",
+        "price_range": "€€€€",
+        "best_time": "Summer best for lake activities",
+        "historical_significance": "Sound of Music filming region",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/austria/schloss-fuschl-lake-castle-panorama.jpg"
+        }
+      },
+      {
+        "id": "castello_casole_italy",
+        "name": "Castello di Casole",
+        "country": "Italy",
+        "region": "Tuscany",
+        "category": "Medieval Castle Resort",
+        "description": "Medieval castle on ancient Etruscan site with timeless Tuscan charm",
+        "unique_features": [
+          "4,200-acre estate",
+          "Signature villas and luxury suites",
+          "World-class spa",
+          "Championship golf course",
+          "Wine estate"
+        ],
+        "room_count": "41",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "Ancient Etruscan settlement site",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/castello-casole-tuscan-hills-aerial.jpg"
+        }
+      },
+      {
+        "id": "domaine_bretesche_france",
+        "name": "Domaine de la Bretesche",
+        "country": "France",
+        "region": "Loire-Atlantique, Western France",
+        "category": "Forest Castle",
+        "description": "15th-century stone castle in Brière Park forest",
+        "unique_features": [
+          "Contemporary interior design",
+          "18-hole golf course",
+          "World-class wellness floor",
+          "Three dining concepts",
+          "Idyllic outdoor pool"
+        ],
+        "room_count": "36",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "15th-century Loire castle",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/domaine-bretesche-forest-castle.jpg"
+        }
+      },
+      {
+        "id": "clontarf_castle_dublin",
+        "name": "Clontarf Castle",
+        "country": "Ireland",
+        "region": "Dublin",
+        "category": "Historic Castle Hotel",
+        "description": "12th-century Norman castle with unique décor and atmosphere",
+        "unique_features": [
+          "Norman castle heritage",
+          "Unique quirky décor",
+          "Knight's Bar and restaurant",
+          "Fahrenheit Restaurant breakfast",
+          "Dublin Bay location"
+        ],
+        "room_count": "111",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "12th-century Norman fortification",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/ireland/clontarf-castle-dublin-bay.jpg"
+        }
+      },
+      {
+        "id": "dromoland_castle_ireland",
+        "name": "Dromoland Castle",
+        "country": "Ireland",
+        "region": "County Clare",
+        "category": "Royal Castle",
+        "description": "Former home of Ireland's High King, now luxury hotel",
+        "unique_features": [
+          "450 acres of grounds",
+          "Falconry experiences",
+          "Stand-up paddleboarding on Lough",
+          "Championship golf course",
+          "High King heritage"
+        ],
+        "room_count": "97",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "Former residence of High King of Ireland",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/ireland/dromoland-castle-royal-grounds.jpg"
+        }
+      },
+      {
+        "id": "dalhousie_castle_scotland",
+        "name": "Dalhousie Castle",
+        "country": "Scotland",
+        "region": "Edinburgh",
+        "category": "Ancient Fortress",
+        "description": "13th-century castle in 11 acres of parkland",
+        "unique_features": [
+          "Archery and falconry",
+          "Whiskey library",
+          "11 acres of private parkland",
+          "Medieval banquet hall",
+          "Scottish Highlands experience"
+        ],
+        "room_count": "29",
+        "price_range": "€€€",
+        "best_time": "May-September",
+        "historical_significance": "13th-century Scottish fortress",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/scotland/dalhousie-castle-fortress.jpg"
+        }
+      },
+      {
+        "id": "château_du_fey_france",
+        "name": "Château du Fey",
+        "country": "France",
+        "region": "Burgundy",
+        "category": "Boutique Wine Castle",
+        "description": "Intimate 18th-century château in Burgundy wine country",
+        "unique_features": [
+          "Only 14 rooms for exclusivity",
+          "Private wine tastings",
+          "Michelin-star chef dining",
+          "Helicopter wine tours",
+          "Historic wine cellars"
+        ],
+        "room_count": "14",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "18th-century Burgundy château",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/chateau-du-fey-burgundy.jpg"
+        }
+      },
+      {
+        "id": "tivoli_palacio_sintra_portugal",
+        "name": "Tivoli Palácio de Seteais",
+        "country": "Portugal",
+        "region": "Sintra",
+        "category": "Royal Palace Hotel",
+        "description": "18th-century royal palace overlooking Sintra mountains",
+        "unique_features": [
+          "UNESCO World Heritage location",
+          "Royal palace architecture",
+          "Panoramic mountain views",
+          "Historic ballroom",
+          "Portuguese royal heritage"
+        ],
+        "room_count": "30",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "18th-century royal residence",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/portugal/tivoli-palacio-sintra-royal.jpg"
+        }
+      }
+    ],
+    "cave_hotels": [
+      {
+        "id": "kayakapi_cappadocia",
+        "name": "Kayakapi Premium Caves",
+        "country": "Turkey",
+        "region": "Cappadocia, Ürgüp",
+        "category": "Historic Cave Complex",
+        "description": "10th-century cave church and historic neighborhood",
+        "unique_features": [
+          "10th-century Cave Church",
+          "Historic churches, mosques, baths",
+          "Protected historic area",
+          "Hot air balloon views",
+          "Traditional cave architecture"
+        ],
+        "room_count": "30+",
+        "price_range": "€€€",
+        "best_time": "April-June, September-October",
+        "historical_significance": "First residential area of Ürgüp",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/turkey/kayakapi-cappadocia-caves.jpg"
+        }
+      },
+      {
+        "id": "sextantio_matera_italy",
+        "name": "Sextantio Le Grotte Della Civita",
+        "country": "Italy",
+        "region": "Basilicata, Matera",
+        "category": "Romantic Cave Hotel",
+        "description": "Authentic cave rooms in Matera's Sassi district",
+        "unique_features": [
+          "Genuine cave rooms",
+          "Medieval cobblestone streets",
+          "Millennia of history",
+          "UNESCO World Heritage site",
+          "Romantic atmosphere"
+        ],
+        "room_count": "18",
+        "price_range": "€€€",
+        "best_time": "April-June, September-October",
+        "historical_significance": "Paleolithic settlement",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/sextantio-matera-caves.jpg"
+        }
+      },
+      {
+        "id": "nobu_santorini_greece",
+        "name": "Nobu Santorini",
+        "country": "Greece",
+        "region": "Santorini, Imerovigli",
+        "category": "Luxury Cave Suites",
+        "description": "Cave-like suites on volcanic cliffs with infinity views",
+        "unique_features": [
+          "25 suites with private terraces",
+          "Hot tubs overlooking Aegean",
+          "World-renowned Japanese cuisine",
+          "Resident DJ entertainment",
+          "Highest location on cliffs"
+        ],
+        "room_count": "25",
+        "price_range": "€€€€",
+        "best_time": "May-October",
+        "historical_significance": "Traditional Cycladic cave architecture",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/greece/nobu-santorini-cave-suites.jpg"
+        }
+      },
+      {
+        "id": "grotta_palazzese_italy",
+        "name": "Grotta Palazzese",
+        "country": "Italy",
+        "region": "Puglia, Polignano a Mare",
+        "category": "Cave Restaurant Hotel",
+        "description": "Restaurant and boutique hotel built inside a natural sea cave",
+        "unique_features": [
+          "Restaurant inside natural cave",
+          "Adriatic Sea cave setting",
+          "18th-century banquet heritage",
+          "Limestone cave architecture",
+          "Exclusive dining experience"
+        ],
+        "room_count": "25",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "Cave dining since 1700s",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/grotta-palazzese-cave-restaurant.jpg"
+        }
+      },
+      {
+        "id": "museum_hotel_cappadocia",
+        "name": "Museum Hotel",
+        "country": "Turkey",
+        "region": "Cappadocia, Uchisar",
+        "category": "Cave Luxury Resort",
+        "description": "Luxury cave hotel carved into Uchisar Castle rock formation",
+        "unique_features": [
+          "Carved into natural rock formation",
+          "Antique collection throughout",
+          "Panoramic Cappadocia views",
+          "Cave spa treatments",
+          "Hot air balloon launch pad"
+        ],
+        "room_count": "30",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "Ancient cave dwellings",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/turkey/museum-hotel-cappadocia.jpg"
+        }
+      },
+      {
+        "id": "argos_in_cappadocia",
+        "name": "Argos in Cappadocia",
+        "country": "Turkey",
+        "region": "Cappadocia, Uchisar",
+        "category": "Monastic Cave Complex",
+        "description": "6th-century monastery converted to luxury cave hotel",
+        "unique_features": [
+          "6th-century monastery heritage",
+          "Carved tunnels and chambers",
+          "Underground spa",
+          "Ancient wine cellars",
+          "Monastery library"
+        ],
+        "room_count": "51",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "Byzantine monastic heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/turkey/argos-cappadocia-monastery.jpg"
+        }
+      }
+    ],
+    "lighthouse_hotels": [
+      {
+        "id": "molja_lighthouse_norway",
+        "name": "Molja Lighthouse",
+        "country": "Norway",
+        "region": "Ålesund",
+        "category": "Designer Lighthouse",
+        "description": "150-year-old lighthouse as 47th room of boutique hotel",
+        "unique_features": [
+          "Snøhetta architectural design",
+          "Circular bedroom with custom bed",
+          "End of jetty location",
+          "5-minute walk from main hotel",
+          "Romantic honeymoon suite"
+        ],
+        "room_count": "1 (part of 47-room hotel)",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "150-year maritime heritage",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/norway/molja-lighthouse-alesund-jetty-sunset.jpg"
+        }
+      },
+      {
+        "id": "west_usk_lighthouse_wales",
+        "name": "West Usk Lighthouse",
+        "country": "Wales",
+        "region": "Newport",
+        "category": "Exclusive Lighthouse Hotel",
+        "description": "1821 lighthouse converted to luxury 23-guest hotel",
+        "unique_features": [
+          "Grade II listed building",
+          "Rooftop hot tub",
+          "Roof garden for summer BBQs",
+          "Contemporary luxury amenities",
+          "WWII lookout post history"
+        ],
+        "room_count": "8",
+        "price_range": "€€€",
+        "best_time": "April-October",
+        "historical_significance": "Built by James Walker 1821",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/wales/west-usk-lighthouse-severn-estuary-aerial.jpg"
+        }
+      },
+      {
+        "id": "corsewall_lighthouse_scotland",
+        "name": "Corsewall Lighthouse Hotel",
+        "country": "Scotland",
+        "region": "Galloway",
+        "category": "Romantic Lighthouse",
+        "description": "19th-century operational lighthouse with 11 rooms",
+        "unique_features": [
+          "Views of Firth of Clyde and Ireland",
+          "Still operational lighthouse",
+          "Galloway Forest Park nearby",
+          "One of Europe's best stargazing spots",
+          "Luxury B&B with restaurant"
+        ],
+        "room_count": "11",
+        "price_range": "€€€",
+        "best_time": "May-September",
+        "historical_significance": "19th-century maritime heritage",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/scotland/corsewall-lighthouse-loch-ryan-panorama.jpg"
+        }
+      },
+      {
+        "id": "pater_noster_sweden",
+        "name": "Pater Noster Lighthouse",
+        "country": "Sweden",
+        "region": "Hamneskär Island, West Coast",
+        "category": "Remote Island Lighthouse",
+        "description": "32-meter lighthouse on windswept rock in Swedish archipelago",
+        "unique_features": [
+          "5 nautical miles from civilization",
+          "Helicopter or boat access only",
+          "360-degree ocean views",
+          "Storm watching experiences",
+          "Nordic minimalist design"
+        ],
+        "room_count": "9",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "Historic navigation landmark",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/sweden/pater-noster-lighthouse-archipelago.jpg"
+        }
+      },
+      {
+        "id": "farol_design_cascais",
+        "name": "Farol Design Hotel",
+        "country": "Portugal",
+        "region": "Cascais",
+        "category": "Boutique Lighthouse",
+        "description": "19th-century lighthouse transformed into design hotel",
+        "unique_features": [
+          "Original lighthouse tower preserved",
+          "Modern design integration",
+          "Atlantic Ocean panoramas",
+          "Rooftop lighthouse suite",
+          "Portuguese coastal heritage"
+        ],
+        "room_count": "33",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "19th-century Portuguese lighthouse",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/portugal/farol-design-cascais.jpg"
+        }
+      },
+      {
+        "id": "belle_tout_lighthouse_england",
+        "name": "Belle Tout Lighthouse",
+        "country": "England",
+        "region": "East Sussex, Beachy Head",
+        "category": "Exclusive Private Lighthouse",
+        "description": "1832 lighthouse offering exclusive private stays",
+        "unique_features": [
+          "Entire lighthouse rental",
+          "Beachy Head cliff location",
+          "360-degree English Channel views",
+          "Historic maritime artifacts",
+          "Complete privacy and isolation"
+        ],
+        "room_count": "6 (entire property)",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "1832 lighthouse heritage",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": false,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/england/belle-tout-lighthouse-beachy-head.jpg"
+        }
+      }
+    ],
+    "monastery_hotels": [
+      {
+        "id": "abbaye_bussiere_france",
+        "name": "Abbaye de la Bussière",
+        "country": "France",
+        "region": "Burgundy",
+        "category": "Luxury Monastery",
+        "description": "12th-century monastery in 6 hectares of parkland",
+        "unique_features": [
+          "Vaulted ceilings",
+          "Stained glass windows",
+          "Carved stone walls",
+          "Authentic monastery ambience",
+          "Modern luxury amenities"
+        ],
+        "room_count": "13",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "12th-century Cistercian monastery",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/abbaye-bussiere-monastery.jpg"
+        }
+      },
+      {
+        "id": "santa_maria_retuerta_spain",
+        "name": "Santa Maria de Retuerta",
+        "country": "Spain",
+        "region": "Valladolid",
+        "category": "Wine Monastery",
+        "description": "1146 monastery in winemaking province",
+        "unique_features": [
+          "Important Romanesque architecture",
+          "Surrounded by vineyards",
+          "Art and history focus",
+          "Award-winning wine cellar",
+          "Michelin-starred dining"
+        ],
+        "room_count": "30",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "Founded 1146, important Romanesque work",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/spain/santa-maria-retuerta-monastery.jpg"
+        }
+      },
+      {
+        "id": "four_seasons_milan_italy",
+        "name": "Four Seasons Hotel Milano",
+        "country": "Italy",
+        "region": "Milan",
+        "category": "Convent Hotel",
+        "description": "15th-century convent in Milan's fashion district",
+        "unique_features": [
+          "Central garden courtyard",
+          "18th-century fireplace",
+          "Vaulted ceilings",
+          "Fashion district location",
+          "Historic frescoes"
+        ],
+        "room_count": "118",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "1450s nuns' convent",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/four-seasons-milan-convent.jpg"
+        }
+      },
+      {
+        "id": "the_dominican_brussels",
+        "name": "The Dominican",
+        "country": "Belgium",
+        "region": "Brussels",
+        "category": "Gothic Monastery Hotel",
+        "description": "15th-century monastery and gothic church conversion",
+        "unique_features": [
+          "Grand gothic ceilings",
+          "Sweeping stone archways",
+          "Jewel-toned interior design",
+          "Steps from Brussels Opera",
+          "Dramatic monastery atmosphere"
+        ],
+        "room_count": "150",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "15th-century Dominican monastery",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/belgium/dominican-brussels-monastery.jpg"
+        }
+      },
+      {
+        "id": "augustine_prague_czech",
+        "name": "Augustine, A Luxury Collection Hotel",
+        "country": "Czech Republic",
+        "region": "Prague",
+        "category": "Active Monastery Hotel",
+        "description": "13th-century monastery still active with four resident monks",
+        "unique_features": [
+          "Still-active monastery",
+          "Four monks living on-site",
+          "St. Thomas Brewery heritage",
+          "Augustine beer production",
+          "Historic monastery architecture"
+        ],
+        "room_count": "101",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "13th-century Augustine monastery",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/czech/augustine-prague-monastery.jpg"
+        }
+      },
+      {
+        "id": "katikies_santorini_greece",
+        "name": "Katikies Garden Santorini",
+        "country": "Greece",
+        "region": "Santorini, Fira",
+        "category": "Former Catholic Monastery",
+        "description": "Venetian Catholic monastery preserving historic charm with modern luxury",
+        "unique_features": [
+          "Old Venetian neighborhood location",
+          "Former Catholic monastery",
+          "Historic charm preservation",
+          "Timeless cultural significance",
+          "Modern luxury integration"
+        ],
+        "room_count": "30",
+        "price_range": "€€€€",
+        "best_time": "May-October",
+        "historical_significance": "Venetian Catholic monastery heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/greece/katikies-santorini-monastery.jpg"
+        }
+      },
+      {
+        "id": "monastero_santa_rosa_italy",
+        "name": "Monastero Santa Rosa",
+        "country": "Italy",
+        "region": "Amalfi Coast, Conca dei Marini",
+        "category": "Cliffside Monastery",
+        "description": "17th-century monastery perched on Amalfi Coast cliffs",
+        "unique_features": [
+          "Infinity pool over Mediterranean",
+          "Cliffside location 300m above sea",
+          "Michelin-starred restaurant",
+          "Historic monastic cells",
+          "Dramatic coastal views"
+        ],
+        "room_count": "20",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "17th-century Dominican monastery",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/monastero-santa-rosa-amalfi.jpg"
+        }
+      },
+      {
+        "id": "convento_espinheiro_portugal",
+        "name": "Convento do Espinheiro",
+        "country": "Portugal",
+        "region": "Évora, Alentejo",
+        "category": "Heritage Monastery Hotel",
+        "description": "15th-century convent in UNESCO World Heritage Évora",
+        "unique_features": [
+          "UNESCO World Heritage location",
+          "Original cloisters and chapel",
+          "Alentejo wine country",
+          "Historic azulejo tiles",
+          "Traditional Portuguese cuisine"
+        ],
+        "room_count": "92",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "15th-century Hieronymite convent",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/portugal/convento-espinheiro-evora.jpg"
+        }
+      }
+    ],
+    "extreme_unique": [
+      {
+        "id": "icehotel_sweden",
+        "name": "ICEHOTEL",
+        "country": "Sweden",
+        "region": "Jukkasjärvi",
+        "category": "Ice Hotel",
+        "description": "World's first ice hotel built entirely of snow and ice",
+        "unique_features": [
+          "Built entirely from Torne River ice",
+          "Constant -5°C temperature",
+          "100+ guest capacity",
+          "Ice bar and church",
+          "Reindeer fur beds"
+        ],
+        "room_count": "65",
+        "price_range": "€€€",
+        "best_time": "December-April",
+        "historical_significance": "First ice hotel in the world",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/sweden/icehotel-frozen-suite-ice-sculptures.jpg"
+        }
+      },
+      {
+        "id": "treehotel_sweden",
+        "name": "Treehotel",
+        "country": "Sweden",
+        "region": "Harads",
+        "category": "Treehouse Hotel",
+        "description": "Designer treehouses in pine forest",
+        "unique_features": [
+          "UFO, Bird's Nest, Mirror Cube rooms",
+          "Stress-free forest environment",
+          "Northern lights viewing",
+          "Spa treatments available",
+          "Sustainable architecture"
+        ],
+        "room_count": "7",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Innovative eco-hotel design",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/sweden/treehotel-mirror-cube-forest-reflection.jpg"
+        }
+      },
+      {
+        "id": "kakslauttanen_finland",
+        "name": "Kakslauttanen Arctic Resort",
+        "country": "Finland",
+        "region": "Saariselkä",
+        "category": "Glass Igloo Resort",
+        "description": "Glass igloos under northern lights",
+        "unique_features": [
+          "-3°C to -6°C temperature",
+          "Glass roof for star gazing",
+          "Warm rooms also available",
+          "Husky and reindeer safaris",
+          "Midnight sun in summer"
+        ],
+        "room_count": "65",
+        "price_range": "€€€",
+        "best_time": "December-March (northern lights)",
+        "historical_significance": "Pioneer in glass igloo accommodation",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/finland/kakslauttanen-glass-igloo-aurora-borealis.jpg"
+        }
+      },
+      {
+        "id": "arctic_treehouse_finland",
+        "name": "Arctic TreeHouse Hotel",
+        "country": "Finland",
+        "region": "Rovaniemi",
+        "category": "Scandinavian Treehouse Design",
+        "description": "Elevated treehouses designed for northern lights viewing",
+        "unique_features": [
+          "Floor-to-ceiling panoramic windows",
+          "Elevated forest canopy location",
+          "Northern lights viewing from bed",
+          "Arctic Circle location",
+          "Sustainable Scandinavian design"
+        ],
+        "room_count": "53",
+        "price_range": "€€€",
+        "best_time": "December-March (northern lights), June-August (midnight sun)",
+        "historical_significance": "Innovative Arctic accommodation design",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/finland/arctic-treehouse-northern-lights.jpg"
+        }
+      },
+      {
+        "id": "sala_silvermine_sweden",
+        "name": "Sala Silvermine",
+        "country": "Sweden",
+        "region": "Sala",
+        "category": "Underground Mine Hotel",
+        "description": "World's deepest hotel suite 155 meters underground",
+        "unique_features": [
+          "155 meters underground",
+          "500-year-old silver mine",
+          "Unique underground dining",
+          "Mine shaft elevator access",
+          "Constant 2°C temperature"
+        ],
+        "room_count": "1 (underground suite)",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Historic Swedish silver mine",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/sweden/sala-silvermine-underground.jpg"
+        }
+      },
+      {
+        "id": "whitepod_switzerland",
+        "name": "Whitepod",
+        "country": "Switzerland",
+        "region": "Valais Alps",
+        "category": "Eco Luxury Pods",
+        "description": "Geodesic dome pods on Alpine mountainside",
+        "unique_features": [
+          "Geodesic dome architecture",
+          "1,400m altitude location",
+          "Eco-luxury design",
+          "Private hiking trails",
+          "Wood-burning stoves"
+        ],
+        "room_count": "15",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Innovative sustainable architecture",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/switzerland/whitepod-alpine-domes.jpg"
+        }
+      },
+      {
+        "id": "crane_harbor_denmark",
+        "name": "Krane Hotel",
+        "country": "Denmark",
+        "region": "Faroe Islands",
+        "category": "Renovated Harbor Crane",
+        "description": "Historic harbor crane converted to unique hotel room",
+        "unique_features": [
+          "Original 1960s harbor crane",
+          "360-degree harbor views",
+          "Industrial heritage design",
+          "Single exclusive room",
+          "Maritime atmosphere"
+        ],
+        "room_count": "1",
+        "price_range": "€€€",
+        "best_time": "May-September",
+        "historical_significance": "1960s industrial heritage",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": false,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/denmark/krane-hotel-harbor-crane.jpg"
+        }
+      }
+    ],
+    "design_boutique": [
+      {
+        "id": "the_ivens_lisbon",
+        "name": "The Ivens",
+        "country": "Portugal",
+        "region": "Lisbon",
+        "category": "Tropical Design",
+        "description": "Botanical-themed hotel with rich fabrics and animal motifs",
+        "unique_features": [
+          "Named after explorer Roberto Ivens",
+          "Tropical plants and macaws",
+          "87 individually decorated rooms",
+          "Cristina Matos interior design",
+          "Urban jungle aesthetic"
+        ],
+        "room_count": "87",
+        "price_range": "€€",
+        "best_time": "Year-round",
+        "historical_significance": "Named after famous Portuguese explorer",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/portugal/ivens-lisbon-tropical.jpg"
+        }
+      },
+      {
+        "id": "conservatorium_amsterdam",
+        "name": "Conservatorium Hotel",
+        "country": "Netherlands",
+        "region": "Amsterdam",
+        "category": "Museum District Design",
+        "description": "Former music school converted to greenhouse-style hotel",
+        "unique_features": [
+          "Opposite major museums",
+          "Greenhouse atmosphere",
+          "Contemporary design",
+          "Only luxury hotel in museum area",
+          "Cultural location"
+        ],
+        "room_count": "129",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Former music conservatory",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/netherlands/conservatorium-amsterdam.jpg"
+        }
+      },
+      {
+        "id": "ett_hem_stockholm",
+        "name": "Ett Hem",
+        "country": "Sweden",
+        "region": "Stockholm",
+        "category": "Home Away From Home",
+        "description": "1910 private residence turned intimate boutique hotel",
+        "unique_features": [
+          "Only 12 rooms over three floors",
+          "Scandinavian classic furniture",
+          "Tranquil residential area",
+          "Mix of modern and vintage design",
+          "Personal atmosphere"
+        ],
+        "room_count": "12",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "1910 private residence heritage",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/sweden/ett-hem-stockholm.jpg"
+        }
+      },
+      {
+        "id": "hotel_la_perouse_nice",
+        "name": "Hotel La Pérouse",
+        "country": "France",
+        "region": "Nice, French Riviera",
+        "category": "Cliffside Boutique",
+        "description": "1936 hotel on limestone cliff with Riviera charm",
+        "unique_features": [
+          "Perched on limestone cliff",
+          "Friedmann & Versace Studio design",
+          "53 rooms with private terraces",
+          "Heated outdoor pool",
+          "Le Patio restaurant"
+        ],
+        "room_count": "53",
+        "price_range": "€€€",
+        "best_time": "April-October",
+        "historical_significance": "1936 French Riviera heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/la-perouse-nice-cliff.jpg"
+        }
+      },
+      {
+        "id": "broadwick_soho_london",
+        "name": "Broadwick Soho",
+        "country": "England",
+        "region": "London, Soho",
+        "category": "Maximalist Boutique",
+        "description": "Whimsical glamour with 1970s disco pop and Soho history influences",
+        "unique_features": [
+          "Martin Brudnizki design",
+          "1970s disco pop influences",
+          "Four dining concepts",
+          "Dear Jackie Italian restaurant",
+          "Maximalist pastel interiors"
+        ],
+        "room_count": "57",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Historic Soho district location",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/england/broadwick-soho-london.jpg"
+        }
+      },
+      {
+        "id": "hotel_cala_di_volpe_sardinia",
+        "name": "Hotel Cala di Volpe",
+        "country": "Italy",
+        "region": "Sardinia, Costa Smeralda",
+        "category": "Celebrity A-List Resort",
+        "description": "1960s Jacques Couëlle design resembling old Italian village",
+        "unique_features": [
+          "Cave-like curves architecture",
+          "A-list celebrity clientele",
+          "James Bond filming location",
+          "Princess Diana historic visits",
+          "Emerald Coast location"
+        ],
+        "room_count": "121",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "1960s architectural masterpiece",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/cala-di-volpe-sardinia.jpg"
+        }
+      },
+      {
+        "id": "acro_suites_crete",
+        "name": "ACRO Suites",
+        "country": "Greece",
+        "region": "Crete",
+        "category": "Contemporary Bohemian",
+        "description": "Natural materials architecture echoing Cretan surroundings",
+        "unique_features": [
+          "Contemporary bohemian interiors",
+          "Private swimming pools",
+          "Byzantine Hammam spa",
+          "Asana Yoga Shala",
+          "Natural materials construction"
+        ],
+        "room_count": "56",
+        "price_range": "€€€",
+        "best_time": "May-October",
+        "historical_significance": "Modern interpretation of Cretan architecture",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/greece/acro-suites-crete.jpg"
+        }
+      },
+      {
+        "id": "hotel_v_fizeaustraat_amsterdam",
+        "name": "Hotel V Fizeaustraat",
+        "country": "Netherlands",
+        "region": "Amsterdam, Oud-Zuid",
+        "category": "Industrial Chic",
+        "description": "Former 1960s laboratory converted to design hotel",
+        "unique_features": [
+          "Industrial laboratory heritage",
+          "Scientific equipment-inspired design",
+          "Retro-futuristic aesthetic",
+          "Laboratory glass installations",
+          "Vondelpark proximity"
+        ],
+        "room_count": "91",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "1960s research laboratory conversion",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/netherlands/hotel-v-amsterdam-lab.jpg"
+        }
+      },
+      {
+        "id": "mama_shelter_prague",
+        "name": "Mama Shelter Prague",
+        "country": "Czech Republic",
+        "region": "Prague",
+        "category": "Philippe Starck Design",
+        "description": "Philippe Starck-designed urban playground hotel",
+        "unique_features": [
+          "Philippe Starck interior design",
+          "Pop culture and street art",
+          "Rooftop terrace with castle views",
+          "Creative cocktail laboratory",
+          "Urban lifestyle concept"
+        ],
+        "room_count": "238",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Contemporary design landmark",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/czech/mama-shelter-prague-starck.jpg"
+        }
+      },
+      {
+        "id": "drake_devonshire_england",
+        "name": "The Drake Devonshire",
+        "country": "England",
+        "region": "Prince Edward County",
+        "category": "Lakefront Art Hotel",
+        "description": "Contemporary art-focused lakefront boutique hotel",
+        "unique_features": [
+          "Contemporary art collection",
+          "Lake Ontario shoreline",
+          "Artist residency program",
+          "Local artisan focus",
+          "Gallery-style public spaces"
+        ],
+        "room_count": "13",
+        "price_range": "€€€",
+        "best_time": "May-October",
+        "historical_significance": "Contemporary art and hospitality fusion",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/england/drake-devonshire-art.jpg"
+        }
+      }
+    ],
+    "alpine_retreats": [
+      {
+        "id": "sommerro_oslo",
+        "name": "Sommerro",
+        "country": "Norway",
+        "region": "Oslo",
+        "category": "Art Deco Luxury",
+        "description": "1930s landmark with Art Deco design",
+        "unique_features": [
+          "231 rooms with vintage furnishing",
+          "1400 sqm wellness floor",
+          "Rooftop pool with cabanas",
+          "7 culinary concepts",
+          "TAK Oslo Nordic-Japanese cuisine"
+        ],
+        "room_count": "231",
+        "price_range": "€€€€",
+        "best_time": "May-September",
+        "historical_significance": "1930s Oslo landmark",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/norway/sommerro-oslo-art-deco.jpg"
+        }
+      },
+      {
+        "id": "hotel_krallerhof_austria",
+        "name": "Hotel Krallerhof",
+        "country": "Austria",
+        "region": "Leogang, Austrian Alps",
+        "category": "Alpine Wellness Retreat",
+        "description": "Luxury alpine hotel at foothills of Leoganger Steinberge mountains",
+        "unique_features": [
+          "5,500 m² natural bathing lake",
+          "124 individually decorated rooms",
+          "ATMOSPHERE wellness center",
+          "Heated infinity pool",
+          "Regional healthy cuisine focus"
+        ],
+        "room_count": "124",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Traditional Austrian Alps hospitality",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/austria/krallerhof-alpine-wellness.jpg"
+        }
+      },
+      {
+        "id": "adler_mountain_lodge_italy",
+        "name": "Adler Mountain Lodge",
+        "country": "Italy",
+        "region": "South Tyrol, Dolomites",
+        "category": "Dolomites Luxury Lodge",
+        "description": "Alpine chalet luxury with panoramic Dolomite peak views",
+        "unique_features": [
+          "18 Junior Suites and 12 Chalets",
+          "South Tyrolean wood construction",
+          "Sciliar-Catinaccio Nature Park location",
+          "Spa with Dolomites mountain views",
+          "Snowshoe walking in winter"
+        ],
+        "room_count": "30",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Traditional South Tyrolean architecture",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/adler-mountain-lodge-dolomites.jpg"
+        }
+      },
+      {
+        "id": "miramonti_merano_italy",
+        "name": "Hotel Miramonti",
+        "country": "Italy",
+        "region": "South Tyrol, Merano",
+        "category": "Kingdom of Peace Resort",
+        "description": "Mountain hotel on porphyry rock 1,230m above Merano",
+        "unique_features": [
+          "Built on ancient porphyry rock",
+          "1,230m elevation above Merano",
+          "44 rooms with 5 distinct themes",
+          "Infinity pool overlooking Merano",
+          "Panorama Restaurant fine dining"
+        ],
+        "room_count": "44",
+        "price_range": "€€€€",
+        "best_time": "May-October",
+        "historical_significance": "Mountain retreat tradition",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/miramonti-merano-mountain.jpg"
+        }
+      },
+      {
+        "id": "deplar_farm_iceland",
+        "name": "Deplar Farm",
+        "country": "Iceland",
+        "region": "Flijót Valley, Troll Peninsula",
+        "category": "Remote Luxury Farm",
+        "description": "Converted sheep farm in remote valley for Arctic adventures",
+        "unique_features": [
+          "Black timber cladding with living roof",
+          "Floor-to-ceiling windows for aurora views",
+          "Viking sauna and I-sopod floatation tank",
+          "Heli-skiing and sea kayaking",
+          "Complete isolation from civilization"
+        ],
+        "room_count": "13",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Traditional Icelandic sheep farming heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/iceland/deplar-farm-arctic.jpg"
+        }
+      },
+      {
+        "id": "chedi_andermatt_switzerland",
+        "name": "The Chedi Andermatt",
+        "country": "Switzerland",
+        "region": "Andermatt, Uri Alps",
+        "category": "Alpine Asian Fusion",
+        "description": "Asian-inspired alpine luxury in Swiss mountains",
+        "unique_features": [
+          "Asian design meets Alpine setting",
+          "Direct ski slope access",
+          "Traditional furrow facade",
+          "Asian-European fusion spa",
+          "Multiple dining venues"
+        ],
+        "room_count": "123",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Contemporary alpine luxury standard",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/switzerland/chedi-andermatt-alpine.jpg"
+        }
+      },
+      {
+        "id": "backstage_hotel_vernissage_austria",
+        "name": "Backstage Hotel Vernissage",
+        "country": "Austria",
+        "region": "Zell am See",
+        "category": "Art & Design Alpine",
+        "description": "Artist-designed alpine hotel with creative workshops",
+        "unique_features": [
+          "Artist residence and workshop program",
+          "Unique artist-designed rooms",
+          "Contemporary art exhibitions",
+          "Creative retreat packages",
+          "Alpine lake location"
+        ],
+        "room_count": "67",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Art and hospitality integration",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/austria/backstage-vernissage-art.jpg"
+        }
+      }
+    ],
+    "vineyard_hotels": [
+      {
+        "id": "les_sources_caudalie_france",
+        "name": "Les Sources de Caudalie",
+        "country": "France",
+        "region": "Bordeaux",
+        "category": "Vineyard Spa Hotel",
+        "description": "Vinotherapy pioneer among Château Smith Haut Lafitte vineyards",
+        "unique_features": [
+          "World's first vinotherapy spa",
+          "Château Smith Haut Lafitte location",
+          "Michelin-starred cuisine",
+          "Gourmet wine bar",
+          "Bucolic vineyard estate"
+        ],
+        "room_count": "61",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "Birthplace of vinotherapy wellness",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/sources-caudalie-bordeaux.jpg"
+        }
+      },
+      {
+        "id": "quinta_nova_douro_portugal",
+        "name": "Quinta Nova de Nossa Senhora do Carmo",
+        "country": "Portugal",
+        "region": "Douro Valley",
+        "category": "UNESCO Wine Estate",
+        "description": "18th-century quinta in UNESCO World Heritage Douro Valley",
+        "unique_features": [
+          "UNESCO World Heritage vineyard location",
+          "18th-century wine estate heritage",
+          "Douro River terraced vineyards",
+          "Premium Port and table wine production",
+          "Authentic Portuguese quinta experience"
+        ],
+        "room_count": "11",
+        "price_range": "€€€",
+        "best_time": "April-October",
+        "historical_significance": "18th-century Douro wine heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/portugal/quinta-nova-douro.jpg"
+        }
+      },
+      {
+        "id": "relais_chateaux_germany",
+        "name": "Relais & Châteaux Burg Schwarzenstein",
+        "country": "Germany",
+        "region": "Rheingau Wine Region",
+        "category": "Rhine Valley Wine Castle",
+        "description": "Medieval castle overlooking Rhine vineyards and river",
+        "unique_features": [
+          "Medieval castle setting",
+          "Rhine Valley vineyard views",
+          "Michelin-starred Nils Henkel cuisine",
+          "Historic wine cellars",
+          "Rheingau Riesling terroir"
+        ],
+        "room_count": "44",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "Medieval Rheingau wine heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/germany/burg-schwarzenstein-rhine.jpg"
+        }
+      },
+      {
+        "id": "marquesado_tokaj_hungary",
+        "name": "Andrassy Residence Wine & Spa",
+        "country": "Hungary",
+        "region": "Tokaj Wine Region",
+        "category": "UNESCO Tokaj Wine Hotel",
+        "description": "Historic mansion in UNESCO World Heritage Tokaj wine region",
+        "unique_features": [
+          "UNESCO Tokaj wine region location",
+          "Historic Andrássy family heritage",
+          "Tokaji Aszú dessert wine cellars",
+          "Volcanic terroir spa treatments",
+          "Noble rot wine experience"
+        ],
+        "room_count": "25",
+        "price_range": "€€€",
+        "best_time": "April-October",
+        "historical_significance": "Tokaj noble wine heritage since 1000+ years",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/hungary/andrassy-tokaj-wine.jpg"
+        }
+      },
+      {
+        "id": "chateau_de_vault_de_lugny_france",
+        "name": "Château de Vault de Lugny",
+        "country": "France",
+        "region": "Burgundy, Avallon",
+        "category": "Medieval Wine Castle",
+        "description": "13th-century fortress castle in Burgundy wine country",
+        "unique_features": [
+          "13th-century fortress architecture",
+          "Michelin-starred restaurant",
+          "Historic moat and drawbridge",
+          "Burgundy wine experiences",
+          "Medieval banquet hall"
+        ],
+        "room_count": "12",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "13th-century Burgundian fortress",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/vault-de-lugny-burgundy.jpg"
+        }
+      },
+      {
+        "id": "castello_del_nero_italy",
+        "name": "Castello del Nero",
+        "country": "Italy",
+        "region": "Tuscany, Chianti",
+        "category": "Tuscan Wine Castle",
+        "description": "12th-century Tuscan castle in Chianti Classico wine region",
+        "unique_features": [
+          "12th-century castle in Chianti",
+          "Michelin-starred La Torre restaurant",
+          "Private wine cellar experiences",
+          "740-acre estate",
+          "Infinity pool with valley views"
+        ],
+        "room_count": "50",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "12th-century Tuscan castle heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/castello-del-nero-tuscany.jpg"
+        }
+      }
+    ],
+    "city_boutique": [
+      {
+        "id": "anantara_budapest_hungary",
+        "name": "Anantara New York Budapest Hotel",
+        "country": "Hungary",
+        "region": "Budapest",
+        "category": "Opulent Grand Hotel",
+        "description": "Exercise in grandiosity with Austrian and Spanish design collaboration",
+        "unique_features": [
+          "Eduard Nopp & TBC Interiorismo design",
+          "Uber cool spa facilities",
+          "Multiple gourmet restaurants",
+          "Extravagant lavish interiors",
+          "Budapest luxury landmark"
+        ],
+        "room_count": "185",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Historic Budapest palace architecture",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/hungary/anantara-budapest-grand.jpg"
+        }
+      },
+      {
+        "id": "hotel_casa_1800_seville",
+        "name": "Hotel Casa 1800 Sevilla",
+        "country": "Spain",
+        "region": "Seville, Andalusia",
+        "category": "Andalusian Palace Hotel",
+        "description": "19th-century mansion in historic Santa Cruz neighborhood",
+        "unique_features": [
+          "Traditional Sevillian architecture",
+          "Central courtyard with fountain",
+          "Steps from Cathedral and Alcázar",
+          "Authentic Andalusian atmosphere",
+          "Rooftop terrace city views"
+        ],
+        "room_count": "25",
+        "price_range": "€€€",
+        "best_time": "October-May",
+        "historical_significance": "19th-century Sevillian palace heritage",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/spain/casa-1800-seville.jpg"
+        }
+      },
+      {
+        "id": "palazzo_margherita_italy",
+        "name": "Palazzo Margherita",
+        "country": "Italy",
+        "region": "Basilicata, Bernalda",
+        "category": "Coppola Family Palace",
+        "description": "Francis Ford Coppola's restored 19th-century palazzo",
+        "unique_features": [
+          "Francis Ford Coppola ownership",
+          "19th-century palazzo restoration",
+          "Italian family heritage experience",
+          "Cooking classes and wine tastings",
+          "Authentic Basilicata village life"
+        ],
+        "room_count": "9",
+        "price_range": "€€€€",
+        "best_time": "April-October",
+        "historical_significance": "19th-century noble palace heritage",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/palazzo-margherita-coppola.jpg"
+        }
+      },
+      {
+        "id": "hotel_des_grands_boulevards_paris",
+        "name": "Hôtel des Grands Boulevards",
+        "country": "France",
+        "region": "Paris, 2nd Arrondissement",
+        "category": "Neo-Bistro Boutique",
+        "description": "Belle Époque hotel with neo-bistro and cocktail culture",
+        "unique_features": [
+          "Belle Époque 1900s architecture",
+          "Michelin-starred Giovanni Passerini cuisine",
+          "Parisian neo-bistro culture",
+          "Hidden courtyard garden",
+          "Historic Grands Boulevards location"
+        ],
+        "room_count": "50",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "1900s Belle Époque Parisian heritage",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/grands-boulevards-paris.jpg"
+        }
+      },
+      {
+        "id": "hotel_amour_paris",
+        "name": "Hôtel Amour",
+        "country": "France",
+        "region": "Paris, 9th Arrondissement",
+        "category": "Artist Collaborative Hotel",
+        "description": "Each room designed by a different artist in bohemian Pigalle",
+        "unique_features": [
+          "Each room by different artist",
+          "Bohemian Pigalle location",
+          "Artist collaborative concept",
+          "Intimate boutique atmosphere",
+          "Parisian creative scene hub"
+        ],
+        "room_count": "24",
+        "price_range": "€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Contemporary Parisian art scene",
+        "instagram_worthy": true,
+        "spa": false,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/france/hotel-amour-paris-artist.jpg"
+        }
+      },
+      {
+        "id": "nobis_hotel_stockholm",
+        "name": "Nobis Hotel Stockholm",
+        "country": "Sweden",
+        "region": "Stockholm",
+        "category": "Scandinavian Luxury",
+        "description": "Contemporary Swedish design in historic Norrmalmstorg",
+        "unique_features": [
+          "Swedish design excellence",
+          "Historic Norrmalmstorg location",
+          "Gold Bar cocktail destination",
+          "Scandinavian luxury redefined",
+          "Art and design focus"
+        ],
+        "room_count": "201",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "Contemporary Scandinavian luxury",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/sweden/nobis-stockholm-design.jpg"
+        }
+      },
+      {
+        "id": "grand_hotel_plaza_rome",
+        "name": "The First Roma Dolce",
+        "country": "Italy",
+        "region": "Rome",
+        "category": "Boutique Roman Palace",
+        "description": "19th-century palazzo near Spanish Steps with contemporary art",
+        "unique_features": [
+          "19th-century Roman palazzo",
+          "Contemporary art collection",
+          "Spanish Steps proximity",
+          "Roof garden restaurant",
+          "Italian design heritage"
+        ],
+        "room_count": "87",
+        "price_range": "€€€€",
+        "best_time": "Year-round",
+        "historical_significance": "19th-century Roman palazzo",
+        "instagram_worthy": true,
+        "spa": true,
+        "fine_dining": true,
+        "images": {
+          "hero": "https://images.hiddeneurope.com/hotels/italy/first-roma-dolce.jpg"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "last_updated": "2025-01-15",
+    "total_hotels": 63,
+    "countries_covered": 20,
+    "languages": ["English"],
+    "data_sources": "Comprehensive European boutique hotel research 2025, architectural heritage collections, luxury hospitality reviews",
+    "version": "5.0 - Complete Boutique Collection",
+    "content_categories": {
+      "castle_hotels": 10,
+      "cave_hotels": 6,
+      "lighthouse_hotels": 6,
+      "monastery_hotels": 8,
+      "extreme_unique": 7,
+      "design_boutique": 10,
+      "alpine_retreats": 7,
+      "vineyard_hotels": 6,
+      "city_boutique": 7
+    },
+    "price_distribution": {
+      "€€": "100-200€/night - Mid-range unique (1 hotel)",
+      "€€€": "200-400€/night - Premium boutique (26 hotels)",
+      "€€€€": "400€+/night - Ultra-luxury unique (36 hotels)"
+    },
+    "seasonal_distribution": {
+      "year_round": 22,
+      "summer_focused": 32,
+      "winter_special": 9
+    },
+    "amenities_breakdown": {
+      "spa": 52,
+      "fine_dining": 59,
+      "instagram_worthy": 63
+    },
+    "unique_categories_added": [
+      "Underground mine hotels",
+      "Harbor crane conversion",
+      "Laboratory conversion",
+      "Artist collaborative hotels",
+      "Geodesic dome pods",
+      "Industrial heritage conversions"
+    ],
+    "geographic_distribution": {
+      "nordic_countries": 12,
+      "mediterranean": 18,
+      "central_europe": 15,
+      "western_europe": 14,
+      "eastern_europe": 4
+    }
+  }
+}

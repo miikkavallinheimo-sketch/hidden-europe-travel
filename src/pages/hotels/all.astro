@@ -1,0 +1,299 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import HotelCard from '../../components/HotelCard.astro';
+import DestinationCard from '../../components/DestinationCard.astro';
+import hotelsData from '../../data/hotels.json';
+import destinationsData from '../../data/destinations.json';
+
+// Kerää kaikki hotellit
+const allHotels = Object.values(hotelsData.boutique_hotels).flat();
+
+// Kerää uniikit maat
+const countries = [...new Set(allHotels.map(h => h.country))].sort();
+
+// Hae satunnaiset featured destinations
+const allDestinations = Object.values(destinationsData).flat();
+const featuredDestinations = allDestinations
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 4);
+
+const title = "All Hotels - Hidden Europe";
+const description = "Explore all our extraordinary boutique hotels across Europe. Filter by country to find your perfect stay.";
+---
+
+<Layout title={title} description={description}>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>All Boutique Hotels</h1>
+        <p>Discover extraordinary stays across Europe</p>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+      <div class="container">
+        <div class="filter-group">
+          <label for="country-filter">Filter by Country</label>
+          <select id="country-filter" class="custom-select">
+            <option value="all">All Countries</option>
+            {countries.map(country => (
+              <option value={country}>{country}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels Grid -->
+    <section class="hotels" id="hotels">
+      <div class="container">
+        <div class="hotels-grid">
+          {allHotels.map((hotel) => (
+            <div class="hotel-wrapper" data-country={hotel.country}>
+              <HotelCard hotel={hotel} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured destinations">
+      <div class="container">
+        <h2>Featured Destinations</h2>
+        <div class="destinations-grid">
+          {featuredDestinations.map((destination) => (
+            <DestinationCard destination={destination} />
+          ))}
+        </div>
+        <div class="view-all">
+          <a href="/destinations" class="view-all-button">View All Destinations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<script>
+  // Alustus
+  const countryFilter = document.getElementById('country-filter') as HTMLSelectElement;
+  const hotelCards = document.querySelectorAll('.hotel-wrapper');
+
+  // Filtteröinti
+  function filterHotels() {
+    const selectedCountry = countryFilter.value;
+    
+    hotelCards.forEach(card => {
+      if (selectedCountry === 'all' || card.getAttribute('data-country') === selectedCountry) {
+        card.classList.remove('hidden');
+        // Fade in -animaatio
+        requestAnimationFrame(() => {
+          card.classList.add('visible');
+        });
+      } else {
+        card.classList.add('hidden');
+        card.classList.remove('visible');
+      }
+    });
+  }
+
+  // Event listener
+  countryFilter.addEventListener('change', filterHotels);
+
+  // Alusta kaikki näkyviin
+  hotelCards.forEach(card => {
+    card.classList.add('visible');
+  });
+</script>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    padding: 6rem 2rem 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .filters {
+    padding: 2rem 0;
+    background: var(--bg-secondary);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .filter-group label {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .custom-select {
+    appearance: none;
+    background-color: var(--bg-primary);
+    border: 2px solid var(--cal-poly-green);
+    border-radius: 8px;
+    padding: 0.8rem 2.5rem 0.8rem 1rem;
+    font-size: 1rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232c5530' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+
+  :root.dark .custom-select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  }
+
+  .custom-select:hover {
+    border-color: var(--viridian);
+  }
+
+  .custom-select:focus {
+    outline: none;
+    border-color: var(--viridian);
+    box-shadow: 0 0 0 2px rgba(74, 124, 89, 0.2);
+  }
+
+  .hotels {
+    padding: 4rem 0;
+    background: var(--bg-muted);
+  }
+
+  :root.dark .hotels {
+    background: var(--bg-muted);
+  }
+
+  .hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .hotels-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hotels-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hotel-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .hotel-wrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hotel-wrapper.hidden {
+    display: none;
+  }
+
+  .featured {
+    padding: 6rem 0;
+    background: var(--bg-primary);
+  }
+
+  :root.dark .featured {
+    background: var(--bg-primary);
+  }
+
+  .featured h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 300;
+    margin-bottom: 4rem;
+  }
+
+  :root.dark .featured h2 {
+    color: var(--card-text);
+  }
+
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+  }
+
+  .view-all {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .view-all-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--cal-poly-green);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .view-all-button:hover {
+    background: var(--viridian);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 1024px) {
+    .destinations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hotels-grid,
+    .destinations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

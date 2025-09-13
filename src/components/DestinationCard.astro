@@ -1,0 +1,279 @@
+---
+// src/components/DestinationCard.astro
+import { Calendar, Users, Navigation, MapPin, Star, Camera } from 'lucide-astro';
+
+export interface Props {
+  destination: any;
+}
+
+const { destination } = Astro.props;
+---
+
+<a href={`/destinations/${destination.id}`} class="destination-card">
+  <div class="card-image">
+    <img 
+      src={destination.images?.hero || '/images/placeholder.jpg'} 
+      alt={destination.name} 
+      loading="lazy" 
+    />
+    <div class="card-badge">{destination.category}</div>
+    {destination.instagram_worthy && (
+      <div class="instagram-badge">
+        <Camera size={16} />
+      </div>
+    )}
+  </div>
+  <div class="card-content">
+    <h3>{destination.name}</h3>
+    <p class="location">
+      <MapPin size={14} />
+      {destination.region}, {destination.country}
+    </p>
+    <p class="description">{destination.description}</p>
+    
+    <div class="card-meta">
+      <span class="meta-item">
+        <Calendar size={14} />
+        {destination.best_time}
+      </span>
+      <span class="meta-item">
+        <Users size={14} />
+        {destination.crowd_level} crowds
+      </span>
+      <span class="meta-item accessibility">
+        <Navigation size={14} />
+        {destination.accessibility}
+      </span>
+    </div>
+    
+    {destination.unique_features && destination.unique_features.length > 0 && (
+      <div class="highlights">
+        <div class="highlight-feature">
+          <Star size={12} />
+          {destination.unique_features[0]}
+        </div>
+      </div>
+    )}
+    
+    <span class="read-more">
+      Explore destination →
+    </span>
+  </div>
+</a>
+
+<style>
+  .destination-card {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  :root.dark .destination-card {
+    background: var(--bg-secondary);
+  }
+
+  .destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 50px rgba(0,0,0,0.12);
+  }
+
+  .card-image {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .destination-card:hover .card-image img {
+    transform: scale(1.05);
+  }
+
+  .card-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(44, 85, 48, 0.9);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .instagram-badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    color: #E4405F;
+    padding: 0.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-content {
+    padding: 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c5530;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  :root.dark .card-content h3 {
+    color: var(--card-title);
+  }
+
+  .location {
+    color: #301B56;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  :root.dark .location {
+    color: var(--bright-blue);
+  }
+
+  .description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+
+  :root.dark .description {
+    color: var(--card-text);
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .meta-item:nth-child(1) {
+    color: var(--cal-poly-green);
+  }
+
+  .meta-item:nth-child(2) {
+    color: var(--viridian);
+  }
+
+  .meta-item:nth-child(3) {
+    color: var(--gold);
+  }
+
+  :root.dark .meta-item:nth-child(1) {
+    color: var(--card-text);
+  }
+
+  :root.dark .meta-item:nth-child(2) {
+    color: var(--bright-blue);
+  }
+
+  :root.dark .meta-item:nth-child(3) {
+    color: var(--card-title);
+  }
+
+  .highlights {
+    background: rgba(44, 85, 48, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #2c5530;
+  }
+
+  :root.dark .highlights {
+    background: rgba(255, 255, 255, 0.1);
+    border-left-color: var(--bright-blue);
+  }
+
+  .highlight-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2c5530;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  :root.dark .highlight-feature {
+    color: var(--bright-blue);
+  }
+
+  .read-more {
+    color: #301B56;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    padding-bottom: 2px;
+  }
+
+  :root.dark .read-more {
+    color: var(--bright-blue);
+  }
+
+  .read-more:hover {
+    border-bottom-color: #301B56;
+    color: #2c5530;
+  }
+
+  :root.dark .read-more:hover {
+    border-bottom-color: var(--bright-blue);
+    color: var(--card-title);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-content {
+      padding: 2rem;
+    }
+    
+    .card-meta {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .card-content h3 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

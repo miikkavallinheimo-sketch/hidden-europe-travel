@@ -1,0 +1,19 @@
+<!-- About Us -->
+<title>About Hidden Europe - Curated European Travel Experts | Hidden Destinations & Boutique Hotels</title>
+<meta name="description" content="Meet the European travel experts behind Hidden Europe. Discover our story, mission, and 15+ years of experience curating Europe's most extraordinary hidden destinations and boutique hotels.">
+
+<!-- Contact -->
+<title>Contact Hidden Europe - European Travel Experts | Get Travel Advice</title>
+<meta name="description" content="Contact Hidden Europe's travel experts for personalized European destination advice. Email info@hiddeneurope.travel for hidden gems, boutique hotel recommendations, and travel planning assistance.">
+
+<!-- Privacy Policy -->
+<title>Privacy Policy - Hidden Europe | Data Protection & Cookie Policy</title>
+<meta name="description" content="Hidden Europe's privacy policy explaining how we collect, use, and protect your personal data. GDPR compliant with transparent data handling practices for our European travel website.">
+
+<!-- Terms of Service -->
+<title>Terms of Service - Hidden Europe | Affiliate Disclosure & Website Terms</title>
+<meta name="description" content="Hidden Europe's terms of service including affiliate marketing disclosure for hotel bookings and travel services. Understand our partnerships with Booking.com and other travel platforms.">
+
+<!-- FAQ -->
+<title>FAQ - Hidden Europe | European Travel Questions & Boutique Hotel Booking Help</title>
+<meta name="description" content="Frequently asked questions about Hidden Europe's curated European destinations and boutique hotels. Get answers about booking, travel tips, and our selection criteria for hidden gems.">

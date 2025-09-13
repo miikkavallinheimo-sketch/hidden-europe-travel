@@ -1,0 +1,564 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import hotelsData from '../../data/hotels.json';
+import { Building2, Coins, Sunrise, Star, Waves, UtensilsCrossed, Camera } from 'lucide-astro';
+
+export function getStaticPaths() {
+  // Kerää kaikki hotellit kategorioista
+  const allHotels = [];
+  
+  // Käy läpi jokainen kategoria
+  for (const category in hotelsData.boutique_hotels) {
+    if (Array.isArray(hotelsData.boutique_hotels[category])) {
+      allHotels.push(...hotelsData.boutique_hotels[category]);
+    }
+  }
+
+  console.log("Found hotels:", allHotels.map(h => h.id));
+  
+  // Palauta vain ne hotellit, joilla on id
+  return allHotels
+    .filter(hotel => hotel && hotel.id)
+    .map(hotel => ({
+      params: { id: hotel.id },
+      props: { hotel },
+    }));
+}
+
+const { hotel } = Astro.props;
+const pageTitle = `${hotel.name}, ${hotel.country} - Hidden Europe Hotels`;
+const pageDescription = `Experience ${hotel.name} in ${hotel.region}, ${hotel.country}. ${hotel.description}`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src={hotel.images?.hero || '/images/hotel-placeholder.jpg'} alt={hotel.name} />
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <div class="breadcrumb">
+              <a href="/">Home</a> → <a href="/hotels">Hotels</a> → {hotel.name}
+            </div>
+            <span class="category-badge">{hotel.category}</span>
+            <h1>{hotel.name}</h1>
+            <p class="location">{hotel.region}, {hotel.country}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="icon"><Building2 size={32} /></span>
+            <span class="label">Rooms</span>
+            <span class="value">{hotel.room_count} rooms</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"><Coins size={32} /></span>
+            <span class="label">Price Range</span>
+            <span class="value">{hotel.price_range}</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"><Sunrise size={32} /></span>
+            <span class="label">Best Time</span>
+            <span class="value">{hotel.best_time}</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"><Star size={32} /></span>
+            <span class="label">Features</span>
+            <span class="value">
+              {hotel.spa && hotel.fine_dining ? "Spa & Fine Dining" : 
+               hotel.spa ? "Spa" : 
+               hotel.fine_dining ? "Fine Dining" : "Boutique"}
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content">
+      <div class="container">
+        <div class="content-grid">
+          <div class="main-content">
+            <h2>About {hotel.name}</h2>
+            <p class="description">{hotel.description}</p>
+            
+            <h3>Unique Features</h3>
+            <ul class="features-list">
+              {hotel.unique_features.map((feature: string) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+
+            {hotel.historical_significance && (
+              <div class="history-section">
+                <h3>Historical Significance</h3>
+                <p class="history-text">{hotel.historical_significance}</p>
+              </div>
+            )}
+          </div>
+
+          <div class="sidebar">
+            <div class="booking-card">
+              <h4>Hotel Details</h4>
+              <p><strong>Country:</strong> {hotel.country}</p>
+              <p><strong>Region:</strong> {hotel.region}</p>
+              <p><strong>Category:</strong> {hotel.category}</p>
+              <p><strong>Room Count:</strong> {hotel.room_count}</p>
+              <p><strong>Price Range:</strong> {hotel.price_range}</p>
+              
+              <div class="amenities">
+                <h5>Amenities</h5>
+                <div class="amenity-tags">
+                  {hotel.spa && <span class="amenity-tag"><Waves size={16} /> Spa</span>}
+                  {hotel.fine_dining && <span class="amenity-tag"><UtensilsCrossed size={16} /> Fine Dining</span>}
+                  {hotel.instagram_worthy && <span class="amenity-tag"><Camera size={16} /> Instagram Worthy</span>}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    {hotel.images?.gallery && (
+      <section class="gallery">
+        <div class="container">
+          <h2>Hotel Gallery</h2>
+          <div class="gallery-grid">
+            {hotel.images?.gallery.map((image: string, index: number) => (
+              <div class="gallery-item">
+                <img src={image} alt={`${hotel.name} view ${index + 1}`} loading="lazy" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    position: relative;
+    height: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+    display: flex;
+    align-items: end;
+  }
+
+  .hero-content {
+    color: white;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .breadcrumb {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .category-badge {
+    background: rgba(44, 85, 48, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+
+  .location {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    font-style: italic;
+  }
+
+  .quick-info {
+    background: var(--bg-primary);
+    padding: 3rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  :root.dark .quick-info {
+    background: var(--bg-muted);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    color: var(--cal-poly-green);
+  }
+
+  :root.dark .icon {
+    color: var(--card-text);
+  }
+
+  .info-item:nth-child(2) .icon {
+    color: var(--cal-poly-green);
+  }
+
+  :root.dark .info-item:nth-child(2) .icon {
+    color: var(--card-text);
+  }
+
+  .info-item:nth-child(3) .icon {
+    color: var(--amber);
+  }
+
+  :root.dark .info-item:nth-child(3) .icon {
+    color: var(--bright-blue);
+  }
+
+  .info-item:nth-child(4) .icon {
+    color: var(--bright-blue);
+  }
+
+  :root.dark .info-item:nth-child(4) .icon {
+    color: var(--card-text);
+  }
+
+  .label {
+    font-weight: bold;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  :root.dark .label {
+    color: var(--card-text-secondary);
+  }
+
+  .value {
+    color: var(--cal-poly-green);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  :root.dark .value {
+    color: var(--card-title);
+  }
+
+  .content {
+    padding: 5rem 0;
+    background: var(--bg-secondary);
+  }
+
+  :root.dark .content {
+    background: var(--bg-primary);
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+
+  .main-content h2 {
+    color: var(--cal-poly-green);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  :root.dark .main-content h2 {
+    color: var(--card-title);
+  }
+
+  .description {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+  }
+
+  :root.dark .description {
+    color: var(--card-text);
+  }
+
+  .main-content h3 {
+    color: var(--cal-poly-green);
+    font-size: 2rem;
+    margin: 3rem 0 1.5rem 0;
+    font-weight: 400;
+  }
+
+  :root.dark .main-content h3 {
+    color: var(--card-title);
+  }
+
+  .features-list {
+    list-style: none;
+    margin-bottom: 3rem;
+  }
+
+  .features-list li {
+    padding: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+    font-size: 1.1rem;
+    color: var(--text-primary);
+  }
+
+  :root.dark .features-list li {
+    color: var(--card-text);
+  }
+
+  .features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--cal-poly-green);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  :root.dark .features-list li::before {
+    color: var(--card-title);
+  }
+
+  .history-section {
+    background: var(--bg-primary);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  :root.dark .history-section {
+    background: var(--bg-muted);
+  }
+
+  .history-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+  }
+
+  :root.dark .history-text {
+    color: var(--card-text);
+  }
+
+  .sidebar {
+    align-self: start;
+  }
+
+  .booking-card {
+    background: var(--bg-primary);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 120px;
+  }
+
+  :root.dark .booking-card {
+    background: var(--bg-muted);
+  }
+
+  .booking-card h4 {
+    color: var(--cal-poly-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  :root.dark .booking-card h4 {
+    color: var(--card-title);
+  }
+
+  .booking-card p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+  }
+
+  :root.dark .booking-card p {
+    color: var(--card-text);
+  }
+
+  .amenities {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .amenities h5 {
+    color: var(--cal-poly-green);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  :root.dark .amenities h5 {
+    color: var(--card-title);
+  }
+
+  .amenity-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .amenity-tag {
+    background: var(--bg-secondary);
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  :root.dark .amenity-tag {
+    background: var(--bg-primary);
+  }
+
+  .amenity-tag:nth-child(1) {
+    color: var(--cal-poly-green);
+  }
+
+  :root.dark .amenity-tag:nth-child(1) {
+    color: var(--card-text);
+  }
+
+  .amenity-tag:nth-child(2) {
+    color: var(--amber);
+  }
+
+  :root.dark .amenity-tag:nth-child(2) {
+    color: var(--bright-blue);
+  }
+
+  .amenity-tag:nth-child(3) {
+    color: var(--bright-blue);
+  }
+
+  :root.dark .amenity-tag:nth-child(3) {
+    color: var(--card-text);
+  }
+
+  .gallery {
+    padding: 5rem 0;
+    background: var(--bg-primary);
+  }
+
+  :root.dark .gallery {
+    background: var(--bg-muted);
+  }
+
+  .gallery h2 {
+    text-align: center;
+    color: var(--cal-poly-green);
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+  }
+
+  :root.dark .gallery h2 {
+    color: var(--card-title);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .gallery-item {
+    aspect-ratio: 4/3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

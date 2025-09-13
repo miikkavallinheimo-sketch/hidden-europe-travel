@@ -1,0 +1,329 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import { Building2 } from 'lucide-astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Muotoile päivämäärä
+const formattedDate = new Date(entry.data.publishDate).toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+});
+---
+
+<Layout 
+  title={`${entry.data.title} - Hidden Europe`}
+  description={entry.data.description}
+>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      {entry.data.heroImage && (
+        <div class="hero-image">
+          <img src={entry.data.heroImage} alt={entry.data.title} />
+        </div>
+      )}
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <div class="breadcrumb">
+            <a href="/articles">Articles</a> / 
+            <a href={`/articles/category/${entry.data.category}`}>{entry.data.category.replace('-', ' ')}</a>
+          </div>
+          <h1>{entry.data.title}</h1>
+          <div class="article-meta">
+            <span class="author">{entry.data.author}</span>
+            <span class="date">{formattedDate}</span>
+            {entry.data.readingTime && (
+              <span class="reading-time">{entry.data.readingTime} min read</span>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-content">
+      <div class="container">
+        <div class="content">
+          <Content />
+        </div>
+
+        <!-- Tags -->
+        {entry.data.tags && entry.data.tags.length > 0 && (
+          <div class="tags">
+            {entry.data.tags.map(tag => (
+              <a href={`/articles/tag/${tag}`} class="tag">#{tag}</a>
+            ))}
+          </div>
+        )}
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    position: relative;
+    height: 70vh;
+    min-height: 500px;
+    color: white;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 100%;
+  }
+
+  .breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+
+  .breadcrumb a:hover {
+    opacity: 1;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .article-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .article-content {
+    padding: 4rem 0;
+    background: var(--bg-primary);
+  }
+
+  .content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
+
+  :root.dark .content {
+    color: var(--card-text);
+  }
+
+  .content :global(h2) {
+    font-size: 2rem;
+    color: var(--cal-poly-green);
+    margin: 2.5rem 0 1.5rem;
+    font-weight: 500;
+  }
+
+  :root.dark .content :global(h2) {
+    color: var(--card-title);
+  }
+
+  .content :global(h3) {
+    font-size: 1.5rem;
+    color: var(--cal-poly-green);
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+  }
+
+  :root.dark .content :global(h3) {
+    color: var(--card-title);
+  }
+
+  .content :global(p) {
+    margin-bottom: 1.5rem;
+  }
+
+  .content :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+
+  .content :global(blockquote) {
+    border-left: 4px solid var(--cal-poly-green);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+
+  :root.dark .content :global(blockquote) {
+    color: var(--card-text-secondary);
+  }
+
+  .content :global(ul),
+  .content :global(ol) {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .content :global(a) {
+    color: var(--cal-poly-green);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+  }
+
+  :root.dark .content :global(a) {
+    color: var(--bright-blue);
+  }
+
+  .content :global(a:hover) {
+    border-bottom-color: currentColor;
+  }
+
+  .content :global(a.hotel-link) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+  }
+
+  .content :global(a.hotel-link::before) {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232C5530' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='4' width='16' height='16' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M9 9h6v6H9z'%3E%3C/path%3E%3Cpath d='M5 20v2h2M19 20v2h2M5 4V2h2M19 4V2h2'%3E%3C/path%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  :root.dark .content :global(a.hotel-link::before) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%235BC0EB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='4' width='16' height='16' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M9 9h6v6H9z'%3E%3C/path%3E%3Cpath d='M5 20v2h2M19 20v2h2M5 4V2h2M19 4V2h2'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  :root.dark .content :global(a.hotel-link) {
+    background: var(--bg-muted);
+  }
+
+  .content :global(a.hotel-link:hover) {
+    background: var(--cal-poly-green);
+    color: white;
+    border-bottom-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .content :global(a.hotel-link:hover::before) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='4' width='16' height='16' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M9 9h6v6H9z'%3E%3C/path%3E%3Cpath d='M5 20v2h2M19 20v2h2M5 4V2h2M19 4V2h2'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  :root.dark .content :global(a.hotel-link:hover) {
+    background: var(--bright-blue);
+  }
+
+  .tags {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+  }
+
+  :root.dark .tag {
+    background: var(--card-bg);
+    color: var(--card-text-secondary);
+  }
+
+  .tag:hover {
+    background: var(--cal-poly-green);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      height: 50vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .article-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

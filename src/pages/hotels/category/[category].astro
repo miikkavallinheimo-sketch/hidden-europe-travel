@@ -1,0 +1,269 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navigation from '../../../components/Navigation.astro';
+import HotelCard from '../../../components/HotelCard.astro';
+import DestinationCard from '../../../components/DestinationCard.astro';
+import hotelsData from '../../../data/hotels.json';
+import destinationsData from '../../../data/destinations.json';
+
+export function getStaticPaths() {
+  return [
+    'castle',
+    'cave',
+    'lighthouse',
+    'monastery',
+    'extreme',
+    'design',
+    'alpine',
+    'vineyard',
+    'city'
+  ].map(category => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params;
+
+// Muunna category_id näyttönimeksi
+const categoryMapping = {
+  castle: { name: 'Castle Hotels', data: 'castle_hotels' },
+  cave: { name: 'Cave Hotels', data: 'cave_hotels' },
+  lighthouse: { name: 'Lighthouse Hotels', data: 'lighthouse_hotels' },
+  monastery: { name: 'Monastery Hotels', data: 'monastery_hotels' },
+  extreme: { name: 'Extreme Unique', data: 'extreme_unique' },
+  design: { name: 'Design Boutique', data: 'design_boutique' },
+  alpine: { name: 'Alpine Retreats', data: 'alpine_retreats' },
+  vineyard: { name: 'Vineyard Hotels', data: 'vineyard_hotels' },
+  city: { name: 'City Boutique', data: 'city_boutique' }
+};
+
+// Hae kategorian hotellit
+const hotels = hotelsData.boutique_hotels[categoryMapping[category].data] || [];
+
+// Hae satunnaiset featured destinations
+const allDestinations = Object.values(destinationsData).flat();
+const featuredDestinations = allDestinations
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 4);
+
+const title = `${categoryMapping[category].name} - Hidden Europe`;
+const description = `Discover extraordinary ${categoryMapping[category].name.toLowerCase()} across Europe. Experience unique stays in carefully curated boutique hotels.`;
+---
+
+<Layout title={title} description={description}>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>{categoryMapping[category].name}</h1>
+        <p>Discover extraordinary {categoryMapping[category].name.toLowerCase()} across Europe</p>
+      </div>
+    </section>
+
+    <!-- Hotels Grid -->
+    <section class="hotels" id="hotels">
+      <div class="container">
+        {hotels && hotels.length > 0 ? (
+          <div class="hotels-grid">
+            {hotels.map((hotel) => (
+              <HotelCard hotel={hotel} />
+            ))}
+          </div>
+        ) : (
+          <div class="no-hotels">
+            <h3>Hotels coming soon!</h3>
+            <p>We're curating extraordinary {categoryMapping[category].name.toLowerCase()} across Europe. Check back soon!</p>
+            <a href="/hotels" class="back-home">← Back to all hotels</a>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured destinations">
+      <div class="container">
+        <h2>Featured Destinations</h2>
+        <div class="destinations-grid">
+          {featuredDestinations.map((destination) => (
+            <DestinationCard destination={destination} />
+          ))}
+        </div>
+        <div class="view-all">
+          <a href="/destinations" class="view-all-button">View All Destinations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    padding: 6rem 2rem 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .hotels {
+    padding: 6rem 0;
+    background: var(--bg-muted);
+  }
+
+  :root.dark .hotels {
+    background: var(--bg-muted);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .hotels-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hotels-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .no-hotels {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  :root.dark .no-hotels {
+    background: var(--card-bg);
+  }
+
+  .no-hotels h3 {
+    color: #2c5530;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  :root.dark .no-hotels h3 {
+    color: var(--card-title);
+  }
+
+  .no-hotels p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  :root.dark .no-hotels p {
+    color: var(--card-text);
+  }
+
+  .back-home {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #2c5530;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .back-home:hover {
+    background: #4a7c59;
+  }
+
+  .featured {
+    padding: 6rem 0;
+    background: var(--bg-primary);
+  }
+
+  :root.dark .featured {
+    background: var(--bg-primary);
+  }
+
+  .featured h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 300;
+    margin-bottom: 4rem;
+  }
+
+  :root.dark .featured h2 {
+    color: var(--card-text);
+  }
+
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+  }
+
+  .view-all {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .view-all-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--cal-poly-green);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .view-all-button:hover {
+    background: var(--viridian);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 1024px) {
+    .destinations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hotels-grid,
+    .destinations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

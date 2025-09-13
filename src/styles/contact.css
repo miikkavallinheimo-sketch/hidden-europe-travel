@@ -1,0 +1,244 @@
+/* Contact Page */
+.hero-contact {
+  background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-700) 100%);
+  color: var(--bg-primary);
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+}
+
+.hero-contact h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  padding: 4rem 0;
+  background: var(--bg-muted);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Contact Info */
+.contact-info h2,
+.contact-form h2 {
+  font-size: 2rem;
+  color: var(--brand-green);
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.contact-item {
+  margin-bottom: 2.5rem;
+}
+
+.contact-item h3 {
+  font-size: 1.4rem;
+  color: var(--brand-green-700);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.contact-item p {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.contact-item a {
+  color: var(--brand-green-700);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: var(--brand-green);
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form-element {
+  background: var(--bg-primary);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--brand-green);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand-green) 25%, transparent);
+}
+
+/* Checkbox styling */
+.checkbox-group {
+  margin-top: 2rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  margin-right: 12px;
+  position: relative;
+  transition: all 0.2s ease;
+  background: var(--bg-primary);
+}
+
+.checkbox-label input[type="checkbox"]:checked ~ .checkbox-custom {
+  background: var(--brand-green);
+  border-color: var(--brand-green);
+}
+
+.checkbox-label input[type="checkbox"]:checked ~ .checkbox-custom::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--bg-primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Submit button */
+.submit-button {
+  background: var(--brand-green);
+  color: var(--bg-primary);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.submit-button:hover {
+  background: var(--brand-green-700);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Dark mode */
+:root.dark .contact-form-element {
+  background: var(--bg-secondary);
+}
+
+:root.dark .contact-info h2,
+:root.dark .contact-form h2 {
+  color: var(--brand-green-dark);
+}
+
+:root.dark .contact-item h3 {
+  color: var(--accent-gold);
+}
+
+:root.dark .contact-item p,
+:root.dark .form-group label {
+  color: var(--text);
+}
+
+:root.dark .contact-item a {
+  color: var(--accent-gold);
+}
+
+:root.dark .contact-item a:hover {
+  color: var(--brand-green-dark);
+}
+
+:root.dark .form-group input,
+:root.dark .form-group select,
+:root.dark .form-group textarea {
+  background: var(--bg-primary);
+  border-color: var(--border);
+}
+
+:root.dark .form-group input:focus,
+:root.dark .form-group select:focus,
+:root.dark .form-group textarea:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent-gold) 25%, transparent);
+}
+
+:root.dark .checkbox-custom {
+  border-color: var(--border);
+  background: var(--bg-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-contact h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 1.8rem;
+  }
+}

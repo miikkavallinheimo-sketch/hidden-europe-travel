@@ -1,0 +1,476 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import DestinationCard from '../../components/DestinationCard.astro';
+import destinationsData from '../../data/destinations.json';
+import { Castle, Mountain, Compass, Anchor, Snowflake, Grape, Building, Waves, Bath, Wine, Mountain as Peak, Droplet } from 'lucide-astro';
+
+// Hae kategoria URL:n parametreista
+const category = Astro.url.searchParams.get('category');
+
+// Määritä kategorioiden vastaavuudet
+const categoryMapping = {
+  hidden_villages: 'Hidden Villages',
+  remote_islands: 'Remote Islands',
+  underground_wonders: 'Underground Wonders',
+  arctic_wonders: 'Arctic Wonders',
+  medieval_towns: 'Medieval Towns',
+  coastal_gems: 'Coastal Gems',
+  underrated_capitals: 'Underrated Capitals',
+  alpine_lakes: 'Alpine Lakes',
+  thermal_spa_destinations: 'Thermal Spa Destinations',
+  wine_regions: 'Wine Regions',
+  mountain_destinations: 'Mountain Destinations',
+  lake_destinations: 'Lake Destinations'
+};
+
+// Kerää kohteet kategorioittain
+const destinationsByCategory = {};
+Object.entries(categoryMapping).forEach(([key, value]) => {
+  destinationsByCategory[key] = destinationsData[key] || [];
+});
+
+// Valitse näytettävät kohteet
+let allDestinations = [];
+if (category && categoryMapping[category]) {
+  // Jos kategoria on määritelty, näytä vain sen kategorian kohteet
+  allDestinations = destinationsByCategory[category] || [];
+} else {
+  // Muuten näytä 6 kohdetta eri kategorioista
+  allDestinations = Object.values(destinationsByCategory)
+    .flat()
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 6);
+}
+---
+
+<Layout 
+  title="Hidden Destinations - Hidden Europe"
+  description="Discover Europe's most hidden villages, remote islands, and secret destinations off the beaten path."
+>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Europe's Hidden Destinations</h1>
+        <p>From hidden villages and remote islands to underground wonders and medieval towns - discover Europe's best kept secrets.</p>
+      </div>
+    </section>
+
+    <!-- Categories Preview -->
+    <section class="categories">
+      <div class="container">
+        <h2>Destination Categories</h2>
+        <div class="categories-grid">
+          <a href="/destinations/category/hidden_villages" class="category-card">
+            <div class="category-icon"><Castle size={48} /></div>
+            <h3>Hidden Villages</h3>
+            <p>Discover charming villages tucked away in remote corners of Europe</p>
+          </a>
+          <a href="/destinations/category/remote_islands" class="category-card">
+            <div class="category-icon"><Anchor size={48} /></div>
+            <h3>Remote Islands</h3>
+            <p>Explore secluded islands with untouched natural beauty</p>
+          </a>
+          <a href="/destinations/category/underground_wonders" class="category-card">
+            <div class="category-icon"><Mountain size={48} /></div>
+            <h3>Underground Wonders</h3>
+            <p>Visit mysterious caves and underground cities</p>
+          </a>
+          <a href="/destinations/category/arctic_wonders" class="category-card">
+            <div class="category-icon"><Snowflake size={48} /></div>
+            <h3>Arctic Wonders</h3>
+            <p>Experience the magic of Europe's northernmost destinations</p>
+          </a>
+          <a href="/destinations/category/medieval_towns" class="category-card">
+            <div class="category-icon"><Building size={48} /></div>
+            <h3>Medieval Towns</h3>
+            <p>Step back in time in Europe's best preserved medieval towns</p>
+          </a>
+          <a href="/destinations/category/coastal_gems" class="category-card">
+            <div class="category-icon"><Waves size={48} /></div>
+            <h3>Coastal Gems</h3>
+            <p>Discover hidden beaches and charming coastal villages</p>
+          </a>
+          <a href="/destinations/category/underrated_capitals" class="category-card">
+            <div class="category-icon"><Building size={48} /></div>
+            <h3>Underrated Capitals</h3>
+            <p>Explore Europe's lesser-known but fascinating capital cities</p>
+          </a>
+          <a href="/destinations/category/alpine_lakes" class="category-card">
+            <div class="category-icon"><Droplet size={48} /></div>
+            <h3>Alpine Lakes</h3>
+            <p>Find pristine mountain lakes with breathtaking views</p>
+          </a>
+          <a href="/destinations/category/thermal_spa_destinations" class="category-card">
+            <div class="category-icon"><Bath size={48} /></div>
+            <h3>Thermal Spa Destinations</h3>
+            <p>Relax in Europe's most extraordinary natural hot springs</p>
+          </a>
+          <a href="/destinations/category/wine_regions" class="category-card">
+            <div class="category-icon"><Wine size={48} /></div>
+            <h3>Wine Regions</h3>
+            <p>Discover hidden wine regions with unique terroir</p>
+          </a>
+          <a href="/destinations/category/mountain_destinations" class="category-card">
+            <div class="category-icon"><Peak size={48} /></div>
+            <h3>Mountain Destinations</h3>
+            <p>Find secret spots in Europe's most beautiful mountain ranges</p>
+          </a>
+          <a href="/destinations/category/lake_destinations" class="category-card">
+            <div class="category-icon"><Droplet size={48} /></div>
+            <h3>Lake Destinations</h3>
+            <p>Explore Europe's most tranquil and scenic lakes</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- View All Destinations -->
+    <div class="view-all">
+      <a href="/destinations/all" class="view-all-button">View All Destinations</a>
+    </div>
+
+    <!-- Destinations Grid -->
+    <section class="destinations" id="featured">
+      <div class="container">
+        <div class="destinations-header">
+          <h2>{category ? categoryMapping[category] : 'Featured Destinations'}</h2>
+          <p class="subtitle">Discover {allDestinations.length} extraordinary {category ? 'places in this category' : 'destinations across Europe'}</p>
+        </div>
+        
+        {allDestinations && allDestinations.length > 0 ? (
+          <div class="destinations-grid">
+            {allDestinations.map((destination) => (
+              <DestinationCard destination={destination} />
+            ))}
+          </div>
+        ) : (
+          <div class="no-destinations">
+            <h3>Destinations coming soon!</h3>
+            <p>We're curating {category ? `extraordinary ${categoryMapping[category].toLowerCase()}` : 'the most extraordinary hidden destinations'} across Europe. Check back soon!</p>
+            <a href="/destinations" class="back-home">← Back to all destinations</a>
+          </div>
+        )}
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    padding: 6rem 2rem 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .destinations {
+    padding: 6rem 0;
+    background: var(--bg-muted);
+  }
+
+  :root.dark .destinations {
+    background: var(--bg-muted);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .destinations-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .destinations-header h2 {
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  :root.dark .destinations-header h2 {
+    color: var(--card-text);
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  :root.dark .subtitle {
+    color: var(--card-text-secondary);
+  }
+
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .no-destinations {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  :root.dark .no-destinations {
+    background: var(--card-bg);
+  }
+
+  .no-destinations h3 {
+    color: #2c5530;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  :root.dark .no-destinations h3 {
+    color: var(--card-title);
+  }
+
+  .no-destinations p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  :root.dark .no-destinations p {
+    color: var(--card-text);
+  }
+
+  .back-home {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #2c5530;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .back-home:hover {
+    background: #4a7c59;
+  }
+
+  .categories {
+    padding: 6rem 0;
+  }
+
+  .categories h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 300;
+    margin-bottom: 4rem;
+  }
+
+  :root.dark .categories h2 {
+    color: var(--card-text);
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .category-card {
+    background: var(--bg-primary);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none;
+    display: block;
+  }
+
+  :root.dark .category-card {
+    background: var(--card-bg);
+  }
+
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .category-icon {
+    margin-bottom: 1rem;
+  }
+
+  .categories-grid a:nth-child(1) .category-icon {
+    color: #2C5530; /* Hidden Villages */
+  }
+
+  .categories-grid a:nth-child(2) .category-icon {
+    color: #5BC0EB; /* Remote Islands */
+  }
+
+  .categories-grid a:nth-child(3) .category-icon {
+    color: #2274A5; /* Underground Wonders */
+  }
+
+  .categories-grid a:nth-child(4) .category-icon {
+    color: #301B56; /* Arctic Wonders */
+  }
+
+  .categories-grid a:nth-child(5) .category-icon {
+    color: #333333; /* Medieval Towns */
+  }
+
+  .categories-grid a:nth-child(6) .category-icon {
+    color: #2C5530; /* Coastal Gems */
+  }
+
+  .categories-grid a:nth-child(7) .category-icon {
+    color: #5BC0EB; /* Underrated Capitals */
+  }
+
+  .categories-grid a:nth-child(8) .category-icon {
+    color: #2274A5; /* Alpine Lakes */
+  }
+
+  .categories-grid a:nth-child(9) .category-icon {
+    color: #301B56; /* Thermal Spa */
+  }
+
+  .categories-grid a:nth-child(10) .category-icon {
+    color: #333333; /* Wine Regions */
+  }
+
+  .categories-grid a:nth-child(11) .category-icon {
+    color: #2C5530; /* Mountain Destinations */
+  }
+
+  .categories-grid a:nth-child(12) .category-icon {
+    color: #5BC0EB; /* Lake Destinations */
+  }
+
+  :root.dark .categories-grid a:nth-child(1) .category-icon,
+  :root.dark .categories-grid a:nth-child(6) .category-icon,
+  :root.dark .categories-grid a:nth-child(11) .category-icon {
+    color: var(--card-text);
+  }
+
+  :root.dark .categories-grid a:nth-child(2) .category-icon,
+  :root.dark .categories-grid a:nth-child(7) .category-icon,
+  :root.dark .categories-grid a:nth-child(12) .category-icon {
+    color: var(--bright-blue);
+  }
+
+  :root.dark .categories-grid a:nth-child(3) .category-icon,
+  :root.dark .categories-grid a:nth-child(8) .category-icon {
+    color: var(--dark-blue);
+  }
+
+  :root.dark .categories-grid a:nth-child(4) .category-icon,
+  :root.dark .categories-grid a:nth-child(9) .category-icon {
+    color: var(--card-title);
+  }
+
+  :root.dark .categories-grid a:nth-child(5) .category-icon,
+  :root.dark .categories-grid a:nth-child(10) .category-icon {
+    color: var(--card-text);
+  }
+
+  .category-card h3 {
+    color: #2c5530;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  :root.dark .category-card h3 {
+    color: var(--card-title);
+  }
+
+  .category-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  :root.dark .category-card p {
+    color: var(--card-text);
+  }
+
+  .view-all {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .view-all-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--cal-poly-green);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .view-all-button:hover {
+    background: var(--viridian);
+    transform: translateY(-2px);
+  }
+
+  /* Featured Hotels section */
+  .featured.hotels {
+    padding: 6rem 0;
+    background: var(--bg-primary);
+  }
+
+  :root.dark .featured.hotels {
+    background: var(--bg-primary);
+  }
+
+  .featured.hotels h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--brand-green);
+    font-weight: 300;
+    margin-bottom: 4rem;
+  }
+
+  :root.dark .featured.hotels h2 {
+    color: var(--card-title);
+  }
+
+  .hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .destinations-grid,
+    .hotels-grid,
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

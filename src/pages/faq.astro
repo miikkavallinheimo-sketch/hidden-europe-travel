@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+
+const title = "FAQ - Hidden Europe | European Travel Questions & Boutique Hotel Booking Help";
+const description = "Frequently asked questions about Hidden Europe's curated European destinations and boutique hotels. Get answers about booking, travel tips, and our selection criteria for hidden gems.";
+---
+
+<Layout title={title} description={description}>
+  <Navigation />
+  <link rel="stylesheet" href="/src/styles/faq.css">
+  <main>
+    <section class="faq-hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p class="hero-subtitle">Everything you need to know about Hidden Europe</p>
+        </div>
+    </section>
+
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-categories">
+                <nav class="faq-nav">
+                    <a href="#general" class="faq-nav-link active">General</a>
+                    <a href="#destinations" class="faq-nav-link">Destinations</a>
+                    <a href="#hotels" class="faq-nav-link">Hotels</a>
+                    <a href="#booking" class="faq-nav-link">Booking</a>
+                    <a href="#travel" class="faq-nav-link">Travel Tips</a>
+                </nav>
+
+                <div class="faq-sections">
+                    <!-- General Questions -->
+                    <section id="general" class="faq-section active">
+                        <h2>General Questions</h2>
+                        
+                        <div class="faq-item">
+                            <h3>What is Hidden Europe?</h3>
+                            <p>Hidden Europe is a curated travel platform specializing in Europe's most extraordinary hidden destinations and unique boutique hotels. We focus on off-the-beaten-path locations that offer authentic experiences away from mass tourism.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>How do you select destinations and hotels?</h3>
+                            <p>Our travel experts personally visit and evaluate each destination and accommodation. We consider factors like authenticity, uniqueness, quality of experience, sustainability practices, and local cultural preservation.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Is Hidden Europe a booking platform?</h3>
+                            <p>No, we are an informational and recommendation website. We provide detailed guides and curated recommendations, but all bookings are made through our partner platforms like Booking.com, Expedia, or directly with the properties.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Do you charge for your recommendations?</h3>
+                            <p>Our content is free to access. We earn commissions through affiliate partnerships when you book through our recommended links, but this never affects our editorial integrity or the cost of your booking.</p>
+                        </div>
+                    </section>
+
+                    <!-- Destinations Questions -->
+                    <section id="destinations" class="faq-section">
+                        <h2>About Our Destinations</h2>
+                        
+                        <div class="faq-item">
+                            <h3>How remote are these "hidden" destinations?</h3>
+                            <p>Our destinations range from easily accessible villages to remote islands requiring special transportation. Each destination page clearly indicates accessibility level: Easy, Moderate, or Difficult.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Are these destinations suitable for families?</h3>
+                            <p>Many of our destinations are family-friendly, though some remote locations may be better suited for adult travelers. Check the accessibility and crowd level indicators on each destination page.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>When is the best time to visit these destinations?</h3>
+                            <p>Each destination includes specific "best time to visit" recommendations considering weather, crowds, and local events. Many are particularly beautiful during shoulder seasons.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>How do I get to these hidden destinations?</h3>
+                            <p>Each destination guide includes detailed transportation information, from airports to local transport options. Some may require rental cars, boats, or even cable cars!</p>
+                        </div>
+                    </section>
+
+                    <!-- Hotels Questions -->
+                    <section id="hotels" class="faq-section">
+                        <h2>Boutique Hotels</h2>
+                        
+                        <div class="faq-item">
+                            <h3>What makes a hotel "boutique" in your selection?</h3>
+                            <p>Our boutique hotels are unique properties with distinctive character, often in historic buildings or unusual locations like castles, lighthouses, or caves. They typically have fewer than 150 rooms and offer personalized experiences.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>What price ranges do your hotels cover?</h3>
+                            <p>We use a €-€€€€ scale: € (50-100€/night), €€ (100-200€), €€€ (200-400€), €€€€ (400€+). Most of our selections fall in the €€€-€€€€ range, reflecting the unique and luxury nature of these properties.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Do you feature chain hotels?</h3>
+                            <p>While we occasionally feature unique properties from luxury chains (like Four Seasons Milano in a historic convent), we primarily focus on independent boutique hotels with distinctive character.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Are spa facilities common in your hotel selections?</h3>
+                            <p>Many of our hotels feature spas, especially castle hotels and alpine retreats. Each hotel listing clearly indicates available amenities including spa, fine dining, and other unique features.</p>
+                        </div>
+                    </section>
+
+                    <!-- Booking Questions -->
+                    <section id="booking" class="faq-section">
+                        <h2>Booking & Reservations</h2>
+                        
+                        <div class="faq-item">
+                            <h3>How do I book these hotels and experiences?</h3>
+                            <p>Click the booking links on our destination or hotel pages, which will take you to our trusted partners like Booking.com, Expedia, or the property's direct booking page.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Do I pay extra when booking through your links?</h3>
+                            <p>No, you pay the same price as booking directly. We earn a small commission from our partners, but this doesn't affect your booking cost.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>What if I need to cancel or modify my booking?</h3>
+                            <p>Cancellation and modification policies depend on the booking platform or property you booked with. Contact them directly for any changes to your reservation.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Can you help with special requests or group bookings?</h3>
+                            <p>For special requests or group bookings, we recommend contacting the property directly or reaching out to us at <a href="mailto:info@hiddeneurope.travel">info@hiddeneurope.travel</a> for assistance.</p>
+                        </div>
+                    </section>
+
+                    <!-- Travel Tips Questions -->
+                    <section id="travel" class="faq-section">
+                        <h2>Travel Tips</h2>
+                        
+                        <div class="faq-item">
+                            <h3>Do I need special travel insurance for remote destinations?</h3>
+                            <p>We highly recommend comprehensive travel insurance for all trips, especially to remote destinations. Some locations may require specific coverage for adventure activities.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Are these destinations safe for solo travelers?</h3>
+                            <p>Most of our destinations are very safe, often safer than major tourist areas due to their remote nature and strong local communities. However, always research current conditions and trust your instincts.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>What should I pack for these unique destinations?</h3>
+                            <p>Packing depends on the specific destination and season. Mountain villages require warm clothing, island destinations need sun protection, and some locations may have limited shopping options.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>How far in advance should I book?</h3>
+                            <p>Popular boutique hotels and unique accommodations often book up months in advance, especially during peak seasons. We recommend booking 3-6 months ahead for the best availability.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Do you offer travel planning services?</h3>
+                            <p>Currently, we provide information and recommendations but don't offer full travel planning services. However, feel free to contact us with specific questions about our featured destinations.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="faq-contact">
+                <h2>Still Have Questions?</h2>
+                <p>Can't find what you're looking for? We're here to help!</p>
+                <a href="/contact" class="cta-button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+  </main>
+</Layout>
+
+<script>
+  // FAQ navigation and section display logic
+  const navLinks = document.querySelectorAll('.faq-nav-link');
+  const sections = document.querySelectorAll('.faq-section');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Remove active class from all links and sections
+      navLinks.forEach(l => l.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+      
+      // Add active class to clicked link and corresponding section
+      link.classList.add('active');
+      const targetId = link.getAttribute('href')?.substring(1);
+      if (targetId) {
+        document.getElementById(targetId)?.classList.add('active');
+      }
+      
+      // Update URL hash without scrolling
+      history.pushState(null, '', link.getAttribute('href'));
+    });
+  });
+  
+  // Handle direct navigation to section via URL hash
+  window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetLink = document.querySelector(`[href="${hash}"]`);
+      targetLink?.click();
+    }
+  });
+</script>

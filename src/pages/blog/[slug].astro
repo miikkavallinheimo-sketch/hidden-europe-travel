@@ -1,0 +1,302 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog');
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Muotoile päivämäärä
+const formattedDate = post.data.publishDate.toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+});
+---
+
+<Layout 
+  title={post.data.title}
+  description={post.data.description}
+>
+  <Navigation />
+  <main>
+    <article class="blog-post">
+      <header class="post-header">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="/blog">Blog</a> / 
+            <a href={`/blog/category/${post.data.category}`}>{post.data.category.replace('-', ' ')}</a>
+          </div>
+          {post.data.heroImage && (
+            <img src={post.data.heroImage} alt={post.data.title} class="hero-image" />
+          )}
+          <div class="header-content">
+            <span class="category">{post.data.category.replace('-', ' ')}</span>
+            <h1>{post.data.title}</h1>
+            <p class="description">{post.data.description}</p>
+            <div class="meta">
+              <span class="author">By {post.data.author}</span>
+              <span class="date">{formattedDate}</span>
+              {post.data.readingTime && <span class="reading-time">{post.data.readingTime} min read</span>}
+            </div>
+            <div class="tags">
+              {post.data.tags.map(tag => <a href={`/blog/tag/${tag}`} class="tag">#{tag}</a>)}
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="post-content">
+        <div class="container">
+          <Content />
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .post-header {
+    background: var(--bg-secondary);
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  :root.dark .breadcrumb a {
+    color: var(--card-text-secondary);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--cal-poly-green);
+  }
+
+  :root.dark .breadcrumb a:hover {
+    color: var(--bright-blue);
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .header-content {
+    text-align: center;
+  }
+
+  .category {
+    display: inline-block;
+    background: var(--cal-poly-green);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: var(--cal-poly-green);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  :root.dark h1 {
+    color: var(--card-title);
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  :root.dark .description {
+    color: var(--card-text);
+  }
+
+  .meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  :root.dark .meta {
+    color: var(--card-text-secondary);
+  }
+
+  .tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  :root.dark .tag {
+    background: var(--card-bg);
+    color: var(--card-text-secondary);
+  }
+
+  .tag:hover {
+    background: var(--bright-blue);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .post-content {
+    padding: 4rem 0;
+    background: var(--bg-primary);
+  }
+
+  .post-content :global(h2) {
+    color: var(--cal-poly-green);
+    font-size: 2rem;
+    margin: 3rem 0 1.5rem 0;
+    font-weight: 500;
+  }
+
+  :root.dark .post-content :global(h2) {
+    color: var(--card-title);
+  }
+
+  .post-content :global(h3) {
+    color: var(--viridian);
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem 0;
+    font-weight: 500;
+  }
+
+  :root.dark .post-content :global(h3) {
+    color: var(--bright-blue);
+  }
+
+  .post-content :global(p) {
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  :root.dark .post-content :global(p) {
+    color: var(--card-text);
+  }
+
+  .post-content :global(ul),
+  .post-content :global(ol) {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    color: var(--text-primary);
+  }
+
+  :root.dark .post-content :global(ul),
+  :root.dark .post-content :global(ol) {
+    color: var(--card-text);
+  }
+
+  .post-content :global(li) {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .post-content :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .post-content :global(blockquote) {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--cal-poly-green);
+    background: var(--bg-secondary);
+    border-radius: 0 12px 12px 0;
+  }
+
+  :root.dark .post-content :global(blockquote) {
+    background: var(--card-bg);
+    border-left-color: var(--bright-blue);
+  }
+
+  .post-content :global(blockquote p) {
+    margin: 0;
+    font-style: italic;
+  }
+
+  .post-content :global(a) {
+    color: var(--bright-blue);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+  }
+
+  .post-content :global(a:hover) {
+    border-bottom-color: var(--bright-blue);
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .hero-image {
+      height: 300px;
+    }
+
+    .meta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .post-content :global(h2) {
+      font-size: 1.75rem;
+    }
+
+    .post-content :global(h3) {
+      font-size: 1.35rem;
+    }
+  }
+</style>

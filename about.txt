@@ -1,0 +1,79 @@
+<!-- About Us Page -->
+<main>
+    <section class="hero-about">
+        <div class="container">
+            <h1>Discover Europe's Best Kept Secrets</h1>
+            <p class="hero-subtitle">Your gateway to authentic European experiences beyond the tourist trail</p>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Our Story</h2>
+                    <p>Hidden Europe was born from a passion for authentic travel and a deep love for Europe's incredible diversity. After years of exploring the continent's most remote corners, discovering villages carved into rocks, staying in lighthouse hotels, and finding medieval towns untouched by mass tourism, we realized these extraordinary places deserved to be shared with fellow travelers seeking genuine experiences.</p>
+
+                    <p>Founded by European travel experts with over 15 years of combined experience, Hidden Europe curates only the most exceptional destinations and accommodations across the continent. We believe that the most memorable travel experiences happen when you venture beyond the guidebooks and discover places where time seems to stand still.</p>
+
+                    <h3>Our Mission</h3>
+                    <p>To connect discerning travelers with Europe's most extraordinary hidden destinations and unique boutique hotels, while preserving the authentic character of these special places through responsible tourism.</p>
+
+                    <h3>What Makes Us Different</h3>
+                    <ul class="features-list">
+                        <li><strong>Expert Curation:</strong> Every destination is personally visited and vetted by our travel experts</li>
+                        <li><strong>Authentic Experiences:</strong> We focus on places that maintain their genuine character and local culture</li>
+                        <li><strong>Sustainable Tourism:</strong> We partner with properties committed to environmental and cultural preservation</li>
+                        <li><strong>Insider Access:</strong> Our local connections provide access to experiences unavailable to typical tourists</li>
+                        <li><strong>Quality Assurance:</strong> We maintain strict standards for accommodation comfort and service</li>
+                    </ul>
+
+                    <h3>Our Values</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <h4>Authenticity</h4>
+                            <p>We celebrate destinations that preserve their genuine heritage and resist over-commercialization.</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Quality</h4>
+                            <p>Every recommendation meets our high standards for comfort, service, and unique character.</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Sustainability</h4>
+                            <p>We promote responsible tourism that benefits local communities and preserves cultural heritage.</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Discovery</h4>
+                            <p>We're passionate about uncovering Europe's hidden gems and sharing them with fellow explorers.</p>
+                        </div>
+                    </div>
+
+                    <h3>Recognition & Expertise</h3>
+                    <p>Our team's expertise has been featured in leading travel publications, and we maintain partnerships with luxury travel associations across Europe. We're committed to staying ahead of emerging destinations while preserving the special character that makes each place unique.</p>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="stats-card">
+                        <h4>By the Numbers</h4>
+                        <div class="stat">
+                            <span class="number">70+</span>
+                            <span class="label">Hidden Destinations</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">45+</span>
+                            <span class="label">Boutique Hotels</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">32</span>
+                            <span class="label">European Countries</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">15+</span>
+                            <span class="label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

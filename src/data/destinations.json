@@ -1,0 +1,2522 @@
+{
+  "hidden_villages": [
+    {
+      "id": "monsanto_portugal",
+      "name": "Monsanto",
+      "country": "Portugal",
+      "region": "Castelo Branco",
+      "category": "Boulder Village",
+      "description": "Village built among and under giant boulders",
+      "unique_features": [
+        "Houses built under and between giant rocks",
+        "Perched on volcanic massif",
+        "Views to Spanish border",
+        "Timeless atmosphere"
+      ],
+      "best_time": "Spring and autumn",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/portugal/monsanto-boulder-village-aerial.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/portugal/monsanto-houses-under-rocks.jpg",
+          "https://images.hiddeneurope.com/destinations/portugal/monsanto-village-panorama.jpg",
+          "https://images.hiddeneurope.com/destinations/portugal/monsanto-stone-architecture.jpg"
+        ]
+      }
+    },
+    {
+      "id": "giethoorn_netherlands",
+      "name": "Giethoorn",
+      "country": "Netherlands",
+      "region": "Overijssel",
+      "category": "Venice of the North",
+      "description": "Car-free village with canals and 180+ bridges",
+      "unique_features": [
+        "No roads at all",
+        "180+ wooden bridges",
+        "Small islands connected by canals",
+        "Boat transportation only"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/netherlands/giethoorn-canal-village-aerial.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/netherlands/giethoorn-wooden-bridge-canal.jpg",
+          "https://images.hiddeneurope.com/destinations/netherlands/giethoorn-boat-transportation.jpg",
+          "https://images.hiddeneurope.com/destinations/netherlands/giethoorn-thatched-roof-houses.jpg"
+        ]
+      }
+    },
+    {
+      "id": "setenil_spain",
+      "name": "Setenil de las Bodegas",
+      "country": "Spain",
+      "region": "Andalusia, Cádiz",
+      "category": "Cave Village",
+      "description": "White village with houses built directly under overhanging rocks",
+      "unique_features": [
+        "Calle Cuevas del Sol (Caves of the Sun)",
+        "Calle Cuevas de la Sombra (Caves of the Shade)",
+        "Cave restaurants and cafés",
+        "3,000 people 'living under a rock'"
+      ],
+      "best_time": "Spring and autumn",
+      "accessibility": "Moderate",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/setenil-cave-houses-street.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/setenil-cuevas-del-sol-street.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/setenil-cave-restaurant-interior.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/setenil-white-houses-rocks.jpg"
+        ]
+      }
+    },
+    {
+      "id": "rothenburg_germany",
+      "name": "Rothenburg ob der Tauber",
+      "country": "Germany",
+      "region": "Bavaria",
+      "category": "Medieval Gem",
+      "description": "Perfectly preserved medieval town that inspired Disney's Pinocchio",
+      "unique_features": [
+        "Complete medieval city walls",
+        "Disney Pinocchio inspiration",
+        "19th century German Romanticism",
+        "Medieval fountains and squares"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate-high",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/germany/rothenburg-medieval-walls.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/germany/rothenburg-market-square.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/rothenburg-christmas-market.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/rothenburg-city-walls.jpg"
+        ]
+      }
+    },
+    {
+      "id": "rupit_spain",
+      "name": "Rupit",
+      "country": "Spain",
+      "region": "Catalonia",
+      "category": "Stone Village",
+      "description": "Medieval village perched on volcanic basalt with hanging bridge",
+      "unique_features": [
+        "Stone houses built on volcanic rock",
+        "Hanging bridge entrance",
+        "Car-free historic center",
+        "Traditional Catalan architecture"
+      ],
+      "best_time": "Spring and autumn",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/rupit-hanging-bridge.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/rupit-stone-houses.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/rupit-volcanic-basalt.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/rupit-medieval-streets.jpg"
+        ]
+      }
+    },
+    {
+      "id": "altea_spain",
+      "name": "Altea",
+      "country": "Spain",
+      "region": "Costa Blanca, Alicante",
+      "category": "White Hilltop Village",
+      "description": "Completely white-painted village on hill with car-free center",
+      "unique_features": [
+        "Entirely white-painted buildings",
+        "Car-free old center",
+        "Hilltop location with sea views",
+        "Boutique shops and cafés"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/altea-white-village-hilltop.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/altea-white-buildings.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/altea-sea-views.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/altea-church-dome.jpg"
+        ]
+      }
+    },
+    {
+      "id": "berat_albania",
+      "name": "Berat",
+      "country": "Albania",
+      "region": "Central Albania",
+      "category": "City of a Thousand Windows",
+      "description": "Ottoman houses climbing fortress-crowned hill",
+      "unique_features": [
+        "Whitewashed Ottoman houses",
+        "2,500-year-old Berat Castle",
+        "UNESCO World Heritage site",
+        "Traditional Albanian architecture"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/albania/berat-thousand-windows.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/albania/berat-ottoman-houses.jpg",
+          "https://images.hiddeneurope.com/destinations/albania/berat-castle.jpg",
+          "https://images.hiddeneurope.com/destinations/albania/berat-unesco-heritage.jpg"
+        ]
+      }
+    },
+    {
+      "id": "swinbrook_england",
+      "name": "Swinbrook",
+      "country": "England",
+      "region": "Cotswolds, Oxfordshire",
+      "category": "Quintessential English Village",
+      "description": "English village pared down to its essence in honey-stone Cotswolds",
+      "unique_features": [
+        "Honey-colored Cotswold stone",
+        "River Windrush location",
+        "Traditional English pub",
+        "Unspoiled countryside setting"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/england/swinbrook-cotswolds-stone.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/england/swinbrook-river-windrush.jpg",
+          "https://images.hiddeneurope.com/destinations/england/swinbrook-traditional-pub.jpg",
+          "https://images.hiddeneurope.com/destinations/england/swinbrook-countryside.jpg"
+        ]
+      }
+    },
+    {
+      "id": "erice_italy",
+      "name": "Erice",
+      "country": "Italy",
+      "region": "Sicily",
+      "category": "Mountaintop Medieval Village",
+      "description": "Medieval village often lost in clouds, known as 'Kiss of Venus'",
+      "unique_features": [
+        "Cable car access only",
+        "Medieval fortified walls",
+        "Hand-painted ceramics workshops",
+        "Venus temple ruins"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Moderate (cable car)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/erice-mountaintop-medieval.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/erice-cable-car.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/erice-medieval-walls.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/erice-venus-temple.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lofou_cyprus",
+      "name": "Lofou",
+      "country": "Cyprus",
+      "region": "Troodos Mountains",
+      "category": "Traditional Mountain Village",
+      "description": "Stone-built village preserving traditional Cypriot way of life",
+      "unique_features": [
+        "Traditional stone architecture",
+        "Mountain village atmosphere",
+        "Spectacular valley views",
+        "Authentic Cypriot culture"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/cyprus/lofou-stone-village.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/cyprus/lofou-traditional-architecture.jpg",
+          "https://images.hiddeneurope.com/destinations/cyprus/lofou-valley-views.jpg",
+          "https://images.hiddeneurope.com/destinations/cyprus/lofou-cypriot-culture.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hallstatt_austria",
+      "name": "Hallstatt",
+      "country": "Austria",
+      "region": "Salzkammergut",
+      "category": "Alpine Lake Village",
+      "description": "Postcard-perfect village between lake and mountains",
+      "unique_features": [
+        "4,000-year-old salt mining heritage",
+        "Bone house with painted skulls",
+        "Hallstätter See lakeside setting",
+        "UNESCO World Heritage landscape"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/austria/hallstatt-alpine-lake-village.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/austria/hallstatt-salt-mining.jpg",
+          "https://images.hiddeneurope.com/destinations/austria/hallstatt-bone-house.jpg",
+          "https://images.hiddeneurope.com/destinations/austria/hallstatt-lakeside.jpg"
+        ]
+      }
+    },
+    {
+      "id": "zermatt_switzerland",
+      "name": "Zermatt",
+      "country": "Switzerland",
+      "region": "Valais",
+      "category": "Car-Free Alpine Village",
+      "description": "Car-free village beneath the iconic Matterhorn peak",
+      "unique_features": [
+        "Completely car-free village",
+        "Matterhorn views from village",
+        "Electric taxis and horse carriages",
+        "Gornergrat railway to 3,089m"
+      ],
+      "best_time": "December-April (skiing), June-September (hiking)",
+      "accessibility": "Easy (train only)",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/switzerland/zermatt-car-free-matterhorn.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/switzerland/zermatt-matterhorn-village.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/zermatt-electric-taxis.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/zermatt-gornergrat-railway.jpg"
+        ]
+      }
+    }
+  ],
+  "remote_islands": [
+    {
+      "id": "halki_greece",
+      "name": "Halki",
+      "country": "Greece",
+      "region": "Dodecanese Islands",
+      "category": "Tranquil Island",
+      "description": "Small island with crystal-clear waters and neoclassical architecture",
+      "unique_features": [
+        "Agios Nikolaos Church with bell tower",
+        "Kania Beach",
+        "Fresh seafood specialties",
+        "Peaceful atmosphere"
+      ],
+      "best_time": "May-October",
+      "accessibility": "Difficult (ferry)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/greece/halki-island-harbor-panorama.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/greece/halki-neoclassical-architecture.jpg",
+          "https://images.hiddeneurope.com/destinations/greece/halki-crystal-clear-waters.jpg",
+          "https://images.hiddeneurope.com/destinations/greece/halki-agios-nikolaos-church.jpg"
+        ]
+      }
+    },
+    {
+      "id": "korcula_croatia",
+      "name": "Korčula",
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "category": "Historic Island",
+      "description": "Croatia's sixth-largest island without Hvar's crowds",
+      "unique_features": [
+        "15th-century walls",
+        "Medieval stone buildings",
+        "Massimos cocktail bar in fortress tower",
+        "Marco Polo's birthplace"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Moderate",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/croatia/korcula-medieval-town-aerial.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/croatia/korcula-fortress-walls-tower.jpg",
+          "https://images.hiddeneurope.com/destinations/croatia/korcula-stone-streets-sunset.jpg",
+          "https://images.hiddeneurope.com/destinations/croatia/korcula-adriatic-sea-view.jpg"
+        ]
+      }
+    },
+    {
+      "id": "corvo_azores",
+      "name": "Corvo",
+      "country": "Portugal",
+      "region": "Azores",
+      "category": "Volcanic Island",
+      "description": "Smallest Azores island with Caldeirão crater",
+      "unique_features": [
+        "Vila do Corvo - only village",
+        "Caldeirão volcanic crater with lakes",
+        "Traditional Azorean life",
+        "Bird migration route"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Difficult (small airport)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/portugal/corvo-caldeirao-crater-lakes.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/portugal/corvo-vila-village-aerial.jpg",
+          "https://images.hiddeneurope.com/destinations/portugal/corvo-volcanic-landscape.jpg",
+          "https://images.hiddeneurope.com/destinations/portugal/corvo-bird-migration-cliffs.jpg"
+        ]
+      }
+    },
+    {
+      "id": "vestmannaeyjar_iceland",
+      "name": "Vestmannaeyjar",
+      "country": "Iceland",
+      "region": "South Coast",
+      "category": "Volcanic Archipelago",
+      "description": "4,000-person archipelago, Iceland's best-kept secret",
+      "unique_features": [
+        "Elephant Rock",
+        "Eldfell volcano",
+        "Eldheimar museum",
+        "Slippurin fine dining restaurant"
+      ],
+      "best_time": "June-August (puffin season)",
+      "accessibility": "Moderate (ferry)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/iceland/vestmannaeyjar-elephant-rock-formation.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/iceland/vestmannaeyjar-puffins-cliffs.jpg",
+          "https://images.hiddeneurope.com/destinations/iceland/vestmannaeyjar-eldfell-volcano.jpg",
+          "https://images.hiddeneurope.com/destinations/iceland/vestmannaeyjar-harbor-town.jpg"
+        ]
+      }
+    },
+    {
+      "id": "aeolian_islands_italy",
+      "name": "Aeolian Islands",
+      "country": "Italy",
+      "region": "Sicily North",
+      "category": "Volcanic Archipelago",
+      "description": "Seven volcanic islands north of Sicily, perfect for island hopping",
+      "unique_features": [
+        "Lipari - largest island with pumice beaches",
+        "Stromboli - active volcano",
+        "Vulcano - mud baths and thermal springs",
+        "UNESCO World Heritage site"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Moderate (ferry from Milazzo)",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/aeolian-islands-volcanic-archipelago.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/aeolian-stromboli-active-volcano.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/aeolian-vulcano-thermal-springs.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/aeolian-lipari-pumice-beaches.jpg"
+        ]
+      }
+    },
+    {
+      "id": "manshausen_norway",
+      "name": "Manshausen",
+      "country": "Norway",
+      "region": "Grøtøya Strait",
+      "category": "Glass Cabin Island",
+      "description": "Private island with glass cabins for northern lights viewing",
+      "unique_features": [
+        "Glass cabins on fjord coastline",
+        "Northern lights viewing",
+        "Pristine Arctic wilderness",
+        "Boat access to mainland restaurants"
+      ],
+      "best_time": "September-April (northern lights)",
+      "accessibility": "Difficult (boat access)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/norway/manshausen-glass-cabins-fjord.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/norway/manshausen-northern-lights.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/manshausen-arctic-wilderness.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/manshausen-boat-access.jpg"
+        ]
+      }
+    },
+    {
+      "id": "hvar_croatia",
+      "name": "Hvar",
+      "country": "Croatia",
+      "region": "Dalmatia",
+      "category": "Lavender Island",
+      "description": "Sunniest Croatian island famous for lavender fields and nightlife",
+      "unique_features": [
+        "Purple lavender fields",
+        "Venetian architecture in Hvar Town",
+        "Hilltop Španišla fortress",
+        "World-renowned beach clubs"
+      ],
+      "best_time": "June-September",
+      "accessibility": "Easy (regular ferries)",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/croatia/hvar-lavender-island.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/croatia/hvar-lavender-fields.jpg",
+          "https://images.hiddeneurope.com/destinations/croatia/hvar-venetian-architecture.jpg",
+          "https://images.hiddeneurope.com/destinations/croatia/hvar-fortress-sunset.jpg"
+        ]
+      }
+    },
+    {
+      "id": "gotland_sweden",
+      "name": "Gotland",
+      "country": "Sweden",
+      "region": "Baltic Sea",
+      "category": "Medieval Island",
+      "description": "Sweden's largest island with medieval Visby and unique limestone formations",
+      "unique_features": [
+        "UNESCO Visby medieval city walls",
+        "Limestone sea stacks (raukar)",
+        "Annual Medieval Week festival",
+        "Långe Erik lighthouse"
+      ],
+      "best_time": "June-August",
+      "accessibility": "Easy (ferry from mainland)",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/sweden/gotland-medieval-island.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/sweden/gotland-visby-medieval-walls.jpg",
+          "https://images.hiddeneurope.com/destinations/sweden/gotland-limestone-stacks.jpg",
+          "https://images.hiddeneurope.com/destinations/sweden/gotland-medieval-week.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sark_channel_islands",
+      "name": "Sark",
+      "country": "Channel Islands (UK)",
+      "region": "English Channel",
+      "category": "Car-Free Island",
+      "description": "Last feudal territory in Europe with no cars or streetlights",
+      "unique_features": [
+        "No cars, tractors, or streetlights",
+        "Horse-drawn carriages and bicycles only",
+        "Dark Sky sanctuary for stargazing",
+        "Dramatic cliff-top walking paths"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Moderate (ferry from Guernsey)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/channelislands/sark-car-free-island.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/channelislands/sark-horse-carriages.jpg",
+          "https://images.hiddeneurope.com/destinations/channelislands/sark-dark-sky-stars.jpg",
+          "https://images.hiddeneurope.com/destinations/channelislands/sark-cliff-paths.jpg"
+        ]
+      }
+    },
+    {
+      "id": "faroe_islands",
+      "name": "Faroe Islands",
+      "country": "Faroe Islands (Denmark)",
+      "region": "North Atlantic",
+      "category": "Nordic Island Archipelago",
+      "description": "18 remote islands with dramatic landscapes and Nordic culture",
+      "unique_features": [
+        "Grass-roof turf houses",
+        "Múlafossur waterfall into ocean",
+        "Traditional Nordic village of Gásadalur",
+        "Hiking to Kallur lighthouse"
+      ],
+      "best_time": "June-September",
+      "accessibility": "Moderate (flights from Copenhagen)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/faroeislands/faroe-islands-nordic-archipelago.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/faroeislands/faroe-grass-roof-houses.jpg",
+          "https://images.hiddeneurope.com/destinations/faroeislands/faroe-mulafossur-waterfall.jpg",
+          "https://images.hiddeneurope.com/destinations/faroeislands/faroe-gasadalur-village.jpg"
+        ]
+      }
+    }
+  ],
+  "underground_wonders": [
+    {
+      "id": "drach_caves_mallorca",
+      "name": "Drach Caves",
+      "country": "Spain",
+      "region": "Mallorca, Porto Cristo",
+      "category": "Underground Lake",
+      "description": "One of the world's largest underground lakes",
+      "unique_features": [
+        "Lake Martel with concerts",
+        "25 meters underground",
+        "1000+ meters of cave exploration",
+        "Boat trips inside cave"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Moderate",
+      "crowd_level": "Moderate-high",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/drach-caves-underground-lake.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/drach-caves-lake-martel-concert.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/drach-caves-boat-trip.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/drach-caves-underground-exploration.jpg"
+        ]
+      }
+    },
+    {
+      "id": "fingal_cave_scotland",
+      "name": "Fingal's Cave",
+      "country": "Scotland",
+      "region": "Isle of Staffa",
+      "category": "Sea Cave",
+      "description": "Unique hexagonal basalt columns forming a cave",
+      "unique_features": [
+        "Hexagonal basalt pillars",
+        "Boat trips to cave",
+        "Featured in films and literature",
+        "Natural cathedral acoustics"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Difficult (boat trip)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/scotland/fingal-cave-basalt-columns.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/scotland/fingal-cave-hexagonal-pillars.jpg",
+          "https://images.hiddeneurope.com/destinations/scotland/fingal-cave-boat-trip.jpg",
+          "https://images.hiddeneurope.com/destinations/scotland/fingal-cave-natural-cathedral.jpg"
+        ]
+      }
+    },
+    {
+      "id": "berchtesgaden_salt_mine",
+      "name": "Berchtesgaden Salt Mine",
+      "country": "Germany",
+      "region": "Bavarian Alps",
+      "category": "Historic Mine",
+      "description": "Over 500-year-old working salt mine",
+      "unique_features": [
+        "650 meters underground",
+        "Historic mining train",
+        "Underground saline lake Spiegelsee",
+        "Slides into underground chambers"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/germany/berchtesgaden-salt-mine.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/germany/berchtesgaden-mining-train.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/berchtesgaden-underground-lake.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/berchtesgaden-salt-slides.jpg"
+        ]
+      }
+    },
+    {
+      "id": "skocjan_caves_slovenia",
+      "name": "Škocjan Caves",
+      "country": "Slovenia",
+      "region": "Škocjan Caves Regional Park",
+      "category": "Underground Grand Canyon",
+      "description": "UNESCO World Heritage underground river canyon system",
+      "unique_features": [
+        "Reka River underground gorge",
+        "World's largest underground canyon",
+        "UNESCO World Heritage site",
+        "4-mile underground route with waterfalls"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Moderate",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/slovenia/skocjan-caves-underground-canyon.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/slovenia/skocjan-caves-reka-river-gorge.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/skocjan-caves-waterfalls.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/skocjan-caves-unesco-heritage.jpg"
+        ]
+      }
+    },
+    {
+      "id": "eisriesenwelt_austria",
+      "name": "Eisriesenwelt Ice Cave",
+      "country": "Austria",
+      "region": "Salzburg, Werfen",
+      "category": "World's Largest Ice Cave",
+      "description": "42-kilometer ice cave system in the Austrian Alps",
+      "unique_features": [
+        "World's largest ice cave",
+        "Natural ice formations and sculptures",
+        "Cable car and mountain hike access",
+        "Ice palaces and frozen waterfalls"
+      ],
+      "best_time": "May-October",
+      "accessibility": "Moderate (cable car + hike)",
+      "crowd_level": "Moderate-high",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/austria/eisriesenwelt-ice-cave-formations.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/austria/eisriesenwelt-ice-sculptures.jpg",
+          "https://images.hiddeneurope.com/destinations/austria/eisriesenwelt-ice-palace.jpg",
+          "https://images.hiddeneurope.com/destinations/austria/eisriesenwelt-frozen-waterfalls.jpg"
+        ]
+      }
+    },
+    {
+      "id": "postojna_cave_slovenia",
+      "name": "Postojna Cave",
+      "country": "Slovenia",
+      "region": "Karst Region",
+      "category": "Underground Train Cave",
+      "description": "Slovenia's most visited cave with underground train",
+      "unique_features": [
+        "24-kilometer cave system",
+        "Underground train journey",
+        "Concert Hall with perfect acoustics",
+        "Endangered olm (human fish) habitat"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy (train access)",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/slovenia/postojna-cave-underground-train.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/slovenia/postojna-cave-train-journey.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/postojna-cave-concert-hall.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/postojna-cave-olm-habitat.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lascaux_cave_france",
+      "name": "Lascaux Cave",
+      "country": "France",
+      "region": "Dordogne, Périgord",
+      "category": "Paleolithic Art Cave",
+      "description": "UNESCO cave complex with 17,000-year-old cave paintings",
+      "unique_features": [
+        "17,000-year-old cave paintings",
+        "Lascaux IV digital recreation",
+        "Hall of Bulls masterpiece",
+        "International Centre for Parietal Art"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy (replica caves)",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/france/lascaux-cave-paleolithic-art.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/france/lascaux-cave-paintings.jpg",
+          "https://images.hiddeneurope.com/destinations/france/lascaux-iv-recreation.jpg",
+          "https://images.hiddeneurope.com/destinations/france/lascaux-hall-bulls.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mammoth_cave_hungary",
+      "name": "Aggtelek Caves",
+      "country": "Hungary",
+      "region": "Aggtelek National Park",
+      "category": "UNESCO Karst Cave System",
+      "description": "UNESCO World Heritage cave system with stunning formations",
+      "unique_features": [
+        "Baradla Cave - 25km long system",
+        "UNESCO World Heritage karst landscape",
+        "Stalactite and stalagmite formations",
+        "Concert Hall with acoustics"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy-moderate",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/hungary/aggtelek-caves-unesco-karst.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/hungary/aggtelek-baradla-cave.jpg",
+          "https://images.hiddeneurope.com/destinations/hungary/aggtelek-stalactite-formations.jpg",
+          "https://images.hiddeneurope.com/destinations/hungary/aggtelek-concert-hall.jpg"
+        ]
+      }
+    }
+  ],
+  "arctic_wonders": [
+    {
+      "id": "svalbard_norway",
+      "name": "Svalbard",
+      "country": "Norway",
+      "region": "Arctic Archipelago",
+      "category": "Extreme Nature",
+      "description": "Halfway between Norway and North Pole, more polar bears than people",
+      "unique_features": [
+        "Longyearbyen - world's northernmost town",
+        "Glaciers and fjords",
+        "Dog sledding adventures",
+        "Northern lights"
+      ],
+      "best_time": "December-April (northern lights), June-August (midnight sun)",
+      "accessibility": "Difficult (flights)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/norway/svalbard-polar-bears-arctic.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/norway/svalbard-longyearbyen-northernmost.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/svalbard-glaciers-fjords.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/svalbard-dog-sledding.jpg"
+        ]
+      }
+    },
+    {
+      "id": "alta_norway",
+      "name": "Alta",
+      "country": "Norway",
+      "region": "Finnmark",
+      "category": "Arctic City",
+      "description": "City of Northern Lights with UNESCO rock carvings",
+      "unique_features": [
+        "UNESCO Alta Rock Carvings",
+        "First northern lights observatory",
+        "Alta Canyon",
+        "Sámi culture immersion"
+      ],
+      "best_time": "September-March (northern lights)",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/norway/alta-northern-lights-observatory.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/norway/alta-rock-carvings-unesco.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/alta-canyon.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/alta-sami-culture.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lulea_sweden",
+      "name": "Luleå",
+      "country": "Sweden",
+      "region": "Swedish Lapland",
+      "category": "Arctic Coastal City",
+      "description": "Coastal city with frozen sea ice roads in winter",
+      "unique_features": [
+        "Ice roads across frozen sea",
+        "Midnight sun in summer",
+        "Traditional Swedish fika culture",
+        "Snowmobiling and ice skating"
+      ],
+      "best_time": "December-March (ice activities), June-August (midnight sun)",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/sweden/lulea-ice-roads-frozen-sea.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/sweden/lulea-midnight-sun.jpg",
+          "https://images.hiddeneurope.com/destinations/sweden/lulea-snowmobiling.jpg",
+          "https://images.hiddeneurope.com/destinations/sweden/lulea-ice-skating.jpg"
+        ]
+      }
+    },
+    {
+      "id": "rovaniemi_finland",
+      "name": "Rovaniemi",
+      "country": "Finland",
+      "region": "Finnish Lapland",
+      "category": "Official Santa Claus Village",
+      "description": "Capital of Finnish Lapland and official hometown of Santa Claus",
+      "unique_features": [
+        "Official Santa Claus Village",
+        "Arctic Circle crossing ceremony",
+        "Reindeer farms and husky sledding",
+        "Northern lights viewing"
+      ],
+      "best_time": "December-March (winter activities), June-August (midnight sun)",
+      "accessibility": "Easy (airport)",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/finland/rovaniemi-santa-claus-village.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/finland/rovaniemi-arctic-circle.jpg",
+          "https://images.hiddeneurope.com/destinations/finland/rovaniemi-reindeer-farms.jpg",
+          "https://images.hiddeneurope.com/destinations/finland/rovaniemi-northern-lights.jpg"
+        ]
+      }
+    },
+    {
+      "id": "tromso_norway",
+      "name": "Tromsø",
+      "country": "Norway",
+      "region": "Northern Norway",
+      "category": "Northern Lights Capital",
+      "description": "Gateway to the Arctic and capital of Northern Lights",
+      "unique_features": [
+        "World's northernmost university",
+        "Arctic Cathedral with stunning glass",
+        "Cable car to Mount Storsteinen",
+        "Prime northern lights viewing location"
+      ],
+      "best_time": "October-March (northern lights), June-August (midnight sun)",
+      "accessibility": "Easy (airport)",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/norway/tromso-northern-lights-capital.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/norway/tromso-arctic-cathedral.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/tromso-cable-car-mountain.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/tromso-aurora-viewing.jpg"
+        ]
+      }
+    },
+    {
+      "id": "kirkenes_norway",
+      "name": "Kirkenes",
+      "country": "Norway",
+      "region": "Finnmark, Norwegian-Russian Border",
+      "category": "Borderland Arctic Town",
+      "description": "Norway's easternmost town bordering Russia and Finland",
+      "unique_features": [
+        "SnowHotel with ice bar",
+        "King Crab safari expeditions",
+        "Russian border proximity",
+        "WWII Andersgrotta bomb shelter"
+      ],
+      "best_time": "January-March (snow activities), June-August (midnight sun)",
+      "accessibility": "Moderate (flights)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/norway/kirkenes-borderland-arctic.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/norway/kirkenes-snowhotel.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/kirkenes-king-crab-safari.jpg",
+          "https://images.hiddeneurope.com/destinations/norway/kirkenes-bomb-shelter.jpg"
+        ]
+      }
+    },
+    {
+      "id": "inari_finland",
+      "name": "Inari",
+      "country": "Finland",
+      "region": "Finnish Lapland",
+      "category": "Sámi Cultural Center",
+      "description": "Heart of Sámi culture with traditional reindeer herding",
+      "unique_features": [
+        "Siida Sámi Museum and Nature Centre",
+        "Traditional Sámi reindeer herding",
+        "Lake Inari - Finland's third largest lake",
+        "Sámi Parliament building"
+      ],
+      "best_time": "September-March (northern lights), June-August (midnight sun)",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/finland/inari-sami-cultural-center.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/finland/inari-siida-museum.jpg",
+          "https://images.hiddeneurope.com/destinations/finland/inari-reindeer-herding.jpg",
+          "https://images.hiddeneurope.com/destinations/finland/inari-lake-largest.jpg"
+        ]
+      }
+    },
+    {
+      "id": "ilulissat_greenland",
+      "name": "Ilulissat",
+      "country": "Greenland (Denmark)",
+      "region": "West Greenland",
+      "category": "Iceberg Capital",
+      "description": "UNESCO World Heritage site with massive icebergs",
+      "unique_features": [
+        "Ilulissat Icefjord UNESCO site",
+        "Sermeq Kujalleq glacier",
+        "Dog sledding on sea ice",
+        "World's most productive glacier outside Antarctica"
+      ],
+      "best_time": "June-September (hiking), February-April (dog sledding)",
+      "accessibility": "Difficult (flights from Denmark)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/greenland/ilulissat-iceberg-capital.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/greenland/ilulissat-icefjord-unesco.jpg",
+          "https://images.hiddeneurope.com/destinations/greenland/ilulissat-sermeq-glacier.jpg",
+          "https://images.hiddeneurope.com/destinations/greenland/ilulissat-dog-sledding.jpg"
+        ]
+      }
+    }
+  ],
+  "medieval_towns": [
+    {
+      "id": "cesky_krumlov_czech",
+      "name": "Český Krumlov",
+      "country": "Czech Republic",
+      "region": "South Bohemia",
+      "category": "Medieval Town",
+      "description": "UNESCO town with winding streets and castle",
+      "unique_features": [
+        "1992 UNESCO listing",
+        "Gothic and Renaissance architecture",
+        "Vltava River meanders",
+        "Baroque theater"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Moderate",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/czechrepublic/cesky-krumlov-unesco-medieval.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/czechrepublic/cesky-krumlov-gothic-renaissance.jpg",
+          "https://images.hiddeneurope.com/destinations/czechrepublic/cesky-krumlov-vltava-river.jpg",
+          "https://images.hiddeneurope.com/destinations/czechrepublic/cesky-krumlov-baroque-theater.jpg"
+        ]
+      }
+    },
+    {
+      "id": "albarracin_spain",
+      "name": "Albarracín",
+      "country": "Spain",
+      "region": "Aragon, Teruel",
+      "category": "Medieval Village",
+      "description": "Pink-hued buildings and narrow winding streets",
+      "unique_features": [
+        "Pink-colored walls",
+        "Medieval city walls",
+        "Moorish heritage",
+        "Dramatic hilltop location"
+      ],
+      "best_time": "Spring and autumn",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/albarracin-pink-medieval-village.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/albarracin-pink-colored-walls.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/albarracin-medieval-city-walls.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/albarracin-moorish-heritage.jpg"
+        ]
+      }
+    },
+    {
+      "id": "san_marino",
+      "name": "San Marino",
+      "country": "San Marino",
+      "region": "Microstate",
+      "category": "Historic State",
+      "description": "World's fifth-smallest country in heart of Italy",
+      "unique_features": [
+        "Three towers on Mount Titan",
+        "Europe's oldest republic (301 AD)",
+        "Palazzo Pubblico",
+        "Changing of the Guard ceremony"
+      ],
+      "best_time": "April-June, September-October",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/sanmarino/san-marino-three-towers.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/sanmarino/san-marino-mount-titan.jpg",
+          "https://images.hiddeneurope.com/destinations/sanmarino/san-marino-palazzo-pubblico.jpg",
+          "https://images.hiddeneurope.com/destinations/sanmarino/san-marino-changing-guard.jpg"
+        ]
+      }
+    },
+    {
+      "id": "blagaj_bosnia",
+      "name": "Blagaj",
+      "country": "Bosnia and Herzegovina",
+      "region": "Herzegovina",
+      "category": "Ottoman Historic Town",
+      "description": "Tekija monastery built into cliff beside emerald river source",
+      "unique_features": [
+        "16th-century Tekija monastery",
+        "Buna River spring",
+        "Cliff-built architecture",
+        "Ottoman heritage"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/bosnia/blagaj-tekija-monastery-cliff.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/bosnia/blagaj-buna-river-spring.jpg",
+          "https://images.hiddeneurope.com/destinations/bosnia/blagaj-cliff-architecture.jpg",
+          "https://images.hiddeneurope.com/destinations/bosnia/blagaj-ottoman-heritage.jpg"
+        ]
+      }
+    },
+    {
+      "id": "carcassonne_france",
+      "name": "Carcassonne",
+      "country": "France",
+      "region": "Occitanie, Aude",
+      "category": "Fortified City",
+      "description": "UNESCO fortified city with complete medieval walls",
+      "unique_features": [
+        "Complete double-walled fortifications",
+        "52 towers and barbicans",
+        "Basilica of Saint-Nazaire",
+        "Medieval streets and atmosphere"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/france/carcassonne-fortified-city.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/france/carcassonne-double-walls.jpg",
+          "https://images.hiddeneurope.com/destinations/france/carcassonne-52-towers.jpg",
+          "https://images.hiddeneurope.com/destinations/france/carcassonne-medieval-streets.jpg"
+        ]
+      }
+    },
+    {
+      "id": "tallinn_estonia",
+      "name": "Tallinn Old Town",
+      "country": "Estonia",
+      "region": "Harju County",
+      "category": "Hanseatic Medieval City",
+      "description": "UNESCO medieval Old Town with complete city walls",
+      "unique_features": [
+        "Complete medieval city walls",
+        "Toompea Castle on limestone hill",
+        "Gothic spires and cobblestone streets",
+        "Alexander Nevsky Cathedral"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/estonia/tallinn-hanseatic-medieval.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/estonia/tallinn-medieval-walls.jpg",
+          "https://images.hiddeneurope.com/destinations/estonia/tallinn-toompea-castle.jpg",
+          "https://images.hiddeneurope.com/destinations/estonia/tallinn-gothic-spires.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bruges_belgium",
+      "name": "Bruges",
+      "country": "Belgium",
+      "region": "West Flanders",
+      "category": "Venice of the North",
+      "description": "UNESCO medieval city with canals and medieval architecture",
+      "unique_features": [
+        "Medieval canals and bridges",
+        "Belfry tower with carillon",
+        "Chocolate and lace traditions",
+        "Preserved medieval market square"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/belgium/bruges-venice-north.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/belgium/bruges-medieval-canals.jpg",
+          "https://images.hiddeneurope.com/destinations/belgium/bruges-belfry-tower.jpg",
+          "https://images.hiddeneurope.com/destinations/belgium/bruges-market-square.jpg"
+        ]
+      }
+    },
+    {
+      "id": "siena_italy",
+      "name": "Siena",
+      "country": "Italy",
+      "region": "Tuscany",
+      "category": "Gothic Medieval City",
+      "description": "UNESCO medieval city famous for Il Palio horse race",
+      "unique_features": [
+        "Shell-shaped Piazza del Campo",
+        "Il Palio horse race twice yearly",
+        "Gothic Siena Cathedral",
+        "Preserved medieval atmosphere"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate-high",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/siena-gothic-medieval.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/siena-piazza-campo.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/siena-palio-horse-race.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/siena-gothic-cathedral.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mostar_bosnia",
+      "name": "Mostar",
+      "country": "Bosnia and Herzegovina",
+      "region": "Herzegovina",
+      "category": "Ottoman Bridge Town",
+      "description": "UNESCO town famous for its iconic Ottoman bridge",
+      "unique_features": [
+        "Stari Most (Old Bridge) UNESCO site",
+        "Ottoman Turkish architecture",
+        "Traditional bridge diving",
+        "Kujundžiluk bazaar"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/bosnia/mostar-ottoman-bridge.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/bosnia/mostar-stari-most.jpg",
+          "https://images.hiddeneurope.com/destinations/bosnia/mostar-bridge-diving.jpg",
+          "https://images.hiddeneurope.com/destinations/bosnia/mostar-bazaar.jpg"
+        ]
+      }
+    },
+    {
+      "id": "toledo_spain",
+      "name": "Toledo",
+      "country": "Spain",
+      "region": "Castile-La Mancha",
+      "category": "City of Three Cultures",
+      "description": "UNESCO city where Christian, Jewish, and Muslim cultures coexisted",
+      "unique_features": [
+        "Three cultures coexistence",
+        "El Greco's artistic legacy",
+        "Toledo Cathedral Gothic masterpiece",
+        "Traditional sword-making crafts"
+      ],
+      "best_time": "April-June, September-October",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate-high",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/toledo-three-cultures.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/toledo-el-greco.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/toledo-gothic-cathedral.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/toledo-sword-making.jpg"
+        ]
+      }
+    }
+  ],
+  "coastal_gems": [
+    {
+      "id": "bosa_italy",
+      "name": "Bosa",
+      "country": "Italy",
+      "region": "Sardinia",
+      "category": "River Town",
+      "description": "Colorful houses along Temo River with medieval castle",
+      "unique_features": [
+        "Malaspina Castle",
+        "Colorful riverside houses",
+        "Bosa Marina beach",
+        "Traditional Sardinian cuisine"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/bosa-colorful-houses-river.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/bosa-malaspina-castle.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/bosa-marina-beach.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/bosa-sardinian-cuisine.jpg"
+        ]
+      }
+    },
+    {
+      "id": "terracina_italy",
+      "name": "Terracina",
+      "country": "Italy",
+      "region": "Lazio",
+      "category": "Historic Coastal Town",
+      "description": "On original Via Appia, beneath Jupiter's temple",
+      "unique_features": [
+        "Spiaggia di Levante beach",
+        "Ancient Roman Temple of Jupiter",
+        "Medieval buildings",
+        "Ponza and Ventotene islands nearby"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/terracina-via-appia-coastal.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/terracina-spiaggia-levante.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/terracina-jupiter-temple.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/terracina-medieval-buildings.jpg"
+        ]
+      }
+    },
+    {
+      "id": "tenby_wales",
+      "name": "Tenby",
+      "country": "Wales",
+      "region": "Pembrokeshire",
+      "category": "Medieval Coastal Town",
+      "description": "Pastel-colored houses and medieval town walls",
+      "unique_features": [
+        "Tudor Merchant's House",
+        "Castle Beach",
+        "Caldey Island boat trips",
+        "Medieval town walls"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/wales/tenby-pastel-houses-medieval.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/wales/tenby-tudor-merchant-house.jpg",
+          "https://images.hiddeneurope.com/destinations/wales/tenby-castle-beach.jpg",
+          "https://images.hiddeneurope.com/destinations/wales/tenby-caldey-island.jpg"
+        ]
+      }
+    },
+    {
+      "id": "perast_montenegro",
+      "name": "Perast",
+      "country": "Montenegro",
+      "region": "Bay of Kotor",
+      "category": "Baroque Coastal Village",
+      "description": "Small coastal village with baroque palaces near Kotor",
+      "unique_features": [
+        "Our Lady of the Rocks island",
+        "17th-18th century palaces",
+        "Car-free waterfront",
+        "Traditional stone architecture"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/montenegro/perast-baroque-village-kotor.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/montenegro/perast-lady-rocks-island.jpg",
+          "https://images.hiddeneurope.com/destinations/montenegro/perast-baroque-palaces.jpg",
+          "https://images.hiddeneurope.com/destinations/montenegro/perast-stone-architecture.jpg"
+        ]
+      }
+    },
+    {
+      "id": "cascais_portugal",
+      "name": "Cascais",
+      "country": "Portugal",
+      "region": "Portuguese Riviera",
+      "category": "Former Fishing Village",
+      "description": "Elegant seaside town that was once a simple fishing village",
+      "unique_features": [
+        "Beautiful beaches and coastal walks",
+        "Traditional Portuguese tiles",
+        "World-class spas and wellness",
+        "Inventive fusion cuisine"
+      ],
+      "best_time": "May-October",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/portugal/cascais-portuguese-riviera.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/portugal/cascais-coastal-walks.jpg",
+          "https://images.hiddeneurope.com/destinations/portugal/cascais-portuguese-tiles.jpg",
+          "https://images.hiddeneurope.com/destinations/portugal/cascais-fusion-cuisine.jpg"
+        ]
+      }
+    },
+    {
+      "id": "nafplio_greece",
+      "name": "Nafplio",
+      "country": "Greece",
+      "region": "Peloponnese",
+      "category": "First Capital of Greece",
+      "description": "Elegant town with Venetian and Ottoman architecture",
+      "unique_features": [
+        "Palamidi Fortress",
+        "Bourtzi Castle on water",
+        "Neoclassical architecture",
+        "Charming old town streets"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/greece/nafplio-first-capital-greece.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/greece/nafplio-palamidi-fortress.jpg",
+          "https://images.hiddeneurope.com/destinations/greece/nafplio-bourtzi-castle.jpg",
+          "https://images.hiddeneurope.com/destinations/greece/nafplio-neoclassical-architecture.jpg"
+        ]
+      }
+    },
+    {
+      "id": "cartagena_spain",
+      "name": "Cartagena",
+      "country": "Spain",
+      "region": "Murcia",
+      "category": "Ancient Port City",
+      "description": "UNESCO heritage city with 3,000 years of history",
+      "unique_features": [
+        "Roman Theatre Museum",
+        "70+ beaches and coves",
+        "Carthaginian and Roman ruins",
+        "Art Nouveau architecture"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/cartagena-ancient-port-city.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/cartagena-roman-theatre.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/cartagena-beaches-coves.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/cartagena-art-nouveau.jpg"
+        ]
+      }
+    },
+    {
+      "id": "vik_iceland",
+      "name": "Vík í Mýrdal",
+      "country": "Iceland",
+      "region": "South Coast",
+      "category": "Black Sand Village",
+      "description": "Small village famous for dramatic black sand beaches",
+      "unique_features": [
+        "Reynisfjara black sand beach",
+        "Reynisdrangar sea stacks",
+        "Vík í Mýrdal Church on hill",
+        "Dyrhólaey promontory views"
+      ],
+      "best_time": "June-August",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/iceland/vik-black-sand-beach.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/iceland/vik-reynisfjara-beach.jpg",
+          "https://images.hiddeneurope.com/destinations/iceland/vik-reynisdrangar-stacks.jpg",
+          "https://images.hiddeneurope.com/destinations/iceland/vik-church-hill.jpg"
+        ]
+      }
+    },
+    {
+      "id": "polignano_a_mare_italy",
+      "name": "Polignano a Mare",
+      "country": "Italy",
+      "region": "Puglia",
+      "category": "Cliff-Top Coastal Town",
+      "description": "Dramatic white town perched on limestone cliffs above Adriatic",
+      "unique_features": [
+        "Dramatic cliff-top location",
+        "Lama Monachile beach",
+        "Grotta Palazzese cave restaurant",
+        "Historic center with sea views"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/polignano-cliff-top-coastal.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/polignano-limestone-cliffs.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/polignano-lama-monachile.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/polignano-grotta-palazzese.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bonifacio_corsica",
+      "name": "Bonifacio",
+      "country": "France",
+      "region": "Corsica",
+      "category": "Cliff Fortress Town",
+      "description": "Fortified town perched on white limestone cliffs",
+      "unique_features": [
+        "Medieval citadel on cliff edge",
+        "Bonifacio Strait views to Sardinia",
+        "King of Aragon's Staircase",
+        "Marine cemetery with sea views"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Moderate",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/france/bonifacio-cliff-fortress.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/france/bonifacio-limestone-cliffs.jpg",
+          "https://images.hiddeneurope.com/destinations/france/bonifacio-strait-sardinia.jpg",
+          "https://images.hiddeneurope.com/destinations/france/bonifacio-aragon-staircase.jpg"
+        ]
+      }
+    }
+  ],
+  "underrated_capitals": [
+    {
+      "id": "aarhus_denmark",
+      "name": "Aarhus",
+      "country": "Denmark",
+      "region": "Jutland",
+      "category": "City of Smiles",
+      "description": "Denmark's second city, world's happiest city",
+      "unique_features": [
+        "ARoS art gallery with rainbow roof",
+        "Banken Food Hall",
+        "Tivoli Friheden",
+        "Modern harbor pools"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/denmark/aarhus-city-smiles.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/denmark/aarhus-aros-rainbow-roof.jpg",
+          "https://images.hiddeneurope.com/destinations/denmark/aarhus-banken-food-hall.jpg",
+          "https://images.hiddeneurope.com/destinations/denmark/aarhus-harbor-pools.jpg"
+        ]
+      }
+    },
+    {
+      "id": "vilnius_lithuania",
+      "name": "Vilnius",
+      "country": "Lithuania",
+      "region": "Baltic States",
+      "category": "Complex History",
+      "description": "700-year-old capital with tumultuous history",
+      "unique_features": [
+        "Gediminas Hill",
+        "Gate of Dawn",
+        "Station District",
+        "Soviet-era buildings"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/lithuania/vilnius-complex-history-capital.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/lithuania/vilnius-gediminas-hill.jpg",
+          "https://images.hiddeneurope.com/destinations/lithuania/vilnius-gate-dawn.jpg",
+          "https://images.hiddeneurope.com/destinations/lithuania/vilnius-soviet-buildings.jpg"
+        ]
+      }
+    },
+    {
+      "id": "the_hague_netherlands",
+      "name": "The Hague",
+      "country": "Netherlands",
+      "region": "South Holland",
+      "category": "International City",
+      "description": "Seat of Dutch government and international justice",
+      "unique_features": [
+        "Peace Palace",
+        "International Court of Justice",
+        "Scheveningen beach",
+        "Royal family residences"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/netherlands/hague-international-city.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/netherlands/hague-peace-palace.jpg",
+          "https://images.hiddeneurope.com/destinations/netherlands/hague-court-justice.jpg",
+          "https://images.hiddeneurope.com/destinations/netherlands/hague-scheveningen-beach.jpg"
+        ]
+      }
+    },
+    {
+      "id": "ljubljana_slovenia",
+      "name": "Ljubljana",
+      "country": "Slovenia",
+      "region": "Central Slovenia",
+      "category": "Green Capital",
+      "description": "One of Europe's greenest cities with car-free center",
+      "unique_features": [
+        "Dragon Bridge",
+        "Car-free old town",
+        "Ljubljana Castle",
+        "Emerald Ljubljanica River"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/slovenia/ljubljana-green-capital.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/slovenia/ljubljana-dragon-bridge.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/ljubljana-car-free-town.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/ljubljana-castle.jpg"
+        ]
+      }
+    },
+    {
+      "id": "sarajevo_bosnia",
+      "name": "Sarajevo",
+      "country": "Bosnia and Herzegovina",
+      "region": "Federation of Bosnia and Herzegovina",
+      "category": "Meeting of East and West",
+      "description": "Multicultural capital where Ottoman and Austro-Hungarian empires meet",
+      "unique_features": [
+        "Baščaršija Ottoman old town",
+        "Austro-Hungarian architecture",
+        "War tunnel museum",
+        "Traditional Bosnian coffee culture"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/bosnia/sarajevo-east-west-meeting.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/bosnia/sarajevo-bascarsija.jpg",
+          "https://images.hiddeneurope.com/destinations/bosnia/sarajevo-austro-hungarian.jpg",
+          "https://images.hiddeneurope.com/destinations/bosnia/sarajevo-coffee-culture.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bratislava_slovakia",
+      "name": "Bratislava",
+      "country": "Slovakia",
+      "region": "Western Slovakia",
+      "category": "Danube Capital",
+      "description": "Charming capital on the Danube with castle views",
+      "unique_features": [
+        "Bratislava Castle overlooking Danube",
+        "Medieval old town",
+        "UFO Bridge observation deck",
+        "Traditional Slovak cuisine"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/slovakia/bratislava-danube-capital.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/slovakia/bratislava-castle-danube.jpg",
+          "https://images.hiddeneurope.com/destinations/slovakia/bratislava-medieval-town.jpg",
+          "https://images.hiddeneurope.com/destinations/slovakia/bratislava-ufo-bridge.jpg"
+        ]
+      }
+    },
+    {
+      "id": "riga_latvia",
+      "name": "Riga",
+      "country": "Latvia",
+      "region": "Baltic States",
+      "category": "Art Nouveau Capital",
+      "description": "UNESCO capital with world's finest collection of Art Nouveau architecture",
+      "unique_features": [
+        "World's finest Art Nouveau architecture",
+        "UNESCO Old Town",
+        "Riga Central Market in Zeppelin hangars",
+        "Traditional Latvian cuisine"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/latvia/riga-art-nouveau-capital.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/latvia/riga-art-nouveau-architecture.jpg",
+          "https://images.hiddeneurope.com/destinations/latvia/riga-unesco-old-town.jpg",
+          "https://images.hiddeneurope.com/destinations/latvia/riga-central-market.jpg"
+        ]
+      }
+    },
+    {
+      "id": "belgrade_serbia",
+      "name": "Belgrade",
+      "country": "Serbia",
+      "region": "Central Serbia",
+      "category": "Fortress City",
+      "description": "Vibrant capital at confluence of Sava and Danube rivers",
+      "unique_features": [
+        "Belgrade Fortress (Kalemegdan)",
+        "Bohemian Skadarlija quarter",
+        "Floating river clubs (splavs)",
+        "Traditional Serbian rakija bars"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/serbia/belgrade-fortress-city.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/serbia/belgrade-kalemegdan-fortress.jpg",
+          "https://images.hiddeneurope.com/destinations/serbia/belgrade-skadarlija-quarter.jpg",
+          "https://images.hiddeneurope.com/destinations/serbia/belgrade-floating-clubs.jpg"
+        ]
+      }
+    },
+    {
+      "id": "chisinau_moldova",
+      "name": "Chișinău",
+      "country": "Moldova",
+      "region": "Central Moldova",
+      "category": "Wine Capital",
+      "description": "Capital of Europe's least visited country with world-class wine cellars",
+      "unique_features": [
+        "Mileștii Mici underground wine city",
+        "Soviet-era architecture",
+        "Cricova wine cellars",
+        "Authentic Eastern European atmosphere"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/moldova/chisinau-wine-capital.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/moldova/chisinau-milestii-mici.jpg",
+          "https://images.hiddeneurope.com/destinations/moldova/chisinau-soviet-architecture.jpg",
+          "https://images.hiddeneurope.com/destinations/moldova/chisinau-cricova-cellars.jpg"
+        ]
+      }
+    },
+    {
+      "id": "tirana_albania",
+      "name": "Tirana",
+      "country": "Albania",
+      "region": "Central Albania",
+      "category": "Colorful Balkan Capital",
+      "description": "Vibrant capital transforming from communist past to colorful present",
+      "unique_features": [
+        "Colorfully painted buildings",
+        "Bunk'Art museums in former bunkers",
+        "Mount Dajti National Park cable car",
+        "Traditional Albanian cuisine"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/albania/tirana-colorful-balkan.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/albania/tirana-painted-buildings.jpg",
+          "https://images.hiddeneurope.com/destinations/albania/tirana-bunkart-museums.jpg",
+          "https://images.hiddeneurope.com/destinations/albania/tirana-mount-dajti.jpg"
+        ]
+      }
+    }
+  ],
+  "alpine_lakes": [
+    {
+      "id": "annecy_france",
+      "name": "Annecy",
+      "country": "France",
+      "region": "Haute-Savoie, French Alps",
+      "category": "Alpine Lake Town",
+      "description": "Medieval town on crystal-clear mountain-fed lake",
+      "unique_features": [
+        "Pristine Lake Annecy",
+        "Medieval Palais de l'Isle",
+        "Canal-lined old town",
+        "Water sports and swimming"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/france/annecy-alpine-lake-town.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/france/annecy-pristine-lake.jpg",
+          "https://images.hiddeneurope.com/destinations/france/annecy-palais-isle.jpg",
+          "https://images.hiddeneurope.com/destinations/france/annecy-canal-old-town.jpg"
+        ]
+      }
+    },
+    {
+      "id": "st_gilgen_austria",
+      "name": "St. Gilgen",
+      "country": "Austria",
+      "region": "Salzburg, Wolfgangsee",
+      "category": "Alpine Lake Village",
+      "description": "Fairytale village on one of Austria's prettiest lakes",
+      "unique_features": [
+        "Wolfgangsee lake setting",
+        "Zwölferhorn Mountain views",
+        "Traditional Alpine architecture",
+        "Mozart family connections"
+      ],
+      "best_time": "May-September (summer), December-March (skiing)",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/austria/st-gilgen-alpine-lake-village.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/austria/st-gilgen-wolfgangsee.jpg",
+          "https://images.hiddeneurope.com/destinations/austria/st-gilgen-zwolferhorn-mountain.jpg",
+          "https://images.hiddeneurope.com/destinations/austria/st-gilgen-alpine-architecture.jpg"
+        ]
+      }
+    },
+    {
+      "id": "nesso_italy",
+      "name": "Nesso",
+      "country": "Italy",
+      "region": "Lake Como, Lombardy",
+      "category": "Lake Como Village",
+      "description": "Picturesque village with ancient Roman bridge on Lake Como",
+      "unique_features": [
+        "Ponte della Civera Roman bridge",
+        "Dramatic waterfall (Orrido di Nesso)",
+        "Traditional lake fish cuisine",
+        "Stunning Como lake views"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/nesso-lake-como-village.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/nesso-roman-bridge.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/nesso-orrido-waterfall.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/nesso-como-views.jpg"
+        ]
+      }
+    },
+    {
+      "id": "bachalpsee_switzerland",
+      "name": "Bachalpsee",
+      "country": "Switzerland",
+      "region": "Grindelwald, Bernese Alps",
+      "category": "Blue Jewel of the Alps",
+      "description": "Mountain lake famous for mirror reflections of Schreckhorn peak",
+      "unique_features": [
+        "Perfect mountain reflections",
+        "Cable car access from Grindelwald First",
+        "Two connected alpine lakes",
+        "Panoramic hiking trails to Faulhorn"
+      ],
+      "best_time": "June-September",
+      "accessibility": "Easy (cable car + 1hr hike)",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/switzerland/bachalpsee-blue-jewel-alps.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/switzerland/bachalpsee-mountain-reflections.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/bachalpsee-cable-car-access.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/bachalpsee-hiking-trails.jpg"
+        ]
+      }
+    },
+    {
+      "id": "oberhornsee_switzerland",
+      "name": "Oberhornsee",
+      "country": "Switzerland",
+      "region": "Bernese Oberland, Lauterbrunnen",
+      "category": "Remote Alpine Lake",
+      "description": "Pristine mountain lake at 2,000m elevation in nature reserve",
+      "unique_features": [
+        "4-hour hike through nature reserve",
+        "Obersteinberg mountain guesthouse nearby",
+        "Candlelight dining experience",
+        "Rare alpine flora and fauna"
+      ],
+      "best_time": "July-September",
+      "accessibility": "Difficult (4hr mountain hike)",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/switzerland/oberhornsee-remote-alpine-lake.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/switzerland/oberhornsee-nature-reserve.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/oberhornsee-mountain-guesthouse.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/oberhornsee-alpine-flora.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lake_bled_slovenia",
+      "name": "Lake Bled",
+      "country": "Slovenia",
+      "region": "Julian Alps",
+      "category": "Fairy-tale Lake",
+      "description": "Slovenia's most iconic lake with island church and clifftop castle",
+      "unique_features": [
+        "Pilgrimage church on island",
+        "Bled Castle on 130m cliff",
+        "Traditional pletna boat rides",
+        "Famous Bled cream cake"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/slovenia/lake-bled-fairytale.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/slovenia/bled-island-church.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/bled-castle-cliff.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/bled-pletna-boats.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lake_bohinj_slovenia",
+      "name": "Lake Bohinj",
+      "country": "Slovenia",
+      "region": "Triglav National Park",
+      "category": "Pristine Glacial Lake",
+      "description": "Slovenia's largest permanent lake in pristine alpine setting",
+      "unique_features": [
+        "Triglav National Park location",
+        "Swimming in crystal-clear waters",
+        "Vogel ski resort cable car",
+        "Savica Waterfall nearby"
+      ],
+      "best_time": "June-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/slovenia/lake-bohinj-glacial.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/slovenia/bohinj-triglav-park.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/bohinj-crystal-waters.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/bohinj-savica-waterfall.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lauterbrunnen_switzerland",
+      "name": "Lauterbrunnen Valley",
+      "country": "Switzerland",
+      "region": "Bernese Oberland",
+      "category": "Valley of 72 Waterfalls",
+      "description": "Spectacular Alpine valley with 72 waterfalls",
+      "unique_features": [
+        "72 waterfalls including Staubbach Falls",
+        "Trümmelbach Falls inside mountain",
+        "Jungfraujoch access point",
+        "Traditional Swiss Alpine architecture"
+      ],
+    "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/switzerland/lauterbrunnen-valley-waterfalls.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/switzerland/lauterbrunnen-staubbach-falls.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/lauterbrunnen-trummelbach-falls.jpg",
+          "https://images.hiddeneurope.com/destinations/switzerland/lauterbrunnen-jungfraujoch.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lac_de_sainte_croix_france",
+      "name": "Lac de Sainte-Croix",
+      "country": "France",
+      "region": "Verdon Gorge, Provence",
+      "category": "Turquoise Lake",
+      "description": "Artificial lake with stunning turquoise waters at entrance to Verdon Gorge",
+      "unique_features": [
+        "Incredible turquoise color",
+        "Verdon Gorge entrance",
+        "Kayaking and pedal boats",
+        "Medieval Moustiers-Sainte-Marie nearby"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/france/lac-sainte-croix-turquoise.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/france/lac-sainte-croix-verdon-gorge.jpg",
+          "https://images.hiddeneurope.com/destinations/france/lac-sainte-croix-kayaking.jpg",
+          "https://images.hiddeneurope.com/destinations/france/lac-sainte-croix-moustiers.jpg"
+        ]
+      }
+    }
+  ],
+  "thermal_spa_destinations": [
+    {
+      "id": "saturnia_italy",
+      "name": "Saturnia",
+      "country": "Italy",
+      "region": "Tuscany, Maremma",
+      "category": "Natural Hot Springs",
+      "description": "Free natural thermal pools cascading down limestone terraces",
+      "unique_features": [
+        "Free access thermal pools",
+        "37°C natural spring water",
+        "Limestone cascade terraces",
+        "Sulfur-rich therapeutic waters"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/saturnia-thermal-springs.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/saturnia-limestone-terraces.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/saturnia-natural-pools.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/saturnia-thermal-water.jpg"
+        ]
+      }
+    },
+    {
+      "id": "pamukkale_turkey",
+      "name": "Pamukkale",
+      "country": "Turkey",
+      "region": "Denizli Province",
+      "category": "Cotton Castle",
+      "description": "UNESCO white limestone terraces with thermal springs",
+      "unique_features": [
+        "White limestone travertine terraces",
+        "UNESCO World Heritage site",
+        "Ancient Hierapolis ruins",
+        "Sacred Pool with Roman columns"
+      ],
+      "best_time": "April-June, September-November",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/turkey/pamukkale-cotton-castle.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/turkey/pamukkale-travertine-terraces.jpg",
+          "https://images.hiddeneurope.com/destinations/turkey/pamukkale-hierapolis-ruins.jpg",
+          "https://images.hiddeneurope.com/destinations/turkey/pamukkale-sacred-pool.jpg"
+        ]
+      }
+    },
+    {
+      "id": "szechenyi_budapest",
+      "name": "Széchenyi Thermal Baths",
+      "country": "Hungary",
+      "region": "Budapest",
+      "category": "Historic Thermal Baths",
+      "description": "Europe's largest medicinal bath complex in Neo-Baroque style",
+      "unique_features": [
+        "18 pools with varying temperatures",
+        "Neo-Baroque architectural style",
+        "Chess playing in thermal pools",
+        "Year-round outdoor swimming"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate-high",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/hungary/szechenyi-thermal-baths.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/hungary/szechenyi-neo-baroque.jpg",
+          "https://images.hiddeneurope.com/destinations/hungary/szechenyi-chess-pools.jpg",
+          "https://images.hiddeneurope.com/destinations/hungary/szechenyi-outdoor-swimming.jpg"
+        ]
+      }
+    },
+    {
+      "id": "baden_baden_germany",
+      "name": "Baden-Baden",
+      "country": "Germany",
+      "region": "Black Forest",
+      "category": "Historic Spa Town",
+      "description": "Elegant spa town with Roman thermal spring heritage",
+      "unique_features": [
+        "Caracalla Spa modern thermal complex",
+        "Friedrichsbad Victorian-era baths",
+        "Casino Baden-Baden",
+        "Lichtentaler Allee park promenade"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/germany/baden-baden-spa-town.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/germany/baden-baden-caracalla-spa.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/baden-baden-friedrichsbad.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/baden-baden-casino.jpg"
+        ]
+      }
+    },
+    {
+      "id": "blue_lagoon_iceland",
+      "name": "Blue Lagoon",
+      "country": "Iceland",
+      "region": "Reykjanes Peninsula",
+      "category": "Geothermal Spa",
+      "description": "Famous geothermal spa with milky blue mineral-rich waters",
+      "unique_features": [
+        "Milky blue geothermal water",
+        "Silica mud masks",
+        "Lava field location",
+        "37-39°C year-round temperature"
+      ],
+      "best_time": "Year-round",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/iceland/blue-lagoon-geothermal.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/iceland/blue-lagoon-milky-water.jpg",
+          "https://images.hiddeneurope.com/destinations/iceland/blue-lagoon-silica-mud.jpg",
+          "https://images.hiddeneurope.com/destinations/iceland/blue-lagoon-lava-field.jpg"
+        ]
+      }
+    }
+  ],
+  "wine_regions": [
+    {
+      "id": "tokaj_hungary",
+      "name": "Tokaj Wine Region",
+      "country": "Hungary",
+      "region": "Northeast Hungary",
+      "category": "UNESCO Wine Region",
+      "description": "UNESCO World Heritage wine region famous for sweet Tokaj wines",
+      "unique_features": [
+        "UNESCO World Heritage vineyard landscape",
+        "Tokaj Aszú dessert wine",
+        "Historic wine cellars",
+        "Volcanic soil terroir"
+      ],
+      "best_time": "September-October (harvest), May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/hungary/tokaj-wine-region.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/hungary/tokaj-unesco-vineyards.jpg",
+          "https://images.hiddeneurope.com/destinations/hungary/tokaj-aszu-wine.jpg",
+          "https://images.hiddeneurope.com/destinations/hungary/tokaj-wine-cellars.jpg"
+        ]
+      }
+    },
+    {
+      "id": "mosel_germany",
+      "name": "Mosel Valley",
+      "country": "Germany",
+      "region": "Rhineland-Palatinate",
+      "category": "Steep Vineyard Valley",
+      "description": "Dramatic river valley with steep slate vineyard slopes",
+      "unique_features": [
+        "Steepest vineyard slopes in Europe",
+        "Riesling wine speciality",
+        "Medieval wine towns",
+        "Mosel River wine cruise routes"
+      ],
+      "best_time": "May-October",
+      "accessibility": "Easy",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/germany/mosel-valley-vineyards.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/germany/mosel-steep-slopes.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/mosel-riesling-wine.jpg",
+          "https://images.hiddeneurope.com/destinations/germany/mosel-river-cruise.jpg"
+        ]
+      }
+    },
+    {
+      "id": "alsace_france",
+      "name": "Alsace Wine Route",
+      "country": "France",
+      "region": "Alsace",
+      "category": "Franco-German Wine Route",
+      "description": "170km wine route through picturesque Franco-German villages",
+      "unique_features": [
+        "170km Route des Vins d'Alsace",
+        "Half-timbered wine villages",
+        "Franco-German wine tradition",
+        "Gewürztraminer and Riesling wines"
+      ],
+      "best_time": "May-October",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/france/alsace-wine-route.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/france/alsace-half-timbered-villages.jpg",
+          "https://images.hiddeneurope.com/destinations/france/alsace-gewurztraminer.jpg",
+          "https://images.hiddeneurope.com/destinations/france/alsace-route-vins.jpg"
+        ]
+      }
+    },
+    {
+      "id": "barolo_italy",
+      "name": "Barolo Wine Region",
+      "country": "Italy",
+      "region": "Piedmont",
+      "category": "King of Wines Region",
+      "description": "UNESCO wine region producing Italy's most prestigious red wine",
+      "unique_features": [
+        "UNESCO vineyard landscape",
+        "Barolo 'King of Wines'",
+        "Truffle hunting season",
+        "Medieval hilltop wine villages"
+      ],
+      "best_time": "September-November (harvest/truffle), May-October",
+      "accessibility": "Easy",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/barolo-wine-region.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/barolo-unesco-vineyards.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/barolo-king-wines.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/barolo-truffle-hunting.jpg"
+        ]
+      }
+    },
+    {
+      "id": "santorini_greece",
+      "name": "Santorini Wine Region",
+      "country": "Greece",
+      "region": "Cyclades Islands",
+      "category": "Volcanic Wine Island",
+      "description": "Unique volcanic wine region with distinctive vine cultivation",
+      "unique_features": [
+        "Volcanic soil viticulture",
+        "Kouloura vine basket cultivation",
+        "Assyrtiko wine grape variety",
+        "Sunset wine tasting experiences"
+      ],
+      "best_time": "April-October",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/greece/santorini-volcanic-wines.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/greece/santorini-kouloura-vines.jpg",
+          "https://images.hiddeneurope.com/destinations/greece/santorini-assyrtiko-grape.jpg",
+          "https://images.hiddeneurope.com/destinations/greece/santorini-sunset-tasting.jpg"
+        ]
+      }
+    }
+  ],
+  "mountain_destinations": [
+    {
+      "id": "dolomites_italy",
+      "name": "Dolomites",
+      "country": "Italy",
+      "region": "South Tyrol, Veneto",
+      "category": "UNESCO Mountain Range",
+      "description": "UNESCO World Heritage dramatic pale limestone peaks",
+      "unique_features": [
+        "Distinctive pale limestone peaks",
+        "Via ferrata climbing routes",
+        "Alpine lake reflections",
+        "Three Peaks of Lavaredo"
+      ],
+      "best_time": "June-September (hiking), December-March (skiing)",
+      "accessibility": "Easy-moderate",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/italy/dolomites-limestone-peaks.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/italy/dolomites-via-ferrata.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/dolomites-alpine-lakes.jpg",
+          "https://images.hiddeneurope.com/destinations/italy/dolomites-three-peaks.jpg"
+        ]
+      }
+    },
+    {
+      "id": "carpathians_romania",
+      "name": "Carpathian Mountains",
+      "country": "Romania",
+      "region": "Transylvania",
+      "category": "Wilderness Mountain Range",
+      "description": "Europe's last great wilderness with brown bears and wolves",
+      "unique_features": [
+        "Europe's largest brown bear population",
+        "Virgin forest ecosystems",
+        "Medieval castles and fortified churches",
+        "Traditional Romanian mountain villages"
+      ],
+      "best_time": "May-October",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/romania/carpathians-wilderness.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/romania/carpathians-brown-bears.jpg",
+          "https://images.hiddeneurope.com/destinations/romania/carpathians-virgin-forests.jpg",
+          "https://images.hiddeneurope.com/destinations/romania/carpathians-mountain-villages.jpg"
+        ]
+      }
+    },
+    {
+      "id": "julian_alps_slovenia",
+      "name": "Julian Alps",
+      "country": "Slovenia",
+      "region": "Triglav National Park",
+      "category": "Pristine Alpine Park",
+      "description": "Slovenia's only national park with Mount Triglav peak",
+      "unique_features": [
+        "Mount Triglav (2,864m) highest peak",
+        "Vrata Valley dramatic scenery",
+        "Alpine ibex and golden eagles",
+        "Traditional alpine huts (koča)"
+      ],
+      "best_time": "June-September",
+      "accessibility": "Moderate",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/slovenia/julian-alps-triglav.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/slovenia/julian-alps-vrata-valley.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/julian-alps-alpine-ibex.jpg",
+          "https://images.hiddeneurope.com/destinations/slovenia/julian-alps-mountain-huts.jpg"
+        ]
+      }
+    },
+    {
+      "id": "picos_europa_spain",
+      "name": "Picos de Europa",
+      "country": "Spain",
+      "region": "Asturias, Cantabria, León",
+      "category": "Limestone National Park",
+      "description": "Spain's first national park with dramatic limestone peaks",
+      "unique_features": [
+        "Spain's first national park (1918)",
+        "Cares Gorge hiking trail",
+        "Traditional Asturian villages",
+        "Fuente Dé cable car"
+      ],
+      "best_time": "June-September",
+      "accessibility": "Moderate",
+      "crowd_level": "Low-moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/spain/picos-europa-limestone.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/spain/picos-europa-cares-gorge.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/picos-europa-asturian-villages.jpg",
+          "https://images.hiddeneurope.com/destinations/spain/picos-europa-fuente-de.jpg"
+        ]
+      }
+    },
+    {
+      "id": "retezat_romania",
+      "name": "Retezat National Park",
+      "country": "Romania",
+      "region": "Hunedoara County",
+      "category": "Glacial Lake Mountains",
+      "description": "Romania's oldest national park with over 80 glacial lakes",
+      "unique_features": [
+        "Over 80 glacial lakes",
+        "Retezat Peak (2,509m)",
+        "Rare endemic plant species",
+        "Pristine mountain wilderness"
+      ],
+      "best_time": "June-September",
+      "accessibility": "Difficult",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/romania/retezat-glacial-lakes.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/romania/retezat-peak.jpg",
+          "https://images.hiddeneurope.com/destinations/romania/retezat-endemic-plants.jpg",
+          "https://images.hiddeneurope.com/destinations/romania/retezat-wilderness.jpg"
+        ]
+      }
+    }
+  ],
+  "lake_destinations": [
+    {
+      "id": "plitvice_croatia",
+      "name": "Plitvice Lakes",
+      "country": "Croatia",
+      "region": "Lika-Senj County",
+      "category": "UNESCO Cascade Lakes",
+      "description": "16 terraced lakes connected by waterfalls in pristine forest",
+      "unique_features": [
+        "16 interconnected terraced lakes",
+        "UNESCO World Heritage status",
+        "Wooden boardwalk trails",
+        "Rare wildlife including brown bears"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/croatia/plitvice-cascade-lakes.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/croatia/plitvice-terraced-lakes.jpg",
+          "https://images.hiddeneurope.com/destinations/croatia/plitvice-wooden-boardwalks.jpg",
+          "https://images.hiddeneurope.com/destinations/croatia/plitvice-waterfalls.jpg"
+        ]
+      }
+    },
+    {
+      "id": "killarney_ireland",
+      "name": "Killarney National Park",
+      "country": "Ireland",
+      "region": "County Kerry",
+      "category": "Irish Lake District",
+      "description": "Ireland's first national park with three pristine lakes",
+      "unique_features": [
+        "Three lakes: Lough Leane, Muckross, Upper",
+        "Ancient oak woodlands",
+        "Red deer herds",
+        "Ross Castle on lake shore"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Moderate",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/ireland/killarney-three-lakes.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/ireland/killarney-oak-woodlands.jpg",
+          "https://images.hiddeneurope.com/destinations/ireland/killarney-red-deer.jpg",
+          "https://images.hiddeneurope.com/destinations/ireland/killarney-ross-castle.jpg"
+        ]
+      }
+    },
+    {
+      "id": "lake_district_england",
+      "name": "Lake District",
+      "country": "England",
+      "region": "Cumbria",
+      "category": "English Romantic Lakes",
+      "description": "UNESCO World Heritage cultural landscape inspiring Romantic poets",
+      "unique_features": [
+        "Birthplace of English Romanticism",
+        "Windermere - England's largest lake",
+        "Traditional Lakeland stone cottages",
+        "Beatrix Potter heritage"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "High",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/england/lake-district-romantic.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/england/lake-district-windermere.jpg",
+          "https://images.hiddeneurope.com/destinations/england/lake-district-stone-cottages.jpg",
+          "https://images.hiddeneurope.com/destinations/england/lake-district-beatrix-potter.jpg"
+        ]
+      }
+    },
+    {
+      "id": "masuria_poland",
+      "name": "Masuria Lake District",
+      "country": "Poland",
+      "region": "Northeast Poland",
+      "category": "Land of a Thousand Lakes",
+      "description": "Over 2,000 lakes connected by rivers and canals",
+      "unique_features": [
+        "Over 2,000 interconnected lakes",
+        "Sailing and kayaking paradise",
+        "Medieval Teutonic castles",
+        "Pristine wilderness areas"
+      ],
+      "best_time": "May-September",
+      "accessibility": "Easy",
+      "crowd_level": "Low",
+      "instagram_worthy": true,
+      "images": {
+        "hero": "https://images.hiddeneurope.com/destinations/poland/masuria-thousand-lakes.jpg",
+        "gallery": [
+          "https://images.hiddeneurope.com/destinations/poland/masuria-sailing-paradise.jpg",
+          "https://images.hiddeneurope.com/destinations/poland/masuria-teutonic-castles.jpg",
+          "https://images.hiddeneurope.com/destinations/poland/masuria-wilderness.jpg"
+        ]
+      }
+    }
+  ]
+}

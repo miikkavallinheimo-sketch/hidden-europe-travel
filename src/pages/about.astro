@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+
+const title = "About Hidden Europe - Curated European Travel Experts | Hidden Destinations & Boutique Hotels";
+const description = "Meet the European travel experts behind Hidden Europe. Discover our story, mission, and 15+ years of experience curating Europe's most extraordinary hidden destinations and boutique hotels.";
+---
+
+<Layout title={title} description={description}>
+  <Navigation />
+  <link rel="stylesheet" href="/src/styles/legal.css">
+  <main>
+    <section class="legal-content">
+      <div class="container">
+        <h1>About Hidden Europe</h1>
+        <p class="subtitle">Discovering Europe's Hidden Treasures Since 2024</p>
+
+        <h2>Our Story</h2>
+        <p>Hidden Europe was born from a passion for discovering the extraordinary in the overlooked corners of Europe. We believe that the most memorable travel experiences often lie beyond the well-trodden tourist paths, in places where authentic culture, stunning landscapes, and genuine hospitality create unforgettable moments.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to uncover and share Europe's best-kept secrets, connecting discerning travelers with extraordinary destinations and unique boutique accommodations. We strive to:</p>
+        <ul>
+          <li>Promote sustainable and responsible tourism</li>
+          <li>Support local communities and preserve cultural heritage</li>
+          <li>Curate authentic travel experiences</li>
+          <li>Showcase unique and characterful boutique hotels</li>
+        </ul>
+
+        <h2>Our Expertise</h2>
+        <p>Our team combines decades of travel experience with deep local knowledge. We personally visit and evaluate each destination and property we feature, ensuring they meet our exacting standards for:</p>
+        <ul>
+          <li>Authenticity and character</li>
+          <li>Quality and service excellence</li>
+          <li>Sustainable practices</li>
+          <li>Unique experiences</li>
+        </ul>
+
+        <h2>Our Selection Criteria</h2>
+        <p>When choosing destinations and properties to feature, we look for:</p>
+        <ul>
+          <li>Off-the-beaten-path locations with unique character</li>
+          <li>Properties with distinctive architecture or historical significance</li>
+          <li>Exceptional service and attention to detail</li>
+          <li>Strong connections to local culture and community</li>
+          <li>Commitment to sustainable practices</li>
+        </ul>
+
+        <h2>Our Values</h2>
+        <p>At Hidden Europe, we are guided by our core values:</p>
+        <ul>
+          <li><strong>Authenticity:</strong> We celebrate genuine experiences and real connections</li>
+          <li><strong>Sustainability:</strong> We promote responsible tourism that benefits local communities</li>
+          <li><strong>Quality:</strong> We maintain high standards in our recommendations</li>
+          <li><strong>Innovation:</strong> We constantly seek new ways to enhance the travel experience</li>
+        </ul>
+
+        <h2>Join Our Journey</h2>
+        <p>We invite you to explore Europe's hidden treasures with us. Whether you're seeking a peaceful retreat in a mountain village, a stay in a historic castle, or an adventure in an undiscovered region, Hidden Europe is your guide to extraordinary travel experiences.</p>
+
+        <div class="cta-section">
+          <h3>Start Your Journey</h3>
+          <div class="cta-links">
+            <a href="/destinations" class="cta-button">Explore Destinations</a>
+            <a href="/hotels" class="cta-button">Discover Hotels</a>
+            <a href="/contact" class="cta-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--dim-gray);
+  margin-bottom: 3rem;
+}
+
+.cta-section {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cta-section h3 {
+  margin-bottom: 1.5rem;
+}
+
+.cta-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--cal-poly-green);
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+  background: var(--viridian);
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+:root.dark .subtitle {
+  color: #999;
+}
+
+:root.dark .cta-section {
+  background: var(--jet);
+}
+
+:root.dark .cta-button {
+  background: var(--amber);
+  color: var(--jet);
+}
+
+:root.dark .cta-button:hover {
+  background: var(--baby-powder);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-links {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>

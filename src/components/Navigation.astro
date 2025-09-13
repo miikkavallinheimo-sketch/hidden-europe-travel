@@ -1,0 +1,183 @@
+---
+---
+
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <img src="/logo.svg" alt="HiddenEurope.travel" class="logo-image light-logo" width="338" height="68">
+        <img src="/logo-dark.svg" alt="HiddenEurope.travel" class="logo-image dark-logo" width="338" height="68">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="/destinations">Destinations</a></li>
+        <li><a href="/hotels">Hotels</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-toggle-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2"/>
+              <path d="M12 20v2"/>
+              <path d="m4.93 4.93 1.41 1.41"/>
+              <path d="m17.66 17.66 1.41 1.41"/>
+              <path d="M2 12h2"/>
+              <path d="M20 12h2"/>
+              <path d="m6.34 17.66-1.41 1.41"/>
+              <path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+          </span>
+        </button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    background: var(--bg-primary);
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: var(--cal-poly-green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+  }
+
+  .logo-image {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .light-logo {
+    position: relative;
+  }
+
+  .dark-logo {
+    opacity: 0;
+  }
+
+  :root.dark .light-logo {
+    opacity: 0;
+  }
+
+  :root.dark .dark-logo {
+    opacity: 1;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    position: relative;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+
+  .nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--cal-poly-green);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    transition: transform 0.3s ease;
+  }
+
+  .theme-toggle:hover {
+    transform: scale(1.1);
+  }
+
+  .theme-toggle-icon {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: var(--text-primary);
+  }
+
+  .moon-icon, .sun-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .moon-icon {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  :global(.dark) .moon-icon {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  :global(.dark) .sun-icon {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>
+
+<script>
+  // Tarkista tallennettu teema sivun latautuessa
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+
+  // Lisää click-event teeman vaihtamiseen
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+
+<!-- Navigation styles are now in global.css -->

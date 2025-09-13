@@ -1,0 +1,121 @@
+---
+// src/pages/destinations/[id].astro
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import destinationsData from '../../data/destinations.json';
+import { Sun, Footprints, Users, Camera } from 'lucide-astro';
+
+export function getStaticPaths() {
+  // Kerää kaikki kohteet yhteen listaan
+  const allDestinations = Object.values(destinationsData).flat();
+
+  // Palauta vain ne kohteet, joilla on id
+  return allDestinations
+    .filter(destination => destination && destination.id)
+    .map(destination => ({
+      params: { id: destination.id },
+      props: { destination },
+    }));
+}
+
+const { destination } = Astro.props;
+const pageTitle = `${destination.name}, ${destination.country} - Hidden Europe`;
+const pageDescription = `Discover ${destination.name} in ${destination.region}, ${destination.country}. ${destination.description}`;
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="page-hero-image">
+        <img src={destination.images?.hero || '/placeholder-image.jpg'} alt={destination.name} />
+        <div class="page-hero-overlay">
+          <div class="page-hero-content">
+            <div class="breadcrumb">
+              <a href="/">Home</a> → <a href="/destinations">Destinations</a> → {destination.name}
+            </div>
+            <span class="category-badge">{destination.category}</span>
+            <h1>{destination.name}</h1>
+            <p class="page-location">{destination.region}, {destination.country}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-icon"><Sun size={24} /></span>
+            <span class="info-label">Best Time</span>
+            <span class="info-value">{destination.best_time}</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon"><Footprints size={24} /></span>
+            <span class="info-label">Accessibility</span>
+            <span class="info-value">{destination.accessibility}</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon"><Users size={24} /></span>
+            <span class="info-label">Crowd Level</span>
+            <span class="info-value">{destination.crowd_level}</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon"><Camera size={24} /></span>
+            <span class="info-label">Instagram</span>
+            <span class="info-value">{destination.instagram_worthy ? "Perfect" : "Limited"}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content">
+      <div class="container">
+        <div class="content-grid">
+          <div class="main-content">
+            <h2>About {destination.name}</h2>
+            <p class="main-description">{destination.description}</p>
+            
+            <h3>What Makes It Special</h3>
+            <ul class="features-list">
+              {destination.unique_features.map((feature: string) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="sidebar">
+            <div class="location-card">
+              <h4>Location Details</h4>
+              <p><strong>Country:</strong> {destination.country}</p>
+              <p><strong>Region:</strong> {destination.region}</p>
+              <p><strong>Category:</strong> {destination.category}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    {destination.images?.gallery && (
+      <section class="gallery">
+        <div class="container">
+          <h2>Photo Gallery</h2>
+          <div class="gallery-grid">
+            {destination.images.gallery.map((image: string, index: number) => (
+              <div class="gallery-item">
+                <img src={image} alt={`${destination.name} view ${index + 1}`} loading="lazy" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+  </main>
+</Layout>
+
+<!-- All styles are now in global.css -->

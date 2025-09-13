@@ -1,0 +1,287 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import DestinationCard from '../components/DestinationCard.astro';
+import HotelCard from '../components/HotelCard.astro';
+import destinationsData from '../data/destinations.json';
+import hotelsData from '../data/hotels.json';
+
+// Hae kaikki kohteet
+const allDestinations = Object.values(destinationsData).flat();
+const featuredDestinations = allDestinations
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 4);
+
+// Hae kaikki hotellit
+const allHotels = Object.values(hotelsData.boutique_hotels).flat();
+const featuredHotels = allHotels
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 4);
+---
+
+<Layout 
+  title="Hidden Europe - Discover Europe's Best Kept Secrets"
+  description="Discover Europe's most hidden villages, secret islands, and unique boutique hotels off the beaten path."
+>
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Europe's Best Kept Secrets</h1>
+        <p>Hidden villages, secret islands, and extraordinary boutique hotels waiting to be explored.</p>
+        <a href="#destinations" class="cta-button">Start Exploring</a>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+      <div class="container">
+        <h2>Featured Hidden Destinations</h2>
+        <div class="destination-grid">
+          {featuredDestinations.map((destination) => (
+            <DestinationCard destination={destination} />
+          ))}
+        </div>
+        <div class="view-all">
+          <a href="/destinations" class="view-all-button">View All Destinations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Hotels -->
+    <section class="hotels">
+      <div class="container">
+        <h2>Extraordinary Boutique Hotels</h2>
+        <div class="hotel-grid">
+          {featuredHotels.map((hotel) => (
+            <HotelCard hotel={hotel} />
+          ))}
+        </div>
+        <div class="view-all">
+          <a href="/hotels" class="view-all-button">Discover All Hotels</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h3>Never Miss a Hidden Gem</h3>
+          <p>Get monthly updates on Europe's most secret destinations and exclusive hotel offerings</p>
+          <form class="newsletter-form" netlify>
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    padding: 8rem 2rem 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  .cta-button:hover {
+    background: white;
+    color: #2c5530;
+  }
+
+  /* Sections */
+  .destinations,
+  .hotels {
+    padding: 6rem 0;
+  }
+
+  .hotels {
+    background: var(--bg-secondary);
+  }
+
+:root.dark .destinations {
+  background: var(--bg-primary);
+}
+
+:root.dark .hotels {
+  background: var(--bg-primary);
+}
+
+  :root.dark .destinations h2,
+  :root.dark .hotels h2 {
+    color: var(--card-text);
+  }
+
+  .destinations h2,
+  .hotels h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: #2c5530;
+    font-weight: 300;
+  }
+
+  .destination-grid,
+  .hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .view-all {
+    text-align: center;
+  }
+
+  .view-all-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #301B56;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .view-all-button:hover {
+    background: #FFBE0B;
+    transform: translateY(-2px);
+  }
+
+  /* Newsletter */
+  .newsletter {
+    background: var(--bg-primary);
+    padding: 4rem 0;
+  }
+
+  :root.dark .newsletter {
+    background: var(--bg-muted);
+  }
+
+  .newsletter-content {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .newsletter-content h3 {
+    color: var(--cal-poly-green);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  :root.dark .newsletter-content h3 {
+    color: var(--card-title);
+  }
+
+  .newsletter-content p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  :root.dark .newsletter-content p {
+    color: var(--card-text);
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .newsletter-form input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--border);
+    border-radius: 25px;
+    font-size: 1rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+
+  .newsletter-form input:focus {
+    outline: none;
+    border-color: var(--russian-violet);
+  }
+
+  :root.dark .newsletter-form input:focus {
+    border-color: var(--bright-blue);
+  }
+
+  .newsletter-form button {
+    padding: 1rem 2rem;
+    background: var(--amber);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  :root.dark .newsletter-form button {
+    background: var(--bright-blue);
+  }
+
+  .newsletter-form button:hover {
+    background: var(--amber-dark);
+    transform: translateY(-2px);
+  }
+
+  :root.dark .newsletter-form button:hover {
+    background: var(--bright-blue-dark);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .destination-grid,
+    .hotel-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+  }
+</style>
