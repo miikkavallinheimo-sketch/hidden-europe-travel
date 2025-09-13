@@ -1,0 +1,6 @@
+# https://hiddeneurope.travel/robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://hiddeneurope.travel/sitemap-index.xml
