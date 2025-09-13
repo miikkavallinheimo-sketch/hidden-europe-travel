@@ -201,7 +201,7 @@ const description = "Frequently asked questions about Hidden Europe's curated Eu
     const hash = window.location.hash;
     if (hash) {
       const targetLink = document.querySelector(`[href="${hash}"]`);
-      targetLink?.click();
+      (targetLink as HTMLElement)?.click();
     }
   });
 </script>
